@@ -114,20 +114,18 @@ class InventoryChange implements ObserverInterface
         if(empty($product)){
             return $observer;
         }
-
+        $product_load = $this->objectManager->create('Magento\Catalog\Model\Product')->load($product->getId());
         $productids[] = $product->getId();
 
         $this->session->setNoBatches(true);
-        $this->dataHelper->createProductOnFruugo($productids, array());
+        $this->dataHelper->createProductOnFruugo($product_load, array());
+        
+        $oldValue = 0;
 
-            //capture stock change
-        $orgQty = $product->getOrigData('quantity_and_stock_status');
-        $oldValue = (int)$orgQty['qty'];
+        $postData = $product_load->getQuantityAndStockStatus();
+        $newValue = $postData['qty'];
 
-        $postData = $this->request->getParam('product');
-        $newValue = (int)$postData['stock_data']['qty'];
-
-        $isInStock = (boolean)$postData['quantity_and_stock_status']['is_in_stock'];
+        $isInStock = $postData['is_in_stock'];
         //if out of stock then set value to 0
         if (!$isInStock)
             $newValue = 0;
