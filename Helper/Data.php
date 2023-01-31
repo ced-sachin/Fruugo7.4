@@ -1468,7 +1468,10 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         $response = $this->getRequest('stockstatus-api' . $queryString);
         $api_hit = 0;
         $response = $this->xml->loadXML($response)->xmlToArray();
-        $pages = (int)$response['skus']['_attribute']['numberOfPages'];
+        $pages = 0;
+        if(isset($response['skus']['_attribute']['numberOfPages'])) {
+            $pages = (int)$response['skus']['_attribute']['numberOfPages'];
+        }
         $page_no = 0;
         $api_response = '';
        while($page_no < $pages ) {
