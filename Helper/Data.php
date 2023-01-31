@@ -1459,19 +1459,35 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      * @param string|[] $ids
      * @return bool
      */
-   public function updateInventoryOnFruugo($ids = null, $data = null)
-    {
+    public function updateInventoryOnFruugo($ids = null, $data = null)
+    {   
+        $timeStamp = '';
+        $this->xml = $this->objectManager->create('Ced\Fruugo\Helper\Custom\Generator');
+        $params = array('page' => 0);
+        $queryString = empty($params) ? '' : '?' . http_build_query($params);
+        $response = $this->getRequest('stockstatus-api' . $queryString);
+        $api_hit = 0;
+        $response = $this->xml->loadXML($response)->xmlToArray();
+        $pages = (int)$response['skus']['_attribute']['numberOfPages'];
+        $page_no = 0;
+        $api_response = '';
+       while($page_no < $pages ) {
         $timeStamp = (string)$this->dateTime->gmtTimestamp();
-         $response = $this->getRequest('stockstatus-api');
-            $this->xml = $this->objectManager->create('Ced\Fruugo\Helper\Custom\Generator');
-            $response = $this->xml->loadXML($response)->xmlToArray();
-            //print_r($response);die('check floww1');
+        if($api_hit > 0) {
+            $params = array('page' => $page_no);
+            $queryString = empty($params) ? '' : '?' . http_build_query($params);
+            $response = $this->getRequest('stockstatus-api' . $queryString);
+            $response = $this->objectManager->get('Ced\Fruugo\Helper\Custom\Generator')->loadXML($response)->xmlToArray();
+        }
+        $api_hit += 1;
+        $page_no += 1;
+
+        // echo '<pre>';print_r($response);die('check floww1');
         if(!isset($response['html']))
-            $res = $response['skus']['sku'];
+            $res = $response['skus']['_value']['sku'];
             $prod_upload = array();$Inventory = array();
         foreach ($ids as $id) 
         { 
-
             $product = $this->objectManager->create('Magento\Catalog\Model\Product')->load($id['id'])
                 ->setStoreId($this->selectedStore);
              //update on xml feed
@@ -1534,38 +1550,44 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
                         }
                     }
                 } 
-            if($frugo_sku_id!='')
-            {
-                $qty = (int) $this->getProductQty($id['id'],null);
-                $qty = ($qty < 0) ? 0 : $qty;
-                $avail = 'OUTOFSTOCK';
-                if($qty > 0)
+                if($frugo_sku_id!='')
                 {
-                    $avail = 'INSTOCK';
-                }
-                $Inventory[] = array(
-                    'sku' => array(
-                        '_attribute' => array(
-                            'fruugoSkuId' => $frugo_sku_id,
+                    $qty = (int) $this->getProductQty($id['id'],null);
+                    $qty = ($qty < 0) ? 0 : $qty;
+                    $avail = 'OUTOFSTOCK';
+                    if($qty > 0)
+                    {
+                        $avail = 'INSTOCK';
+                    }
+                    $Inventory[] = array(
+                        'sku' => array(
+                            '_attribute' => array(
+                                'fruugoSkuId' => $frugo_sku_id,
+                            ),
+                            '_value' => array(
+                                'availability' => (string)$avail,
+                                'itemsInStock' => (string)$qty,
+                            ),
                         ),
-                        '_value' => array(
-                            'availability' => (string)$avail,
-                            'itemsInStock' => (string)$qty,
-                        ),
-                    ),
 
-                );
-            }
+                    );
+                }
             }
         }
-//for config product code end
+        //for config product code end
            
            
        if($prod_upload!=null)
         $this->createProductOnFruugo($prod_upload);
+        
         if(!isset($Inventory) || count($Inventory) <= 0) {
-            return false;
-        }
+            if($page_no == $pages){
+                return $api_response;
+            }else{
+                continue;
+            }
+                
+            }
             $path = $this->createDir('fruugo', 'media');
             $path = $path['path'] . '/' . 'InventoryFeed.xml';
             $this->xml = $this->objectManager->create('\Magento\Framework\Xml\Generator');
@@ -1576,15 +1598,21 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
                 ),
             );
             $this->xml->arrayToXml($inventoryArray)->save($path);
-            $response = $this->postRequestWithXml(self::GET_FEEDS_INVENTORY_SUB_URL, $this->xml->__toString() );
+            $api_response = $this->postRequestWithXml(self::GET_FEEDS_INVENTORY_SUB_URL, $this->xml->__toString() );
+            // die($response);
             $cpPath = $this->createDir('fruugo', 'media');
             $cpPath = $cpPath['path'] . '/' . 'InventoryFeed_' . $timeStamp . '.xml';
             if ($this->debugMode) {
                 $this->fileIo->cp($path, $cpPath);
-                return $response;
+                if($page_no == $pages){
+                    return $api_response;
+                }
             }
-            return $response;
-}
+            if($page_no == $pages){
+            return $api_response;
+            }
+     }
+   }
 
     public function getProductQty($productId,$childId){
         if(is_object($productId))
