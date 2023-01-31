@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!--
+        /**
+         * CedCommerce
+         *
+         * NOTICE OF LICENSE
+         *
+         * This source file is subject to the End User License Agreement (EULA)
+         * that is bundled with this package in the file LICENSE.txt.
+         * It is also available through the world-wide-web at this URL:
+         * http://cedcommerce.com/license-agreement.txt
+         *
+         * @category  Ced
+         * @package   Ced_Fruugo
+         * @author    CedCommerce Core Team <connect@cedcommerce.com>
+         * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+         * @license   http://cedcommerce.com/license-agreement.txt
+         */
+        -->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+<argument name="data" xsi:type="array">
+    <item name="js_config" xsi:type="array">
+        <item name="provider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid_source</item>
+        <item name="deps" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid_source</item>
+    </item>
+    <item name="spinner" xsi:type="string">fruugo_orders_grid_columns</item>
+    <item name="buttons" xsi:type="array">
+        <item name="add" xsi:type="array">
+            <item name="name" xsi:type="string">add</item>
+            <item name="label" xsi:type="string" translate="true">Fetch New Orders</item>
+            <item name="class" xsi:type="string">primary</item>
+            <item name="url" xsi:type="string">*/*/ordersync</item>
+        </item>
+         <!--<item name="directShip" xsi:type="array">
+             <item name="name" xsi:type="string">directShip</item>
+             <item name="label" xsi:type="string" translate="true">Ship Orders</item>
+             <item name="class" xsi:type="string">primary</item>
+             <item name="url" xsi:type="string">*/*/shipOrders</item>
+&lt;!&ndash;             <item name="sortOrder" xsi:type="number">2</item>&ndash;&gt;
+             <item name="confirm" xsi:type="array">
+                 <item name="title" xsi:type="string" translate="true">Ship Complete Orders</item>
+                 <item name="message" xsi:type="string" translate="true">This would mark all fruugo orders as shipped which are complete in Magento?</item>
+             </item>
+         </item>-->
+    </item>
+</argument>
+<dataSource name="fruugo_orders_grid_source">
+    <argument name="dataProvider" xsi:type="configurableObject">
+        <argument name="class" xsi:type="string">Ced\Fruugo\Ui\DataProvider\Orders\DataProvider</argument>
+        <argument name="name" xsi:type="string">fruugo_orders_grid_source</argument>
+        <argument name="primaryFieldName" xsi:type="string">id</argument>
+        <argument name="requestFieldName" xsi:type="string">id</argument>
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="update_url" xsi:type="url" path="mui/index/render"/>
+                <item name="storageConfig" xsi:type="array">
+                    <item name="indexField" xsi:type="string">id</item>
+                </item>
+            </item>
+        </argument>
+    </argument>
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="component" xsi:type="string">Magento_Ui/js/grid/provider</item>
+        </item>
+    </argument>
+</dataSource>
+<listingToolbar name="listing_top">
+    <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+            <item name="template" xsi:type="string">ui/grid/toolbar</item>
+        </item>
+    </argument>
+    <bookmark name="bookmarks">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="storageConfig" xsi:type="array">
+                    <item name="namespace" xsi:type="string">fruugo_orders_grid</item>
+                </item>
+            </item>
+        </argument>
+    </bookmark>
+    <columnsControls name="columns_controls">
+    </columnsControls>
+    <filterSearch name="status">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="provider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid_source</item>
+                <item name="chipsProvider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid.listing_top.listing_filters_chips</item>
+                <item name="storageConfig" xsi:type="array">
+                    <item name="provider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid.listing_top.bookmarks</item>
+                    <item name="namespace" xsi:type="string">current.search</item>
+                </item>
+            </item>
+        </argument>
+    </filterSearch>
+    <filters name="listing_filters" />
+   <massaction name="listing_massaction">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="selectProvider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid.fruugo_orders_grid_columns.ids</item>
+                <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
+                <item name="indexField" xsi:type="string">id</item>
+            </item>
+        </argument>
+        <action name="cancel_order">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="type" xsi:type="string">update</item>
+                    <item name="label" xsi:type="string" translate="true">Delete Orders</item>
+                    <item name="url" xsi:type="url" path="fruugo/order/massDelete"/>
+                    <item name="confirm" xsi:type="array">
+                        <item name="title" xsi:type="string" translate="true">Cancel Orders</item>
+                        <item name="message" xsi:type="string" translate="true">Are you sure to Delete selected orders?</item>
+                    </item>
+                </item>
+            </argument>
+        </action>
+    </massaction>
+    <paging name="listing_paging"/>
+</listingToolbar>
+<columns name="fruugo_orders_grid_columns">
+    <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+            <item name="storageConfig" xsi:type="array">
+                <item name="provider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid.listing_top.bookmarks</item>
+                <item name="namespace" xsi:type="string">current</item>
+            </item>
+            <item name="childDefaults" xsi:type="array">
+                <item name="fieldAction" xsi:type="array">
+                    <item name="provider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid.fruugo_orders_grid_columns.actions</item>
+                    <item name="target" xsi:type="string">applyAction</item>
+                    <item name="params" xsi:type="array">
+                        <item name="0" xsi:type="string">edit</item>
+                        <item name="1" xsi:type="string">${ $.$data.rowIndex }</item>
+                    </item>
+                </item>
+                <item name="storageConfig" xsi:type="array">
+                    <item name="provider" xsi:type="string">fruugo_orders_grid.fruugo_orders_grid.listing_top.bookmarks</item>
+                    <item name="root" xsi:type="string">columns.${ $.index }</item>
+                    <item name="namespace" xsi:type="string">current.${ $.storageConfig.root}</item>
+                </item>
+            </item>
+        </item>
+    </argument>
+    <selectionsColumn name="ids">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="indexField" xsi:type="string">id</item>
+                <item name="sortOrder" xsi:type="number">0</item>
+            </item>
+        </argument>
+    </selectionsColumn>
+
+
+
+    <actionsColumn name="actions" class="Ced\Fruugo\Ui\Component\Listing\Columns\OrderId">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="resizeEnabled" xsi:type="boolean">false</item>
+                <item name="resizeDefaultWidth" xsi:type="string">200</item>
+                <item name="indexField" xsi:type="string">id</item>
+                <item name="label" xsi:type="string" translate="true">Magento Order id</item>
+                <item name="sortOrder" xsi:type="number">1</item>
+            </item>
+        </argument>
+    </actionsColumn>
+
+    <column name="id">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+                <!--  <item name="sorting" xsi:type="string">asc</item> -->
+                <item name="label" xsi:type="string" translate="true">Entity Id</item>
+                <item name="sortOrder" xsi:type="number">2</item>
+            </item>
+        </argument>
+    </column>
+    <column name="merchant_order_id">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+               <!--  <item name="sorting" xsi:type="string">asc</item> -->
+                <item name="label" xsi:type="string" translate="true">Merchant Order Id</item>
+                <item name="sortOrder" xsi:type="number">2</item>
+            </item>
+        </argument>
+    </column>
+    <column name="purchase_order_id">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+                <!--<item name="sorting" xsi:type="string">asc</item>-->
+                <item name="label" xsi:type="string" translate="true">Purchase Order Id</item>
+                <item name="sortOrder" xsi:type="number">3</item>
+            </item>
+        </argument>
+    </column>
+    <column name="order_place_date">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+                <item name="sorting" xsi:type="string">desc</item>
+                <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/column</item>
+                <item name="dataType" xsi:type="string">text</item>
+                <item name="label" xsi:type="string" translate="true">Order Place Date</item>
+                <item name="sortOrder" xsi:type="number">4</item>
+            </item>
+        </argument>
+    </column>
+    <column name="status">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+                <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/column</item>
+                <item name="dataType" xsi:type="string">text</item>
+                <item name="label" xsi:type="string" translate="true">Status</item>
+                <item name="sortOrder" xsi:type="number">5</item>
+            </item>
+        </argument>
+    </column>
+    <column name="deliver_by">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="filter" xsi:type="string">text</item>
+                <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/column</item>
+                <item name="dataType" xsi:type="string">text</item>
+                <item name="label" xsi:type="string" translate="true">Deliver By</item>
+                <item name="sortOrder" xsi:type="number">6</item>
+            </item>
+        </argument>
+    </column>
+</columns>
+</listing>
+
+
+
+
+
+

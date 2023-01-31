@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category    Ced
+ * @package     Ced_Fruugo
+ * @author 		CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright   Copyright CedCommerce (http://cedcommerce.com/)
+ * @license      http://cedcommerce.com/license-agreement.txt
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/system_file.xsd">
+    <system>
+
+
+        <tab id="cedcommerce" translate="label" sortOrder="1">
+            <label>Cedcommerce</label>
+        </tab>
+        <section id="cedcore" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+            <tab>cedcommerce</tab>
+            <label>Installed Extensions</label>
+            <resource>Ced_Fruugo::cedcore</resource>
+            <group id="installed_extensions" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Installed Extensions</label>
+                <frontend_model>Ced\Fruugo\Block\Extensions</frontend_model>
+            </group>
+        </section>
+
+        <!--<tab id="cedcommerce" translate="label" sortOrder="1">
+            <label>Cedcommerce</label>
+        </tab>-->
+        <!-- section start for General Tab in Cedcommerce section -->
+        <section id="ced_general" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label> General Setting</label>
+            <tab>cedcommerce</tab>
+            <resource>Ced_Fruugo::system_config</resource>
+            <group id="feed_group" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Notifications</label>
+                <field id="feeds" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>I'd like to be informed by CedCommerce about:</label>
+                    <source_model>Ced\Fruugo\Model\Source\Updates\Type</source_model>
+                </field>
+            </group>
+            <group id="extensions_groups" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>CedCommerce Extensions Store</label>
+                <field id="extensions" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Ced\Fruugo\Block\Cedcommerce\Store</frontend_model>
+                </field>
+            </group>
+        </section>
+        <!-- section start for General Tab in Cedcommerce section -->
+
+        <!-- section start for Fruugo Configuration Tab in Cedcommerce section -->
+        <section id="fruugoconfiguration" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label> Fruugo Configuration</label>
+            <tab>cedcommerce</tab>
+            <resource>Ced_Fruugo::system_config</resource>
+            <group id="fruugosetting" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Fruugo Api Settings</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="api_url" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api Url</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="username" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>User Name</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+
+                <field id="user_password" translate="label comment" type="text" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Password</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+
+                <!--<field id="api_url" translate="label comment" type="label" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>API URL</label>
+                    <comment>https://marketplace.fruugoapis.com/</comment>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>-->
+
+                <!--<field id="customer_id" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Consumer Id</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+
+                <field id="private_key" translate="label comment" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Private Key</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>-->
+                <!--<field id="consumer_channel_type_id" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Consumer Channel Type Id</label>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>-->
+                <!--<field id="orders_fetch_startdate" translate="label comment" type="text" sortOrder="7" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Orders Fetch Start Date</label>
+                    <frontend_model>Ced\Fruugo\Model\Source\DatePicker</frontend_model>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                    <validate>required-entry</validate>
+                </field>-->
+
+                <!--<field id="validate_details" translate="button_label" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Validation</label>
+                    <button_label>Validate Details</button_label>
+                    <frontend_model>Ced\Fruugo\Block\Adminhtml\System\Config\Validate</frontend_model>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>-->
+                <field id="debug" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Debug Log</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="feed_static_url" translate="label" type="label" sortOrder="9" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Feed Static URL</label>
+                    <frontend_model>Ced\Fruugo\Block\Adminhtml\System\Config\FeedURL</frontend_model>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <!--<field id="fruugo_product_swatches" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Swatches for Configurable Product</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                    </depends>
+                </field>
+
+                <field id="fruugo_product_swatches_attributes" translate="label" type="multiselect" sortOrder="9" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Swatches Attributes</label>
+                    <source_model>Ced\Fruugo\Model\Source\FruugoSwatchAttributes</source_model>
+                    <depends>
+                        <field id="enable" separator=",">1</field>
+                        <field id="swatches" separator=",">1</field>
+                    </depends>
+                </field>-->
+            </group>
+
+            <group id="product_edit" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" showInProfile="1">
+                <label>Fruugo Product Sync Settings</label>
+                <field id="fruugo_storeid" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Select Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                </field>
+                <field id="fruugo_config_image" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Use Parent Image as Child Product Image</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="fruugo_config_attr_from_parent" translate="label" type="multiselect" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Use From Parent Product</label>
+                    <source_model>Ced\Fruugo\Model\Source\FruugoAttributes</source_model>
+                    <can_be_empty>1</can_be_empty>
+                    <comment><![CDATA[Select attributes whichy you want to taken from parent product.</b>]]></comment>
+                </field>
+                <!--<field id="auto_sync" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Auto Sync Fruugo</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Auto Update product information on Fruugo While Product Edit</comment>
+                </field>
+                <field id="update_price" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Update Price</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Update price on each product updation</comment>
+                </field>
+                <field id="update_inventory" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Update Inventory</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Update inventory on each product updation</comment>
+                </field>
+                <field id="other_detail" translate="label comment" type="select" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0"  showInProfile="1">
+                    <label>Update Other Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Update all product details (other than price and inventory) on each product updation</comment>
+                </field>-->
+
+            </group>
+
+            <group id="productinfo_map" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0"  showInProfile="1">
+                <label>Fruugo Global Settings</label>
+                <comment>Please set the global settings for Fruugo.com</comment>
+                <field id="fruugo_manufacturer" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Are you a manufacturer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>if you are a manufacturer and not having upc/ean then you can set yes</comment>
+                </field>
+                <field id="fruugo_product_price" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Price</label>
+                    <source_model>Ced\Fruugo\Model\Source\Selprice</source_model>
+                    <comment><![CDATA[Select to send a different product price to <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_fix_price" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Modify by Fix Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <depends>
+                        <field id="fruugo_product_price" separator=",">plus_fixed,min_fixed</field>
+                    </depends>
+                </field>
+                <field id="fruugo_percentage_price" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Modify by Percenctage Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment><![CDATA[Numeric value Required for <b>Add/subtract % on Magento price</b> 5 for Example: Magento price +/- 5% of Magento price.<b>]]></comment>
+                    <depends>
+                        <field id="fruugo_product_price" separator=",">plus_per,min_per</field>
+                    </depends>
+                </field>
+                <field id="fruugo_different_price" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Map Price Attribute</label>
+                    <validate>required-entry</validate>
+                    <comment><![CDATA[<b>Attribute Code Required in case of <b>Custom Fixed Price</b>]]></comment>
+                    <depends>
+                        <field id="fruugo_product_price">differ</field>
+                    </depends>
+                </field>
+
+                <!--<field id="fruugo_fullfillment_lagtime" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Inventory Fullfillment Lag Time</label>
+                    &lt;!&ndash;<validate>required-entry</validate>&ndash;&gt;
+                    <comment><![CDATA[Days to fulfill the inventory on <b>out of stock</b>]]></comment>
+                </field>-->
+                <!--<field id="fruugo_productid_type" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Identifier Type</label>
+                    <validate>required-entry</validate>
+                    <source_model>Ced\Fruugo\Model\Source\ProductIdType</source_model>
+                    <comment><![CDATA[Product Identifier Type to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>-->
+
+                <!--<field id="fruugo_taxcodes" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Category</label>
+                    <source_model>Ced\Fruugo\Model\Source\TaxCodes</source_model>
+                    <comment><![CDATA[Category Wise Tax Code to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>-->
+                <!--<field id="fruugo_taxcode" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number input-text validate-length maximum-length-7 minimum-length-7 validate-digits</validate>
+                    &lt;!&ndash;<depends>
+                        <field id="fruugo_taxcodes">Animal</field>
+                    </depends>&ndash;&gt;
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Animal</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>-->
+                <!--<field id="fruugo_taxcode_artandcraft" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">ArtAndCraft</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Art And Craft</b> to be applied on each product for <b>fruugo.com</b>. Enter 7 digit product tax code. Characters not allowed]]></comment>
+                </field>
+                <field id="fruugo_taxcode_baby" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Baby</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Baby</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_carriersandaccessories" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">CarriersAndAccessories</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Carriers And Accessories</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_clothing" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Clothing</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Clothing</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_electronics" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Electronics</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Electronics</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_foodandbeverage" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">FoodAndBeverage</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Food And Beverage</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_footwear" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Footwear</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Footwear</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_furniture" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Furniture</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Furniture</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_gardenandpatio" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">GardenAndPatio</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Garden And Patio</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_healthandbeauty" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">HealthAndBeauty</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Health And Beauty</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_home" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Home</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Home</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_jewelry" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Jewelry</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Jewelry</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_media" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Media</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Media</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_musicalinstrument" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">MusicalInstrument</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Musical Instrument</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_occasionandseasonal" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">OccasionAndSeasonal</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Occasion And Seasonal</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_office" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Office</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Office</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_other" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Other</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Other</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_photography" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Photography</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Photography</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+
+                </field>
+                <field id="fruugo_taxcode_sportandrecreation" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">SportAndRecreation</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Sport And Recreation</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_toolsandhardware" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">ToolsAndHardware</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Tools And Hardware</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_toy" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Toy</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Toy</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+
+                </field>
+                <field id="fruugo_taxcode_vehicle" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Vehicle</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Vehicle</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+                <field id="fruugo_taxcode_watches" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Product Tax Code Value</label>
+                    <validate>validate-number</validate>
+                    <depends>
+                        <field id="fruugo_taxcodes">Watches</field>
+                    </depends>
+                    <comment><![CDATA[Category Wise Tax Code for Category <b>Watches</b> to be applied on each product for <b>fruugo.com</b>]]></comment>
+                </field>
+-->
+                <!--<field id="select_taxcode" translate="button_label" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="0" showInProfile="1">
+                    <button_label>Select Taxcode</button_label>
+                    <frontend_model>Ced\Fruugo\Block\Adminhtml\System\Config\TaxCode</frontend_model>
+                </field>-->
+                <!--<field id="fruugo_product_product_override" translate="label" type="select" sortOrder="19" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Override</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Enable to Override Fruugo Product Identifier . Keep It disabled until it is specifically Needed.</comment>
+                </field>-->
+               <!-- <field id="fruugo_product_swatches" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Swatches</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Enable to Use Swatches for Configrable Products Only.</comment>
+                </field>-->
+                <!-- <field id="fruugo_orderid_prefix" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="0">
+                    <label>Fruugo Order Id Prefix</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Prefix for Fruugo Increment ID</comment>
+                </field> -->
+                <field id="fruugo_language" translate="label" type="select" sortOrder="21" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="0">
+                    <label>Fruugo Language</label>
+                    <source_model>Ced\Fruugo\Model\Source\FruugoLanguage</source_model>
+                    <comment>Language For Country Of Fruugo</comment>
+                </field>
+                <field id="fruugo_currency" translate="label" type="select" sortOrder="21" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="0">
+                    <label>Fruugo Currency</label>
+                    <source_model>Ced\Fruugo\Model\Source\FruugoCurrency</source_model>
+                    <comment>Currency For Fruugo</comment>
+                </field>
+                <!--<field id="admin_email" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="0">
+                    <label>Fruugo Admin Email</label>
+                    <comment>Get Email When New Fruugo Order Imported.Example: owner@example.com</comment>
+                </field>-->
+                <field id="order_prefix" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="0">
+                    <label>Fruugo Order Prefix</label>
+                    <comment>Odrer Prefix for Fruugo Order Id.Example: For Fg_10001 Use : Fg_ , for FG-10001 use : FG-</comment>
+                </field>
+
+                <field id="fruugo_cat_setting" translate="label" type="select" sortOrder="23" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="0">
+                    <label>Want to Set Fruugo Category Wise</label>
+                    <source_model>Ced\Fruugo\Model\Source\FruugoProdcat</source_model>
+                    <comment>If you don't want to create multiple profiles and want to set each product's fruugo category in  product attribute</comment>
+                </field>
+                <!-- @ToDo need to remove this
+                <field id="fruugo_product_shipping" translate="label" type="select" sortOrder="22" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Shipping Override</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Enable to Override Fruugo Shipping</comment>
+                </field>
+                <field id="fruugo_product_shipregion" translate="label" type="select" sortOrder="23" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Shipping Region</label>
+                    <depends>
+                        <field id="fruugo_product_shipping">1</field>
+                    </depends>
+                    <source_model>Ced\Fruugo\Model\Source\ShippingOverrides\ShipRegion</source_model>
+                    <comment><![CDATA[Select Fruugo Shipping Region]]></comment>
+                </field>
+                <field id="fruugo_product_shipmethod" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Shipping Method</label>
+                    <depends>
+                        <field id="fruugo_product_shipping">1</field>
+                    </depends>
+                    <source_model>Ced\Fruugo\Model\Source\ShippingOverrides\ShipMethod</source_model>
+                    <comment><![CDATA[Select Fruugo Shipping Method]]></comment>
+                </field>
+                <field id="fruugo_product_shipprice" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Shipping Price Value</label>
+                    <depends>
+                        <field id="fruugo_product_shipping">1</field>
+                    </depends>
+                    <validate>validate-number</validate>
+                    <comment><![CDATA[Select Fruugo Shipping Price]]></comment>
+                </field>-->
+                <!--<field id="fruugo_product_id_override" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product Id Override</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Enable to Override Fruugo Product Identifier . Keep It disabled until it is specifically Needed.</comment>
+                </field>
+                <field id="fruugo_product_sku_override" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Fruugo Product SKU Override</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Enable to override product SKU on fruugo</comment>
+                </field>
+                <field id="shipping_override_rule" translate="label" sortOrder="70" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Shipping Settings</label>
+                    <frontend_model>Ced\Fruugo\Block\Adminhtml\Form\Field\Shippingsetting</frontend_model>
+                    <backend_model>Ced\Fruugo\Model\System\Config\Backend\Shippingsetting</backend_model>
+                </field>-->
+            </group>
+            <!--<group id="fruugo_inventory_settings" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1" showInProfile="1">
+                <label>Fruugo Inventory Rules</label>
+                <field id="advanced_threshold_status" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Set Inventory on Basis of Threshold</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Choose yes to send inventory on fruugo by condition </comment>
+                </field>
+                <field id="inventory_rule_threshold" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Inventory Threshold Value</label>
+                    <comment>Set inventory quantity on which lesser and greater condition can control.</comment>
+                    <depends>
+                        <field id="advanced_threshold_status">1</field>
+                    </depends>
+                </field>
+                <field id="send_inventory_for_lesser_than_threshold" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Send Inventory for Lesser Than Threshold Case</label>
+                    <comment>Send Quantity to Fruugo for those products, whose inventory is LESSER than the inventory threshold.
+                        </comment>
+                    <depends>
+                        <field id="advanced_threshold_status">1</field>
+                    </depends>
+                </field>
+                <field id="send_inventory_for_greater_than_threshold" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Send Inventory for Greater Than Threshold Case</label>
+                    <comment>Send Quantity to Fruugo for those products, whose inventory is GREATER than the inventory threshold.
+                    </comment>
+                    <depends>
+                        <field id="advanced_threshold_status">1</field>
+                    </depends>
+                </field>
+            </group>-->
+            <group id="fruugo_cron_settings" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Fruugo Cron Settings</label>
+                <field id="order_cron" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Fruugo Order Cron</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Order Fetch Cron </comment>
+                </field>
+                <field id="price_cron" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Fruugo Price Cron</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Price Sync Cron</comment>
+                </field>
+                <field id="inventory_cron" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Fruugo Inventory Cron</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Inventory Sync Cron</comment>
+                </field>
+                <!--<field id="shipment_cron" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Fruugo Shipment Cron</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>This will automatically generate </comment>
+                </field>-->
+            </group>
+            <group id="fruugo_order_setting" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Order Fetch Setting</label>
+                <field id="auto_confirm_order" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Auto acknowledge Fruugo Order</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Auto acknowledge order</comment>
+                </field>
+                <field id="auto_reject_order" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Auto Reject Fruugo Order</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Auto Reject order</comment>
+                </field>
+                <field id="create_order_for_disabled" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include Disabled Product in Order</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include disabled products as order items</comment>
+                    <!--<depends>
+                        <field id="auto_confirm_order" separator=",">0</field>
+                    </depends>-->
+                </field>
+                <field id="create_order_for_outofstock" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include OutOfStock Product in Order</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include outofstock products as order items</comment>
+                    <!--<depends>
+                        <field id="auto_confirm_order" separator=",">0</field>
+                    </depends>-->
+                </field>
+            </group>
+            <!--profile Masaaction-->
+            <!--<group id="massaction" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Profile Product Selection Massaction</label>
+                <field id="activation" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Profile MassAction</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>-->
+        </section>
+        <!-- section end for Fruugo Cofiguration Tab in Cedcommerce Tab -->
+
+        <!-- section start for Shipping Methods Tab in Sales Tab -->
+        <section id="carriers" >
+            <group id="shipfruugocom" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Fruugo.com</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+            </group>
+        </section>
+        <!-- section end for Shipping Methods Tab in Sales Tab -->
+
+        <!-- section start for Payment Methods Tab in Sales Tab -->
+        <section id="payment">
+            <group id="payfruugocom" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Fruugo.com</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>New order status</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                </field>
+            </group>
+        </section>
+        <!-- section start for Payment Methods Tab in Sales Tab -->
+    </system>
+</config>

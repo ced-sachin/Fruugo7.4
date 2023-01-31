@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <!--Declare data source, columns list, button...-->
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">fruugo_confattributes_index.fruugo_attributes_data_source</item>
+            <item name="deps" xsi:type="string">fruugo_confattributes_index.fruugo_attributes_data_source</item>
+            <!--Declare the data source name which will be defined below-->
+        </item>
+        <item name="spinner" xsi:type="string">attr_columns</item>
+        <!--Declare the listing of columns which will be defined below-->
+        <item name="buttons" xsi:type="array">
+            <!--The button on the top of the Grid-->
+            <!--<item name="attributes_reset" xsi:type="string">Ced\Fruugo\Block\Adminhtml\Attributes\Grid\ResetButton</item>-->
+            <item name="attributes_sync" xsi:type="array">
+                <item name="name" xsi:type="string">attributes_map</item>
+                <item name="label" xsi:type="string" translate="true">Map Configurable Attributes</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">*/confattributes/map</item>
+            </item>
+            <item name="add" xsi:type="array">
+                <item name="name" xsi:type="string">add</item>
+                <item name="label" xsi:type="string" translate="true">Add New Attribute</item>
+                <item name="url" xsi:type="string">*/*/addnew</item>
+            </item>
+        </item>
+    </argument>
+    <dataSource name="fruugo_attributes_data_source">
+        <!--The data source-->
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">Ced\Fruugo\Ui\DataProvider\Confattributes\DataProvider</argument>
+            <argument name="name" xsi:type="string">fruugo_attributes_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/provider</item>
+                    <item name="update_url" xsi:type="url" path="mui/index/render"/>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="indexField" xsi:type="string">id</item>
+                    </item>
+                </item>
+            </argument>
+        </argument>
+    </dataSource>
+
+
+
+    <container name="listing_top">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="template" xsi:type="string">ui/grid/toolbar</item>
+            </item>
+        </argument>
+
+        <bookmark name="bookmarks">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="namespace" xsi:type="string">fruugo_confattributes_index</item>
+                    </item>
+                </item>
+            </argument>
+        </bookmark>
+
+        <component name="columns_controls">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="columnsData" xsi:type="array">
+                        <item name="provider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.attr_columns</item>
+                    </item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/controls/columns</item>
+                    <item name="displayArea" xsi:type="string">dataGridActions</item>
+                </item>
+            </argument>
+        </component>
+
+        <filters name="listing_filters">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="columnsProvider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.attr_columns</item>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="provider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.listing_top.bookmarks</item>
+                        <item name="namespace" xsi:type="string">current.filters</item>
+                    </item>
+                    <item name="childDefaults" xsi:type="array">
+                        <item name="provider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.listing_top.listing_filters</item>
+                        <item name="imports" xsi:type="array">
+                            <item name="visible" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.attr_columns.${ $.index }:visible</item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </filters>
+
+
+        <massaction name="listing_massaction">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="selectProvider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.attr_columns.ids</item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
+                    <item name="indexField" xsi:type="string">id</item>
+                </item>
+            </argument>
+            <action name="delete">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">delete</item>
+                        <item name="label" xsi:type="string" translate="true">Delete</item>
+                        <item name="url" xsi:type="url" path="*/*/massDelete"/>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">Delete Categories</item>
+                            <item name="message" xsi:type="string" translate="true">Are you sure to delete selected Categories?</item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+
+
+        <paging name="listing_paging">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="provider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.listing_top.bookmarks</item>
+                        <item name="namespace" xsi:type="string">current.paging</item>
+                    </item>
+                    <item name="selectProvider" xsi:type="string">fruugo_confattributes_index.fruugo_confattributes_index.attr_columns.ids</item>
+                </item>
+            </argument>
+        </paging>
+    </container>
+
+    <columns name="attr_columns">
+        <!--The list of columns-->
+        <selectionsColumn name="ids">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="indexField" xsi:type="string">id</item>
+                    <item name="sortOrder" xsi:type="number">0</item>
+                </item>
+            </argument>
+        </selectionsColumn>
+
+        <column name="id">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">textRange</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Id</item>
+                </item>
+            </argument>
+        </column>
+
+        <!-- <column name="cat_id">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Category Id</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="parent_cat_id">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Parent Category Id</item>
+                </item>
+            </argument>
+        </column> -->
+
+        <column name="fruugo_attribute_name">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Attribute Name</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="magento_attribute_code">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Magento Attribute Code</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="fruugo_attribute_doc">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Documentation</item>
+                </item>
+            </argument>
+        </column>
+
+       <!--  <column name="is_mapped">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">textRange</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Magento Category Id</item>
+                </item>
+            </argument>
+        </column> -->
+
+        <column name="is_mapped">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">textRange</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Is Mapped</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="fruugo_attribute_enum">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">textRange</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Enumeration</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="fruugo_attribute_level">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">textRange</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Level</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="fruugo_attribute_type">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">textRange</item>
+                    <item name="sorting" xsi:type="string">asc</item>
+                    <item name="label" xsi:type="string" translate="true">Type</item>
+                </item>
+            </argument>
+        </column>
+        <!--<actionsColumn name="actions"  class="Ced\Fruugo\Ui\DataProvider\Categories\CategoriesActions">-->
+            <!--<argument name="data" xsi:type="array">-->
+                <!--<item name="config" xsi:type="array">-->
+                    <!--<item name="indexField" xsi:type="string">id</item>-->
+                    <!--<item name="sortOrder" xsi:type="number">200</item>-->
+                <!--</item>-->
+            <!--</argument>-->
+        <!--</actionsColumn>-->
+
+    </columns>
+
+</listing>

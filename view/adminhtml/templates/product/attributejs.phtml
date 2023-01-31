@@ -1,0 +1,240 @@
+<?php
+
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category  Ced
+ * @package   Ced_Fruugo
+ * @author    CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+ * @license   http://cedcommerce.com/license-agreement.txt
+ */
+
+$formKey=	$block->objectManager->create('\Magento\Framework\Data\Form\FormKey')->getFormKey();
+
+?>
+<div id="popup-modal" style="display:none">
+    <table id="initial" style="padding-top: 10px;">
+        <tr>
+            <th style="padding-right: 10px;">Search Key </th>
+            <td style="padding-right: 10px; width: 80px;"><input type="text" class='action-default' id="fruugo-taxcode-key" required="required"></td>
+            <td><input type="submit" class='action-default' id="fruugo-taxcode-submit" value="Search" onclick="search()"></td>
+            <td style="padding-left: 230px"><label id="selected_tax_code"></label></td>
+        </tr>
+    </table>
+    <div class="fruugo-taxcodes-data" style="height: 260px; margin-top: 15px; overflow-y: scroll; padding-top: 0; text-align: center;">
+        <table id="rendered" class="data-grid" style="display:none;padding: 22px; margin: 20px auto;  width: 100%;">
+            <tr>
+                <th style="padding:15px">
+                    <label class="data-grid-cell-content">Tax Code</label>
+                </th>
+                <th style="padding:15px">
+                    <label class="data-grid-cell-content">Category</label>
+                </th>
+                <th style="padding:15px">
+                    <label class="data-grid-cell-content">Category Description</label>
+                </th>
+                <th style="padding:15px">
+                    <label class="data-grid-cell-content">Action</label>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    var json = '';
+    require(
+        [
+            'jquery'
+        ],
+        function ($) {
+            $('#fruugo-taxcode-key').keypress(function(e) {
+                if (e.which == 13) {
+                    search();
+                    e.preventDefault();
+                }
+            });
+            $(document).ready(function () {
+                var value = window.setTimeout(delayedAlert, 4000);
+            });
+            function delayedAlert() {
+                var validations = $("input[name*='product[fruugo_product_validation]']");
+                json = $("textarea[name*='product[fruugo_validation_errors]']").text();
+                //alert(json)
+
+                /* alert(flag);
+                 alert(nullFlag)
+                 return;*/
+                validations.attr('style','display:none');
+                if (validations.val() == 'Valid') {
+                    $("[data-index='fruugo_validation_errors']").remove();
+                    $("[data-index='fruugo_product_validation'] > .admin__field-control > .admin__field-note").html('<b>Valid Product</b>');
+                    $("[data-index='fruugo_product_validation'] > .admin__field-control > .admin__field-note").attr('style', 'color:green');
+                }
+                else if(validations.val() == 'Not-Validated'){
+                    $("[data-index='fruugo_validation_errors']").remove();
+                    $("[data-index='fruugo_product_validation'] > .admin__field-control > .admin__field-note").html('<b>Not-Validated</b>');
+                    $("[data-index='fruugo_product_validation'] > .admin__field-control > .admin__field-note").attr('style', 'color:yellow');
+                }
+                else {
+                    $("[data-index='fruugo_validation_errors'] > .admin__field-control").html('<input type="button" class="action-default" onclick="getErrors()" value="View Missing Attributes" />');
+                    // $("[data-index='fruugo_validation_errors']").remove();
+                    $("[data-index='fruugo_product_validation'] > .admin__field-control > .admin__field-note").html('<b>Invalid</b>');
+                    $("[data-index='fruugo_product_validation'] > .admin__field-control > .admin__field-note").attr('style', 'color:red');
+                }
+                $("select[name*='product[fruugo_product_status]']").attr('disabled', 'disabled');
+                $("[data-index='fruugo_product_taxcode'] > .admin__field-control").append("<input type='button' class='action-default' onclick='getTaxCode();' value='Select Tax Code' />");
+
+            }
+        });
+    function getErrors() {
+        require(
+            [
+                'jquery'
+            ],
+            function ($) {
+                var data = $.parseJSON(json);
+                alert(json);
+                var result = "<table class='data-grid' style='margin-bottom:25px'><tr><th style='padding:15px'>Serial No.</th><th style='padding:15px'>SKU</th><th style='padding:15px'>Errors</th></tr>";
+
+                $.each(data, function (index, value) {
+                    /* if (value == 'valid') {
+                     flag = 1;
+                     } else {
+
+                     }*/
+                    var errors = "<table style='width: 100%;'>";
+                    $.each(value.errors, function (i, v) {
+                        errors += "<tr><th style='border: 0px; color: #0A0A0A; background: #ffffff;padding:10px;'>" + i + "</th><td style='border: 0px;'> " + v + '</td></tr>';
+                    });
+
+                    errors += '</table>';
+                    var sku = "<a href='" + value.url + "' target='_blank'>" + value.sku + '</a>';
+                    result += '<tr><td>' + (index + 1) + '</td><td>' + sku + '</td><td style="padding:0px">' + errors + '</td></tr>';
+                });
+                result += '</table>';
+
+                var previewPopup = $('<div/>', {id: 'fruugopopup'});
+
+                var fruugopopup = previewPopup.modal({
+                    title: 'Missing Attributes Product Wise',
+                    innerScroll: true,
+                    modalLeftMargin: 15,
+                    buttons: [],
+                    opened: function () {
+                        fruugopopup.append(result);
+                    },
+                    closed: function () {
+                    }
+                }).trigger('openModal');
+            });
+    }
+    function getTaxCode() {
+        require(
+            [
+                'jquery',
+                'Magento_Ui/js/modal/modal'
+            ],
+            function(
+                $,
+                modal
+            ) {
+                console.log("Model");
+                $(document).ready(function(){
+                    var options = {
+                        type: 'popup',
+                        responsive: true,
+                        innerScroll: true,
+                        title: 'Find a Tax Code',
+                        buttons: [{
+                            text: $.mage.__('Save'),
+                            class: 'modal-btn',
+                            click: function() {
+                                this.closeModal();
+                            }
+                        }]
+                    };
+
+                    var popup = modal(options, $('#popup-modal'));
+
+                    $('#popup-modal').modal('openModal');
+                });
+            });
+    }
+
+    function search() {
+        require(
+            [
+                'jquery'
+            ],
+            function ($) {
+                var id = $('#fruugo-taxcode-key').val();
+                if(id.length == null){
+                    alert('Please Enter Search Key')
+                    return false;
+                }
+
+                $.ajax({
+                    url: '<?php echo $this->getUrl('fruugo/taxes/searchtaxcode');?>',
+                    type:"POST",
+                    dataType: 'json',
+                    data: {
+                        search: id,
+                        formKey: '<?php echo $formKey;?>',
+                    },
+                    context: self.element,
+                    showLoader: true,
+                    success: function(response){
+                        var IS_JSON = true;
+                        try
+                        {
+                            var json = response.result;
+                            var size = response.size;
+                            var html = '';
+                            for( var i= 0 ;  i < size ; i++){
+                                html += '<tr><td>'+json[i].tax_code+'</td><td>'+json[i].sub_cat_desc+'</td>' +
+                                    '<td>'+json[i].cat_desc+'</td>' +
+                                    '<td>' +
+                                    '<button class="action-default"  onclick = "changeTax(\''+json[i].tax_code+'\')//$(\'#selected_tax_code\').text(\''+json[i].tax_code+'\')">Select</button></td></tr>';
+                            }
+                            $('#rendered').append(html);
+                            $('#rendered').attr('style','display:block;padding: 22px;');
+                        }
+                        catch(err)
+                        {
+                            console.log(err);
+
+                            IS_JSON = false;
+                        }
+                    }
+                });
+            });
+    }
+
+    function changeTax(tax){
+        require(
+            [
+                'jquery'
+            ],
+            function ($) {
+                //setting in popup
+                $('#selected_tax_code').html
+                ('<b>Selected Tax Code </b> <input type="text" class="action-default" value="'+tax + '"/>');
+
+                //setting in input box
+                $("input[name*='product[fruugo_product_taxcode]']").attr('value', tax);
+            });
+    }
+
+
+</script>
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <!--<item name="buttons" xsi:type="array">-->
+            <!--<item name="fruugo" xsi:type="string">Ced\Fruugo\Block\Adminhtml\Product\Edit\Button\Sync</item>-->
+            <!--&lt;!&ndash;<item name="attribute_map_button" xsi:type="string">Ced\Fruugo\Block\Adminhtml\Product\Edit\AttributeMapButton</item>&ndash;&gt;-->
+            <!--&lt;!&ndash;<item name="sync_with_fruugo" xsi:type="string">Ced\Fruugo\Block\Adminhtml\Product\Edit\SyncWithFruugo</item>&ndash;&gt;-->
+        <!--</item>-->
+    </argument>
+    <fieldset name="fruugo">
+        <container name="container_fruugo_attributes_js" >
+            <htmlContent name="html_content">
+                <argument name="block" xsi:type="object">Ced\Fruugo\Block\Adminhtml\Product\AttributeJS</argument>
+            </htmlContent>
+        </container>
+    </fieldset>
+</form>

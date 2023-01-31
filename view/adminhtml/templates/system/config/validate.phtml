@@ -1,0 +1,94 @@
+<?php
+
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category    Ced
+ * @package     Ced_Fruugo
+ * @author 		CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright   Copyright CedCommerce (http://cedcommerce.com/)
+ * @license      http://cedcommerce.com/license-agreement.txt
+ */
+
+/**
+ * @see \Ced\Fruugo\Block\Adminhtml\System\Config\Validate
+ */
+?>
+<script>
+require(['prototype'], function(){
+
+//<![CDATA[
+    function validate() {
+        var validationMessage = $('validation_result');
+        var consumerid = $('fruugoconfiguration_fruugosetting_customer_id').value;
+        var secretKey = $('fruugoconfiguration_fruugosetting_private_key').value;
+        var channel_id = '7b2c8dab-c79c-4cee-97fb-0ac399e17ad';/*$('fruugoconfiguration_fruugosetting_consumer_channel_type_id').value;*/
+        var url = "https://marketplace.fruugoapis.com/";//$('fruugoconfiguration_fruugosetting_api_url').value;
+        var createdStartDate = $('fruugoconfiguration_fruugosetting_orders_fetch_startdate').value;
+
+
+       	params = {
+           consumerid: consumerid,
+           secretKey: secretKey,
+           channelid: channel_id,
+           url: url,
+           createdStartDate : createdStartDate
+        };
+
+        if(params.createdStartDate == '' || params.url == '' ||
+            params.channelid == '' || params.secretKey == '' || params.consumerid == '')
+        {
+            validationMessage.setStyle({color:'red'});
+            validationMessage.update('Feilds are Empty');
+        }
+        else {
+            new Ajax.Request('<?php echo $block->getPostUrl() ?>', {
+                parameters: params,
+                onSuccess: function(response) {
+                    var result = '<?php  echo __('Fields are required.') ?>';
+                    try {
+                        if (response.responseText.isJSON()) {
+                            response = response.responseText.evalJSON();
+                            result = response.message;
+                        }
+                        if (response.valid == 1) {
+                            var result = '<?php  echo __('Validation Successfully') ?>';
+                            validationMessage.removeClassName('hidden').addClassName('success');
+//                            $('fruugoconfiguration_fruugosetting_validate_details').value = '1';
+                            validationMessage.setStyle({color:'green'})
+                        } else {
+//                            $('fruugoconfiguration_fruugosetting_validate_details').value = '0';
+                            jQuery('#validation_result').css('color','red');
+                            validationMessage.removeClassName('hidden').addClassName('error');
+                            validationMessage.setStyle({color:'red'})
+                        }
+                    } catch (e) {
+                        validationMessage.removeClassName('hidden').addClassName('error');
+                    }
+                    validationMessage.update(result);
+                }
+            });
+
+        }
+
+    }
+
+    window.validate = validate;
+//]]>
+
+});
+</script>
+<div class="actions actions-validate">
+    <div id="validation_result" class="message-validation hidden" >
+    </div>
+    <button onclick="validate(); return false;" class="action-validate" type="button" id="<?php echo $block->getHtmlId() ?>">
+        <span><?php echo $block->escapeHtml($block->getButtonLabel()) ?></span>
+    </button>
+</div>

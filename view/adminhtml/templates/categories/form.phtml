@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category  Ced
+ * @package   Ced_Fruugo
+ * @author    CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+ * @license   http://cedcommerce.com/license-agreement.txt
+ */
+
+$fruugoRootLevel = $block->getLevel( 0 ); // parent
+$fruugoChildLevel = $block->getLevel( 1 );
+
+$rootCatId = $block->getRootCategory();
+$savedCatIdRootLevel = $block->getSavedCategoryData( 0 );
+$savedCatIdChildLevel = $block->getSavedCategoryData( 1 );
+
+?>
+<?php if(!empty($savedCatIdChildLevel)) {
+	?>
+	<button onclick="window.location.href='<?php echo $block->getUrl('fruugo/categories/resetmapping/',
+		['id' => $this->getRequest()->getParam('id')] ); ?>'">Reset Mapping</button>
+	<?php
+}
+?>
+<script>
+	require([
+		"jquery",
+
+	], function($){
+		var fruugo_level_0=<?php echo json_encode($fruugoRootLevel);?>;
+		var fruugo_level_1=<?php echo json_encode($fruugoChildLevel);?>;
+		var fruugo_saved_data_level0="<?php echo $savedCatIdRootLevel; ?>";
+		var fruugo_saved_data_level1="<?php echo $savedCatIdChildLevel; ?>";
+		var fruugo_defaultcat="<?php echo $block->getCurrentCategory(); ?>";
+		setTimeout(function() {
+			if(fruugo_defaultcat == '2')
+			{
+				$('[data-index="fruugo_cat_level_0"]').hide();
+				$('[data-index="fruugo_cat_level_1"]').hide();
+				$('[data-index="fruugo_category_mapping"]').children().eq(0).append('<div id="error">Fruugo doesn\'t entertain uploading product on root category . Please select a Magento child category</div>')
+			}
+			else
+			{
+				$('[data-index="fruugo_category_mapping"]').addClass(' _show');
+				$('[data-index="fruugo_category_mapping"]').children().addClass(' _show');
+				if(fruugo_saved_data_level0 == "")
+				{
+					$('[name="fruugo_cat_level_0"]').prepend('<option value="" selected= selected>Please select root-category</option>');
+					$('[name="fruugo_cat_level_1"]').empty();
+					$('[name="fruugo_cat_level_1"]').prepend('<option value="">Please select Sub Category</option>');
+				}
+				$('[name="fruugo_cat_level_0"]').change(function(){
+					$('[name="fruugo_cat_level_1"]').empty();
+					$('[name="fruugo_cat_level_1"]').append('<option value="">Please select Sub Category</option>');
+					var cat_id=$('[name="fruugo_cat_level_0"]').val();
+					for (var key in fruugo_level_1) {
+						for (var subkey in fruugo_level_1[key]){
+							if((subkey == 'parent_cat_id') && (fruugo_level_1[key][subkey] == cat_id)){
+								if(fruugo_saved_data_level1 == fruugo_level_1[key]['path'])
+								{
+									$('[name="fruugo_cat_level_1"]').append('<option value='+fruugo_level_1[key]['path']+'selected="selected'+'>'+fruugo_level_1[key]['name']+'</option>');
+								} else{
+									$('[name="fruugo_cat_level_1"]').append('<option value='+fruugo_level_1[key]['path']+'>'+fruugo_level_1[key]['name']+'</option>');
+								}
+							}
+						}
+					}
+				});
+
+				// FOR SETTING SAVED VALUES AFTER SAVING THEM IN LEVEL 0
+				if(fruugo_saved_data_level0)
+				{
+					$('[name="fruugo_cat_level_1"]').empty();
+					for (var key in fruugo_level_0) {
+						for (var subkey in fruugo_level_0[key]){
+							if(subkey == 'parent_cat_id'){
+								if(fruugo_saved_data_level0 == fruugo_level_0[key]['path'])
+								{
+									$('[name="fruugo_cat_level_0"]').append('<option  selected="selected" value='+fruugo_level_0[key]['path']+'>'+fruugo_level_0[key]['name']+'</option>');
+								} else {
+									$('[name="fruugo_cat_level_0"]').append('<option value='+fruugo_level_0[key]['path']+'>'+fruugo_level_0[key]['name']+'</option>');
+								}
+							}
+						}
+					}
+				}
+
+				// FOR SETTING SAVED VALUES AFTER SAVING THEM IN LEVEL 1
+				if (fruugo_saved_data_level1) {
+					$('[name="fruugo_cat_level_1"]').empty();
+					var cat_id=$('[name="fruugo_cat_level_0"]').val();
+					for (var key in fruugo_level_1) {
+						for (var subkey in fruugo_level_1[key]){
+							if(subkey == 'parent_cat_id'){
+								if(fruugo_level_1[key][subkey] == cat_id)
+								{
+									if(fruugo_saved_data_level1 == fruugo_level_1[key]['path'])//LEVEL 1 value selection
+									{
+										$('[name="fruugo_cat_level_1"]').append('<option  selected="selected" value='+fruugo_level_1[key]['path']+'>'+fruugo_level_1[key]['name']+'</option>');
+									} else{
+										$('[name="fruugo_cat_level_1"]').append('<option value='+fruugo_level_1[key]['path']+'>'+fruugo_level_1[key]['name']+'</option>');
+									}
+
+
+								}
+
+							}
+						}
+					}
+				}
+
+			}
+		}, 10);
+
+	});
+</script>
+
+

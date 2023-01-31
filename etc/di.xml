@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Ced\Fruugo\Helper\FruugoHandler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Ced\Fruugo\Helper\FruugoLogger">
+        <arguments>
+            <argument name="name" xsi:type="string">Fruugo</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Ced\Fruugo\Helper\FruugoHandler</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Config\Model\Config">
+        <plugin name="fruugo_admin_system_config_save_plugin" type="Ced\Fruugo\Plugin\ConfigPlugin" sortOrder="1"/>
+    </type>
+  
+    <preference for="Magento\Config\Model\Config\SchemaLocator" type="Ced\Fruugo\Model\Config\SchemaLocator" />
+
+    <!-- profile view grid -->
+    <virtualType name="ProfileDataGridFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ProfileDataGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Ced\Fruugo\Model\Resource\Profile\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">ProfileDataGridFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ced\Fruugo\Model\ResourceModel\Profile\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">fruugo_profile</argument>
+            <argument name="resourceModel" xsi:type="string">Ced\Fruugo\Model\ResourceModel\Profile</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="fruugo_profile_index_data_source" xsi:type="string">Ced\Fruugo\Model\ResourceModel\Profile\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

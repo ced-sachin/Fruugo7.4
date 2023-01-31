@@ -1,0 +1,673 @@
+<?php
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category  Ced
+ * @package   Ced_Fruugo
+ * @author    CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+ * @license   http://cedcommerce.com/license-agreement.txt
+ */
+
+/*Ced\Fruugo\Block\Adminhtml\Order\View\Tab\Shipbyfruugo $block*/
+
+$fruugohelper = $block->getHelper('\Fruugo');
+$datahelper = $block->getHelper('\Data');
+$errorMsg = false;
+$showShipinfo = false;
+$numberItems = 0;
+$rowId= 0;
+$orderid = $block->getRequest ()->getParam( 'order_id' );
+$orderObj = $block->getOrder ();
+$items = $orderObj->getAllVisibleItems();
+foreach ($items as $itemId => $item) {
+    $mag_sku=$item->getSku(); // temp code to bypass fruugo- mag sku restrictons
+}
+$mageOrderStatus = $orderObj->getStatus();
+$resultdata = $block->getModel();// filtered model for current opened order.
+$ackData = $fruugohelper->getackQtyData($resultdata);
+foreach ( $resultdata as $data ) {
+    $fruugoStatus = $data->getStatus();
+}
+if ($fruugoStatus !='Cancelled') {
+    $prevShipinfo = $fruugohelper->getShippedCancelledQty ( $resultdata );
+}
+$resultdata = $resultdata->getData();
+$block->setOrderResult ( $resultdata ); // setting registry
+if (count ( $resultdata ) > 0) {
+    $rowId = $resultdata [0] ['id'];
+    $orderObject = $data = json_decode( $resultdata [0] ['order_data'],true );
+    $shipmentdata = json_decode ( $resultdata[0]['shipment_data'],true );
+    $merchantorderid = $data['o:orderId'];
+    if ($fruugoStatus == "Rejected") {
+        $showShipinfo = false;
+        $errorMsg = 'This order is <b>Rejected</b> for fruugo.com';
+    } elseif ($fruugoStatus == "Cancelled") {
+        $showShipinfo = false;
+        $errorMsg = 'This order is <b>Cancelled</b> for fruugo.com';
+    } else {
+
+        if ($fruugoStatus == 'Complete') {
+            if (empty ( $shipmentdata ) && count ( $shipmentdata ) == 0) {
+                $showShipinfo = false;
+            } else {
+                $showShipinfo = true;
+            }
+        }elseif($fruugoStatus == "Already Shipped") {
+           $errorMsg = 'This order is <b>Already shipped</b> by fruugo seller panel';
+            $showShipinfo = false;
+        }else {
+            $showShipinfo = false;
+        }
+    }
+} else {
+    $errorMsg = 'This order is either not <b>Acknowledged</b> or it is not a fruugo.com order';
+}
+?>
+<!-- ===== code start for all different conditions =================== -->
+<?php if($errorMsg!=false){ ?>
+    <p>
+    <h4><?php echo $errorMsg; ?></h4>
+    <p>
+        <?php
+        } else if ($showShipinfo) {
+        $infoData = [];
+        $infoData ["refer_order_id"] = $data['o:orderId'];
+        $infoData ["order_place_date"] = date ( 'l, F jS Y \a\t g:ia', strtotime( $data['o:orderDate'] ) );
+        $count = 0;
+        $k = 0;
+        ?><?php
+        $count = 0 ;
+        if(isset($shipData['shipments']))
+        foreach($shipmentdata["shipments"] as $shdata){ ?>
+        <strong style="font-size: 16px;color: #68a81e;margin-bottom: 10px;margin-top: 15px;display: inline-block;"> <u>Shipment History</u> </strong>
+
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item">
+            <div class="admin__page-section-item-title">
+                <span class="title">Shipment Information</span>
+            </div>
+            <div class="admin__page-section-item-content"
+                 id="_shipbyjetinfo_table">
+                <table class="admin__table-secondary">
+                    <tbody>
+                    <tr>
+                        <td class="label"><label>Order Id on Fruugo.com</label></td>
+                        <td class="value"><?php echo $data['o:orderId']; ?></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Customer Order Id on Fruugo.com</label></td>
+                        <td class="value"><?php echo $data['o:customerOrderId']; ?></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Order Date on Fruugo.com</label></td>
+                        <td class="value"><?php  echo date('l, F jS Y \a\t g:ia', strtotime($data['o:orderDate'])); ?></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Order Release Date on Fruugo.com</label></td>
+                        <td class="value"><?php echo date('l, F jS Y \a\t g:ia', strtotime($data['o:orderReleaseDate'])); ?></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Shipping carrier used</label></td>
+                        <td><?php  echo  $data['o:shippingMethod']; ?></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Tracking Url</label></td>
+                        <td class="value"><input class="input-text" type="text" readonly id="tracking_url" value="<?php  echo  $shdata['shipment_tracking_url']; ?>" style="width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Tracking Code</label></td>
+                        <td class="value"><input class="input-text" type="text" readonly id="tracking_code" value="<?php  echo  $shdata['shipment_tracking_number']; ?>" style="width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Message To Customer</label></td>
+                        <td class="value"><textarea id="msg_to_cst" rows="5" readonly cols="50"><?php  echo  $shdata['msg_to_customer']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Message To Fruugo</label></td>
+                        <td class="value"><textarea id="msg_to_fruugo" rows="5" readonly cols="50"><?php  echo  $shdata['msg_to_fruugo']; ?></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="admin__page-section-title">
+        <span class="title">Shipment Items</span>
+    </div>
+    <div class="admin__table-wrapper">
+        <table class="data-table admin__table-primary edit-order-table">
+            <thead>
+            <tr class="headings">
+                <th>Product sku</th>
+                <th>Quantity ordered</th>
+                <th>Quantity Shipped</th>
+                <th>Quantity cancelled</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <?php
+            $k= 0;
+            foreach($shdata["shipment_items"] as $item)
+            {
+                ?>
+                <?php if( $item['merchant_sku']){ ?>
+                <tr>
+                    <td>
+                        <span><?php echo $item['merchant_sku']?></span>
+                    </td>
+                    <td>
+                        <span><?php echo $data['o:orderLines']['o:orderLine'][$k]['o:totalNumberOfItems'];?></span>
+                    </td>
+                    <td>
+                        <span><?php echo isset ( $item['response_shipment_sku_quantity'] ) ? $item['response_shipment_sku_quantity'] : 0?></span>
+                    </td>
+                    <td>
+                        <span><?php echo isset ( $item['response_shipment_cancel_qty'] ) ? $item['response_shipment_cancel_qty'] : 0; ?></span>
+                    </td>
+
+                </tr>
+            <?php  } ?>
+                <?php $k++; }  ?>
+            <?php
+            $k= 0;
+            if(isset($shdata["cancel_items"]))
+                foreach($shdata["cancel_items"] as $item)
+                {
+                    ?>
+                    <?php if( $item['merchant_sku']){ ?>
+                    <tr>
+                        <td>
+                            <span><?php echo $item['merchant_sku']?></span>
+                        </td>
+                        <td>
+                            <span><?php echo $data['o:orderLines']['o:orderLine'][$k]['o:totalNumberOfItems'];?></span>
+                        </td>
+                        <td>
+                            <span><?php echo isset ( $item['response_shipment_sku_quantity'] ) ? $item['response_shipment_sku_quantity'] : 0?></span>
+                        </td>
+                        <td>
+                            <span><?php echo isset ( $item['response_shipment_cancel_qty'] ) ? $item['response_shipment_cancel_qty'] : 0; ?></span>
+                        </td>
+
+                    </tr>
+                <?php  } ?>
+                <?php $k++; }  ?>
+
+            </tbody>
+        </table>
+    </div>
+    <h3>Order Shipped Successfully</h3>
+<?php $count++; } ?>
+<?php } else { ?>
+    <p>
+        <input type="hidden" id="orderid" value="<?php echo $data['o:orderId'] ?>" readonly>
+        <input type="hidden" id="incrementid" value="<?php echo $block->getOrder()->getIncrementId () ?>"> <input
+            type="hidden" id="form_key" value="<?php echo $block->getFormKey();?>">
+        <input type="hidden" id="magento_orderid"
+               value="<?php echo $orderid ?>">
+    </p>
+
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item">
+            <div class="admin__page-section-item-title">
+                <span class="title">Shipment Information</span>
+            </div>
+            <div class="admin__page-section-item-content">
+                <table class="admin__table-secondary">
+                    <tbody>
+                    <tr>
+                        <th>Reference Order Id on Fruugo.com</th>
+                        <td><?php echo $data['o:orderId']; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Order Placed on Fruugo.com</th>
+                        <td>
+                            <?php
+                            echo $block->escapeHtml(date('m/d/Y H:i:s', strtotime($data['o:orderDate'])));
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Shipping Type</th>
+                        <td>
+                            <?php
+                                echo $block->escapeHtml($data['o:shippingMethod']);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tracking Number</th>
+                        <td><input class="admin__control-text" type="text" id="tracking" value=""></td>
+                    </tr>
+                    <tr>
+                        <th>Tracking URL</th>
+                        <td><input class="admin__control-text" type="text" id="tracking_url" value=""></td>
+                    </tr>
+                    <tr>
+                        <th class="label"><label>Message To Customer</label></th>
+                        <td class="value"><textarea id="msg_to_cst" rows="5" cols="50"><?php /* echo  $shdata['message_To_Customer'];*/ ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <th class="label"><label>Message To Fruugo</label></th>
+                        <td class="value"><textarea id="msg_to_fruugo" rows="5" cols="50"><?php /* echo  $shdata['message_To_Fruugo']; */?></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="admin__page-section-title">
+        <span class="title">Shipment Items</span>
+    </div>
+    <div class="admin__table-wrapper">
+        <table class="data-table admin__table-primary edit-order-table" id="_prod_table">
+            <thead>
+            <tr class="headings">
+                <th>Product Sku</th>
+                <th>Quantity Ordered</th>
+                <th>Quantity Confirmed/To confirm</th>
+                <th>Quantity to Ship</th>
+                <th>Quantity to Cancel</th>
+                <th>Qty Available for Ship</th>
+            </tr>
+            </thead>
+            <tbody id="item">
+            <?php
+
+            $cancelOrdersData = $this->getCancelledOrder($data['o:orderId']);
+            if(!empty($data)){
+            foreach($data['o:orderLines']['o:orderLine'] as $k=>$valdata) { $numberItems++;
+                $cancel_qty = 0;
+                $reject = false;
+                if(isset($ackData[$valdata['o:skuId']]['acknowledge_qty'])) {
+                    $cnfrmQty = $ackData[$valdata['o:skuId']]['acknowledge_qty'];
+                } else {
+                    $cnfrmQty = 0;
+                }
+                $real_cancel_qty = 0;
+                $qtyToCnfrm = $valdata['o:totalNumberOfItems'] - $cnfrmQty;
+                if(isset($prevShipinfo[$valdata['o:skuId']]) && $prevShipinfo){
+                    $avail_qty = ($cnfrmQty - ($prevShipinfo [$valdata['o:skuId']]
+                            ['response_shipment_sku_quantity'] + $prevShipinfo [$valdata['o:skuId']]
+                            ['response_shipment_cancel_qty'] + $real_cancel_qty));
+                }else{
+                    $avail_qty = $cnfrmQty;
+                }
+
+
+                $ship_qty = ( int ) ($valdata['o:totalNumberOfItems']);
+                    ?>
+                    <tr>
+                    <td><input type="hidden" id="lineNumber_<?php echo $block->escapeHtml($k);?>"
+                               value="<?php echo $block->escapeHtml(/*$valdata['lineNumber']*/$k) ?>">
+                        <input type="hidden" id="sku_<?php echo $block->escapeHtml($k);?>"
+                               value="<?php echo $block->escapeHtml($valdata/*['item']*/['o:skuId'])?>">
+                        <input type="hidden" id="fruugo_prodid_<?php echo $block->escapeHtml($k);?>"
+                               value="<?php echo $block->escapeHtml($valdata/*['item']*/['o:fruugoProductId'])?>">
+                        <input type="hidden" id="fruugo_skuid_<?php echo $block->escapeHtml($k);?>"
+                               value="<?php echo $block->escapeHtml($valdata/*['item']*/['o:fruugoSkuId'])?>">
+                        <strong><?php echo $block->escapeHtml($valdata/*['item']*/['o:skuId']); ?></strong>
+                    </td>
+                    <td><input type="hidden" id="qty_<?php echo $block->escapeHtml($k);?>"
+                               value="<?php echo $block->escapeHtml($valdata['o:totalNumberOfItems']) ?>">
+                        <strong><?php echo $block->escapeHtml($valdata['o:totalNumberOfItems']) ?></strong>
+                    </td>
+                    <?php
+                    $cancelOrdersData = is_bool($cancelOrdersData) ? [] : $cancelOrdersData;
+                    foreach($cancelOrdersData as $cancelOrderData) {
+                        $found = '';
+                        $found = strstr($cancelOrderData['reason'], $valdata['o:skuId'], false);
+                        if(isset($found) && $found != '') {?>
+                            <td><?php echo strstr($cancelOrderData['reason'], '-', false); ?></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <?php
+                            $reject = true;
+                            break;
+                        }
+                    }
+                    ?>
+                    <?php if(!$reject) { ?>
+                    <?php if($avail_qty > 0): ?>
+                        <td>
+                            <input  class="admin__control-text" type="text" maxlength="70" id="cnf_<?php echo $k;?>" value="<?php echo $cnfrmQty;?>" readonly>
+                            <input  class="admin__control-text" type="text" maxlength="70" id="qty_to_cnf_<?php echo $k;?>" value="<?php echo $qtyToCnfrm;?>">
+                        </td>
+                        <td><input class="admin__control-text" type="text" maxlength="70"
+                                   id="ship_<?php echo $block->escapeHtml($k);?>"
+                                   value="<?php echo $block->escapeHtml($avail_qty);?>"
+                                   onkeypress="return isNumberKey(event);">
+                        </td>
+                        <td><input class="admin__control-text" type="text"
+                                   id="can_<?php echo $block->escapeHtml($k);?>"
+                                   value="<?php echo $block->escapeHtml($cancel_qty);?>">
+                        </td>
+                    <?php else : ?>
+                        <td>
+                            <input  class="admin__control-text" type="text" maxlength="70" id="cnf_<?php echo $k;?>" value="<?php echo $cnfrmQty;?>" readonly>
+                            <input  class="admin__control-text" type="text" maxlength="70" id="qty_to_cnf_<?php echo $k;?>" value="<?php echo $qtyToCnfrm;?>">
+                        </td>
+                        <td><input type="hidden" id="ship_<?php echo $block->escapeHtml($k);?>"
+                                   value="<?php echo $block->escapeHtml($avail_qty) ?>">
+                            <strong <?php if($avail_qty <= 0){echo ' style="color: #EE0000" ';} ?>>
+                                <?php echo $block->escapeHtml($avail_qty) ?>
+                            </strong>
+                        </td>
+                        <td><input type="hidden" id="can_<?php echo $block->escapeHtml($k);?>"
+                                   value="<?php echo $block->escapeHtml($cancel_qty);?>">
+                            <strong <?php if ($avail_qty <= 0) {echo ' style="color: #EE0000" ';} ?>>
+                                <?php echo $block->escapeHtml($cancel_qty) ?>
+                            </strong>
+                        </td>
+                    <?php endif;?>
+                        <input type="hidden" id="orig_cnf_<?php echo $k;?>" value="<?php echo $cnfrmQty;?>">
+                    <td><input type="hidden" id="avail_<?php echo $block->escapeHtml($k);?>"
+                               value="<?php echo $block->escapeHtml($avail_qty) ?>">
+                        <strong <?php if($avail_qty > 0){echo ' style="color: #008800" ';} else{echo ' style="color: #EE0000" ';} ?>>
+                            <?php echo $block->escapeHtml($avail_qty) ?>
+                        </strong>
+                    </td>
+
+                    </tr><?php }
+            } }?>
+            </tbody>
+        </table>
+    </div>
+    <br/><button class="primary" id="button1" onclick="CallShipment();">Submit
+        Shipment</button>
+    <button id="buttonack" class="primary" onclick="CallAcknowledgement();">Submit Acknowledgment</button><br/>
+    <script type="text/javascript">
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31
+                && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+
+        function CallShipment(){
+            var key=document.getElementById('form_key').value;
+            var id=document.getElementById('incrementid').value;
+            var ids=document.getElementById('magento_orderid').value;
+            var orderid=document.getElementById('orderid').value;
+            var tracking=document.getElementById('tracking').value;
+            var tracking_url=document.getElementById('tracking_url').value;
+            var msgToCustomer=document.getElementById('msg_to_cst').value;
+            var msgToFruugo=document.getElementById('msg_to_fruugo').value;
+            var jet_order_detail_row = <?php echo $block->escapeHtml($rowId); ?>;
+            var outterArray = [];
+            var lengthval = <?php echo $block->escapeHtml($numberItems); ?>;
+
+
+            for(var i=0; i<lengthval;  i++) {
+                if(document.getElementById('sku_'+i) && document.getElementById('avail_'+i) != null ){
+                    order_lineNumber = document.getElementById('lineNumber_'+i).value;
+                    product_sku = document.getElementById('sku_'+i).value;
+                    fruugo_product_id = document.getElementById('fruugo_prodid_'+i).value;
+                    fruugo_product_sku = document.getElementById('fruugo_skuid_'+i).value;
+                    requested_quantity = document.getElementById('qty_'+i).value;
+                    cancel_quantity = document.getElementById('can_'+i).value;
+                    ship_quantity = document.getElementById('ship_'+i).value;
+                    avail_check_quantity = document.getElementById('avail_'+i).value;
+                    if(ship_quantity > (requested_quantity - cancel_quantity)){
+                        alert("Item Sku: "+requested_quantity+" .Total quantity available "+cancel_quantity+"for shipping/cancellation : "+(ship_quantity));
+                        return;
+                    }
+                    if(parseInt(ship_quantity) < 0 ||  parseInt(cancel_quantity) < 0){
+                        alert("please enter Quantity to Ship or Quantity to Cancel greater than zero");
+                        return;
+                    }
+                    var product_data = [
+
+                        product_sku,
+                        requested_quantity,
+                        cancel_quantity,
+                        ship_quantity,
+                        document.getElementById('avail_'+i).value,
+                        order_lineNumber,
+                        fruugo_product_id,
+                        fruugo_product_sku]; // new quantity to ship added
+                    //shipment id removed
+                    outterArray.push(product_data);
+                }
+            }
+            new Ajax.Request("<?php echo $block->getUrl('fruugo/order/ship') ?>", {
+                method: 'Post',
+                parameters: {"orderid":orderid,"items":JSON.stringify(outterArray),
+                    "key1":id,"order":ids,"tracking":tracking,"tracking_url":tracking_url,
+                    "order_table_row":jet_order_detail_row,
+                "msgtocustomer" : msgToCustomer, "msgtofruugo" : msgToFruugo},
+
+                onComplete: function(transport) {
+                    if(transport.responseText == "Success"){
+                        try {
+                            new Ajax.Request("<?php echo $block->getUrl('fruugo/order/updateStatus') ?>", {
+                                method: 'Post',
+                                parameters: {"orderid": id, "order_table_row":jet_order_detail_row},
+                                onComplete: function(transport) {
+                                    window.location.href=window.location.href;
+                                }
+                            });
+                        }
+                        catch(err) {
+                            alert(transport.responseText);
+                        }
+                    }else{
+                        alert(transport.responseText);
+                    }
+                }
+            });
+
+        }
+
+
+        function CallAcknowledgement(){
+            var key = document.getElementById('form_key').value;
+            var id = document.getElementById('incrementid').value;
+            var ids = document.getElementById('magento_orderid').value;
+            var orderid =document.getElementById('orderid').value;
+            var msg_to_cst=document.getElementById('msg_to_cst').value;
+            var msg_to_fruugo=document.getElementById('msg_to_fruugo').value;
+            var outterArray = [];
+            var fruugo_order_detail_row = <?php echo $block->escapeHtml($rowId); ?>;
+            var lengthval = <?php echo $numberItems; ?>;
+            var all_zero = false;
+
+
+            for(var i=0; i<lengthval;  i++) {
+                if(document.getElementById('sku_'+i) && document.getElementById('cnf_'+i) != null ){
+                    product_sku = document.getElementById('sku_'+i).value;
+                    fruugo_product_id = document.getElementById('fruugo_prodid_'+i).value;
+                    fruugo_sku_id = document.getElementById('fruugo_skuid_'+i).value;
+                    requested_quantity = document.getElementById('qty_'+i).value;
+                    confirm_quantity = document.getElementById('qty_to_cnf_'+i).value;
+                    already_confirm_quantity = document.getElementById('orig_cnf_'+i).value;
+                    avail_check_quantity = document.getElementById('avail_'+i).value;
+
+                    if(confirm_quantity > (requested_quantity - already_confirm_quantity)){
+                        alert("Item Sku: "+product_sku+"  . Total confirm quantity can't be greater than order quanity. ");
+                        return;
+                    }
+
+                    var product_data = [
+                        product_sku,
+                        fruugo_product_id,
+                        fruugo_sku_id,
+                        requested_quantity,
+                        confirm_quantity,
+                    ];
+                    if(confirm_quantity > 0) {
+                        outterArray.push(product_data);
+                    }
+                }
+            }
+
+            new Ajax.Request("<?php echo $this->getUrl('fruugo/order/customacknowledge') ?>", {
+                method: 'Post',
+                parameters: {"orderid":orderid,"items":JSON.stringify(outterArray),"key1":id,"msg_to_cst":msg_to_cst,"msg_to_fruugo":msg_to_fruugo,"order":ids,"order_table_row":fruugo_order_detail_row},
+
+                onComplete: function(transport) {
+                    var result = JSON.parse(transport.responseText);
+                    if(result == "Success"){
+                        try {
+                            window.location.href=window.location.href;
+                        }
+                        catch(err) {
+                            alert(result);
+                        }
+                    }else{
+                        alert(result);
+                    }
+                }
+            });
+
+        }
+
+    </script>
+<?php } ?>
+
+<?php
+if ($fruugoStatus == "inProgress") {
+        ?><?php
+    $count = 0 ;
+    foreach($shipmentdata["shipments"] as $shdata){ ?>
+        <strong style="font-size: 16px;color: #68a81e;margin-bottom: 10px;margin-top: 15px;display: inline-block;"> <u>Shipment History</u> </strong>
+
+        <div class="admin__page-section-content">
+        <div class="admin__page-section-item">
+            <div class="admin__page-section-item-title">
+                <span class="title">Shipment Information</span>
+            </div>
+            <div class="admin__page-section-item-content"
+                 id="_shipbyjetinfo_table">
+                <table class="admin__table-secondary">
+                    <tbody>
+                    <tr>
+                        <td class="label"><label>Order Id on Fruugo.com</label></td>
+                        <td class="value"><?php echo $data['o:orderId']; ?></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Customer Order Id on Fruugo.com</label></td>
+                        <td class="value"><?php echo $data['o:customerOrderId']; ?></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Order Date on Fruugo.com</label></td>
+                        <td class="value"><?php  echo date('l, F jS Y \a\t g:ia', strtotime($data['o:orderDate'])); ?></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Order Release Date on Fruugo.com</label></td>
+                        <td class="value"><?php echo date('l, F jS Y \a\t g:ia', strtotime($data['o:orderReleaseDate'])); ?></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Shipping carrier used</label></td>
+                        <td><?php  echo  $data['o:shippingMethod']; ?></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Tracking Url</label></td>
+                        <td class="value"><input class="input-text" type="text" readonly id="tracking_url" value="<?php  echo  $shdata['shipment_tracking_url']; ?>" style="width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Tracking Code</label></td>
+                        <td class="value"><input class="input-text" type="text" readonly id="tracking_code" value="<?php  echo  $shdata['shipment_tracking_number']; ?>" style="width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Message To Customer</label></td>
+                        <td class="value"><textarea id="msg_to_cst" rows="5" readonly cols="50"><?php  echo  $shdata['msg_to_customer']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Message To Fruugo</label></td>
+                        <td class="value"><textarea id="msg_to_fruugo" rows="5" readonly cols="50"><?php  echo  $shdata['msg_to_fruugo']; ?></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div class="admin__page-section-title">
+        <span class="title">Shipment Items</span>
+    </div>
+        <div class="admin__table-wrapper">
+        <table class="data-table admin__table-primary edit-order-table">
+            <thead>
+            <tr class="headings">
+                <th>Product sku</th>
+                <th>Quantity ordered</th>
+                <th>Quantity Shipped</th>
+                <th>Quantity cancelled</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            $k= 0;
+            foreach($shdata["shipment_items"] as $item)
+            {
+                ?>
+                <?php if( $item['merchant_sku']){ ?>
+                <tr>
+                    <td>
+                        <span><?php echo $item['merchant_sku']?></span>
+                    </td>
+                    <td>
+                        <span><?php echo $data['o:orderLines']['o:orderLine'][$k]['o:totalNumberOfItems'];?></span>
+                    </td>
+                    <td>
+                        <span><?php echo isset ( $item['response_shipment_sku_quantity'] ) ? $item['response_shipment_sku_quantity'] : 0?></span>
+                    </td>
+                    <td>
+                        <span><?php echo isset ( $item['response_shipment_cancel_qty'] ) ? $item['response_shipment_cancel_qty'] : 0; ?></span>
+                    </td>
+
+                </tr>
+            <?php  } ?>
+                <?php $k++; }  ?>
+            <?php
+            $k= 0;
+            if(isset($shdata["cancel_items"]))
+                foreach($shdata["cancel_items"] as $item)
+                {
+                    ?>
+                    <?php if( $item['merchant_sku']){ ?>
+                    <tr>
+                        <td>
+                            <span><?php echo $item['merchant_sku']?></span>
+                        </td>
+                        <td>
+                            <span><?php echo $data['o:orderLines']['o:orderLine'][$k]['o:totalNumberOfItems'];?></span>
+                        </td>
+                        <td>
+                            <span><?php echo isset ( $item['response_shipment_sku_quantity'] ) ? $item['response_shipment_sku_quantity'] : 0?></span>
+                        </td>
+                        <td>
+                            <span><?php echo isset ( $item['response_shipment_cancel_qty'] ) ? $item['response_shipment_cancel_qty'] : 0; ?></span>
+                        </td>
+
+                    </tr>
+                <?php  } ?>
+                    <?php $k++; }  ?>
+
+            </tbody>
+        </table>
+    </div>
+        <h3>Order Shipped Successfully</h3>
+        <?php $count++; } }?>
+
+<style>
+    #item >tr >td > input , select{
+        width:100% !important;
+    }
+</style>

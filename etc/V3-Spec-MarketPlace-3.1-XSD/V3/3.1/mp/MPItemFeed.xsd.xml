@@ -1,0 +1,11 @@
+<wal:MPItemFeedHeader xmlns:wal="http://fruugo.com/">
+  <wal:version>3.1</wal:version>
+  <!--Optional:-->
+  <wal:requestId>string</wal:requestId>
+  <!--Optional:-->
+  <wal:requestBatchId>string</wal:requestBatchId>
+  <!--Optional:-->
+  <wal:feedDate>2007-10-26T12:06:28</wal:feedDate>
+  <!--Optional:-->
+  <wal:mart>WALMART_CA</wal:mart>
+</wal:MPItemFeedHeader>

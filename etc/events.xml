@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!--<event name="catalog_category_prepare_save">
+        <observer name="ced_fruugo_categories_save" instance="Ced\Fruugo\Observer\CategorySave"/>
+    </event>
+    <event name="catalog_controller_category_delete">
+        <observer name="ced_fruugo_categories_delete" instance="Ced\Fruugo\Observer\CategoryDelete"/>
+    </event>
+    <event name="catalog_product_delete_after_done">
+        <observer name="ced_fruugo_product_delete" instance="Ced\Fruugo\Observer\ProductDelete"/>
+    </event>
+    <event name="catalog_product_save_before">
+        <observer name="ced_fruugo_product_save_before" instance="Ced\Fruugo\Observer\ProductSaveBefore"/>
+    </event>-->
+    <event name="controller_action_catalog_product_save_entity_after">
+        <observer name="ced_fruugo_product_save_after" instance="Ced\Fruugo\Observer\ProductSaveAfter"/>
+    </event>
+    <!--<event name="adminhtml_catalog_category_tabs">
+        <observer name="ced_fruugo_categories" instance="Ced\Fruugo\Observer\Categorytabs"/>
+    </event>-->
+    <event name="sales_order_shipment_save_after">
+        <observer name="ced_fruugo_shipment" instance="Ced\Fruugo\Observer\Shipment"/>
+    </event>
+    <!--<event name="sales_order_shipment_resource_save_after">
+        <observer name="ced_fruugo_shipment_resource" instance="Ced\Fruugo\Observer\Shipment"/>
+    </event>-->
+    <event name="sales_model_service_quote_submit_success">
+        <observer name="ced_fruugo_order_place_after" instance="Ced\Fruugo\Observer\Orderplace"/>
+    </event>
+    <event name="sales_order_creditmemo_save_after">
+        <observer name="fruugo_creditmemo_after" instance="Ced\Fruugo\Observer\CreditmemoAfter"/>
+    </event>
+    <event name="sales_order_item_cancel">
+        <observer name="inventory" instance="Ced\Fruugo\Observer\CancelItemObserver"/>
+    </event>
+</config>

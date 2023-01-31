@@ -1,0 +1,31 @@
+<PriceFeed>
+  <PriceHeader>
+    <version>1.5</version>
+    <!--Optional:-->
+    <feedDate>2007-10-26T12:06:28</feedDate>
+  </PriceHeader>
+  <!--1 to 5000 repetitions:-->
+  <Price>
+    <itemIdentifier>
+      <sku>string</sku>
+    </itemIdentifier>
+    <pricingList>
+      <!--1 to 10 repetitions:-->
+      <pricing effectiveDate="2004-02-15T00:14:14" expirationDate="2018-11-01T11:06:46+05:30">
+        <currentPrice>
+          <!--Optional:-->
+          <value currency="USD" amount="1000.00">string</value>
+        </currentPrice>
+        <!--Optional:-->
+        <currentPriceType>REDUCED</currentPriceType>
+        <!--Optional:-->
+        <comparisonPrice>
+          <!--Optional:-->
+          <value currency="USD" amount="1000.00">string</value>
+        </comparisonPrice>
+        <!--Optional:-->
+        <priceDisplayCodes submapType="CART"/>
+      </pricing>
+    </pricingList>
+  </Price>
+</PriceFeed>

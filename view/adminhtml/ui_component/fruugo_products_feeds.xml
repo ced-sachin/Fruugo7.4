@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+  * CedCommerce
+  *
+  * NOTICE OF LICENSE
+  *
+  * This source file is subject to the End User License Agreement (EULA)
+  * that is bundled with this package in the file LICENSE.txt.
+  * It is also available through the world-wide-web at this URL:
+  * http://cedcommerce.com/license-agreement.txt
+  *
+  * @category    Ced
+  * @package     Ced_Fruugo
+  * @author      CedCommerce Core Team <connect@cedcommerce.com>
+  * @copyright   Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  * @license     http://cedcommerce.com/license-agreement.txt
+  */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <!--Declare data source, columns list, button...-->
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">fruugo_products_feeds.feeds_listing_data_source</item>
+            <item name="deps" xsi:type="string">fruugo_products_feeds.feeds_listing_data_source</item>
+        </item>
+        <item name="spinner" xsi:type="string">feeds_columns</item>
+        <!--<item name="buttons" xsi:type="array">
+            &lt;!&ndash;The button on the top of the Grid&ndash;&gt;
+
+            <item name="feeds_sync" xsi:type="array">
+                <item name="name" xsi:type="string">feeds_sync</item>
+                <item name="label" xsi:type="string" translate="true">Sync Feeds</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">*/products/syncfeeds</item>
+            </item>
+        </item>-->
+
+    </argument>
+    <dataSource name="feeds_listing_data_source">
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">Ced\Fruugo\Ui\DataProvider\Products\FeedsDataProvider</argument>
+            <argument name="name" xsi:type="string">feeds_listing_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/provider</item>
+                    <item name="update_url" xsi:type="url" path="mui/index/render"/>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="indexField" xsi:type="string">id</item>
+                    </item>
+                </item>
+            </argument>
+        </argument>
+    </dataSource>
+    <listingToolbar name="listing_top">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="sticky" xsi:type="boolean">true</item>
+            </item>
+        </argument>
+        <bookmark name="bookmarks"/>
+        <columnsControls name="columns_controls"/>
+        <filters name="listing_filters">
+            <filterSelect name="store_id">
+                <argument name="optionsProvider" xsi:type="configurableObject">
+                    <argument name="class" xsi:type="string">Magento\Store\Ui\Component\Listing\Column\Store\Options</argument>
+                </argument>
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="provider" xsi:type="string">${ $.parentName }</item>
+                        <item name="dataScope" xsi:type="string">store_id</item>
+                        <item name="caption" xsi:type="string" translate="true">All Store Views</item>
+                        <item name="label" xsi:type="string" translate="true">Store View</item>
+                    </item>
+                </argument>
+            </filterSelect>
+        </filters>
+        <paging name="listing_paging"/>
+    </listingToolbar>
+    <columns name="feeds_columns">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="childDefaults" xsi:type="array">
+                    <item name="fieldAction" xsi:type="array">
+                        <item name="provider" xsi:type="string">fruugo_products_feeds.fruugo_products_feeds.feeds_columns.actions</item>
+                        <item name="target" xsi:type="string">applyAction</item>
+                        <item name="params" xsi:type="array">
+                            <item name="0" xsi:type="string">edit</item>
+                            <item name="1" xsi:type="string">${ $.$data.rowIndex }</item>
+                        </item>
+                    </item>
+                    <item name="selectProvider" xsi:type="string">fruugo_products_feeds.fruugo_products_feeds.feeds_columns.ids</item>
+                </item>
+            </item>
+        </argument>
+        <column name="feed_id">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed Id</item>
+                    <item name="sortOrder" xsi:type="number">20</item>
+                </item>
+            </argument>
+        </column>
+        <column name="feed_status">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed Status</item>
+                    <item name="sortOrder" xsi:type="number">30</item>
+                </item>
+            </argument>
+        </column>
+        <column name="feed_source">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed Source</item>
+                    <item name="sortOrder" xsi:type="number">40</item>
+                </item>
+            </argument>
+        </column>
+        <column name="feed_type">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed Type</item>
+                    <item name="sortOrder" xsi:type="number">50</item>
+                </item>
+            </argument>
+        </column>
+        <column name="items_received">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Items Received</item>
+                    <item name="sortOrder" xsi:type="number">60</item>
+                </item>
+            </argument>
+        </column>
+        <column name="items_succeeded">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Items Succeeded</item>
+                    <item name="sortOrder" xsi:type="number">70</item>
+                </item>
+            </argument>
+        </column>
+        <column name="items_failed">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Items Failed</item>
+                    <item name="sortOrder" xsi:type="number">80</item>
+                </item>
+            </argument>
+        </column>
+        <!--<column name="items_processing">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Items Processing</item>
+                    <item name="sortOrder" xsi:type="number">90</item>
+                </item>
+            </argument>
+        </column>-->
+        <column name="feed_date">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed Date</item>
+                    <item name="sortOrder" xsi:type="number">100</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="feed_file" class="Ced\Fruugo\Ui\Component\Listing\Columns\ProductFeedFile">
+        <!--<column name="feed_file">-->
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Ced_Fruugo/js/grid/columns/productfeedfile</item>
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed File</item>
+                    <item name="sortOrder" xsi:type="number">110</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="feed_errors" class="Ced\Fruugo\Ui\Component\Listing\Columns\ProductFeedErrors">
+        <!--<column name="feed_errors" >-->
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Ced_Fruugo/js/grid/columns/productfeederrors</item>
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="add_field" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Feed Errors</item>
+                    <item name="sortOrder" xsi:type="number">120</item>
+                </item>
+            </argument>
+        </column>
+
+    </columns>
+</listing>

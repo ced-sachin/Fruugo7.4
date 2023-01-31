@@ -1,0 +1,1145 @@
+[
+  {
+    "cat_id": "ToolsAndHardware",
+    "parent_cat_id": "0",
+    "name": "Tools And Hardware",
+    "path": "ToolsAndHardware",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape"
+  },
+  {
+    "cat_id": "Home",
+    "parent_cat_id": "0",
+    "name": "Home",
+    "path": "Home",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,recommendedRooms\/recommendedRoom,batteriesRequired,batterySize,isReusable,isDisposable,isAntique,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,powerType,occasion\/occasionValue,isPersonalizable,isPortable,cleaningCareAndMaintenance,isCordless,isMadeFromRecycledMaterial,isSet,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,isWheeled,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,shape"
+  },
+  {
+    "cat_id": "OccasionAndSeasonal",
+    "parent_cat_id": "0",
+    "name": "Occasion And Seasonal",
+    "path": "OccasionAndSeasonal",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,holidayLightingStyle\/holidayLightingStyleValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,pattern\/patternValue,material\/materialValue,numberOfPieces,powerType,occasion\/occasionValue,recommendedUses\/recommendedUse,isAssemblyRequired,assemblyInstructions,watts\/unit,watts\/measure,lightBulbType"
+  },
+  {
+    "cat_id": "Animal",
+    "parent_cat_id": "0",
+    "name": "Animal",
+    "path": "Animal",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,animalLifestage,minimumWeight\/unit,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,animalType,material\/materialValue,pattern\/patternValue,isPortable,isFoldable,maximumWeight\/unit,maximumWeight\/measure,petSize"
+  },
+  {
+    "cat_id": "Baby",
+    "parent_cat_id": "0",
+    "name": "Baby",
+    "path": "Baby",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology"
+  },
+  {
+    "cat_id": "ArtAndCraft",
+    "parent_cat_id": "0",
+    "name": "Art And Craft",
+    "path": "ArtAndCraft",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "metal,isRefillable,plating,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,isRecyclable,culturalStyle,chainLength\/unit,chainLength\/unit,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,isBulk,isReusable,isDisposable,isAntique,pattern\/patternValue,material\/materialValue,isAntitarnish,numberOfPieces,character\/characterValue,isPowered,powerType,occasion\/occasionValue,isPersonalizable,artPaintType,isPortable,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,gotsCertification,isFoldable,isCollectible,isHandmade,diameter\/unit,diameter\/measure,skillLevel,isSelfAdhesive,recommendedSurfaces\/recommendedSurface,capacity,subject,scent,form,organicCertifications\/organicCertification,shape"
+  },
+  {
+    "cat_id": "Furniture",
+    "parent_cat_id": "0",
+    "name": "Furniture",
+    "path": "Furniture",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,recommendedRooms\/recommendedRoom,mountTypeValue,isAntique,pattern\/patternValue,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,seatingCapacity,isInflatable,isWheeled,numberOfDrawers,numberOfShelves,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,fillMaterial\/fillMaterialValue,shape"
+  },
+  {
+    "cat_id": "Electronics",
+    "parent_cat_id": "0",
+    "name": "Electronics",
+    "path": "Electronics",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform"
+  },
+  {
+    "cat_id": "GardenAndPatio",
+    "parent_cat_id": "0",
+    "name": "Garden And Patio",
+    "path": "GardenAndPatio",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isWeatherResistant,finish,homeDecorStyle,plantCategory,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,theme\/themeValue,minimumTemperature\/unit,minimumTemperature\/measure,modelNumber,manufacturerPartNumber,color\/colorValue,isBulk,ageGroup\/ageGroupValue,batteriesRequired,batterySize,isEnergyStarCertified,isAntique,material\/materialValue,pattern\/patternValue,numberOfPieces,character\/characterValue,isPowered,powerType,occasion\/occasionValue,coverageArea\/unit,coverageArea\/measure,cleaningCareAndMaintenance,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,flowRate\/unit,flowRate\/measure,recommendedLocations\/recommendedLocation,hasRadiantHeat,season\/seasonValue,isWheeled,isFoldable,isIndustrial,maximumWeight\/unit,maximumWeight\/measure,isTearResistant,installationType,capacity,fuelType,volts\/unit,volts\/measure,watts\/unit,watts\/measure,btu,isWaterproof,hasAutomaticShutoff,frameMaterial\/frameMaterialValue,shape,displayTechnology,lightBulbType"
+  },
+  {
+    "cat_id": "Media",
+    "parent_cat_id": "0",
+    "name": "Media",
+    "path": "Media",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "title,originalLanguages,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isAdultProduct,awardsWon\/awardsWonValue,character\/characterValue,targetAudience\/targetAudienceValue,isDownloadableContentAvailable"
+  },
+  {
+    "cat_id": "Office",
+    "parent_cat_id": "0",
+    "name": "Office",
+    "path": "Office",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "inkColor\/inkColorValue,numberOfSheets,isRefillable,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isAntiglare,isPrimaryVariant,fabricContent\/fabricContentValue,finish,isRecyclable,isMagnetic,brand,envelopeSize,condition,holeSize\/unit,holeSize\/unit,manufacturer,theme\/themeValue,paperSize,year,modelNumber,manufacturerPartNumber,calendarFormat\/unit,calendarTerm\/value,color\/colorValue,batteriesRequired,ageGroup\/ageGroupValue,dexterity,batterySize,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,powerType,occasion\/occasionValue,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,isRetractable,isIndustrial,isTearResistant,capacity,brightness\/unit,brightness\/measure,shape,compatibleDevices\/compatibleDevice"
+  },
+  {
+    "cat_id": "MusicalInstrument",
+    "parent_cat_id": "0",
+    "name": "Musical Instrument",
+    "path": "MusicalInstrument",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,numberOfPieces,isPersonalizable,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation"
+  },
+  {
+    "cat_id": "Toy",
+    "parent_cat_id": "0",
+    "name": "Toy",
+    "path": "Toy",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,ageRange",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/unit,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isAdultProduct,finish,isRecyclable,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,awardsWon\/awardsWonValue,isEnergyStarCertified,animalType,material\/materialValue,isPowered,numberOfPieces,characterValue,powerType,isRemoteControlIncluded,occasion\/occasionValue,isPersonalizable,isMadeFromRecycledMaterial,isTravelSize,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,seatingCapacity,isInflatable,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,skillLevel,maximumWeight\/unit,maximumWeight\/measure,targetAudience\/targetAudienceValue,maximumSpeed\/unit,maximumSpeed\/measure,educationalFocus\/educationalFocus,capacity,skinTone,volts\/unit,volts\/measure,vehicleType,shape,screenSize\/unit,screenSize\/measure,displayTechnology"
+  },
+  {
+    "cat_id": "FoodAndBeverage",
+    "parent_cat_id": "0",
+    "name": "Food And Beverage",
+    "path": "FoodAndBeverage",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,foodForm",
+    "fruugo_attributes": "isNutritionFactsLabelRequired,nutritionFactsLabel,foodForm,isImitation,foodAllergenStatements\/foodAllergenStatement,usdaInspected,vintage,timeAged\/unit,timeAged\/measure,variantAttributeNames\/variantAttributeName,isGmoFree,variantGroupId,isPrimaryVariant,isBpaFree,isPotentiallyHazardousFood,isReadyToEat,caffeineDesignation,brand,manufacturer,spiceLevel,flavor,beefCut,poultryCut,color\/colorValue,isMadeInHomeKitchen,nutrientContentClaims\/nutrientContentClaim,safeHandlingInstructions,character\/characterValue,occasion\/occasionValue,isPersonalizable,fatCaloriesPerGram,recommendedUses\/recommendedUse,carbohydrateCaloriesPerGram,totalProtein\/unit,totalProtein\/measure,totalProteinPercentageDailyValue\/unit,totalProteinPercentageDailyValue\/measure,proteinCaloriesPerGram,isFairTrade,isIndustrial,ingredients,releaseDate,servingSize,servingsPerContainer,organicCertifications\/organicCertification,instructions,calories,caloriesFromFat\/unit,caloriesFromFat\/measure,totalFat\/unit,totalFat\/measure,totalFatPercentageDailyValue\/unit,totalFatPercentageDailyValue\/measure,totalCarbohydrate\/unit,totalCarbohydrate\/measure,totalCarbohydratePercentageDailyValue\/unit,totalCarbohydratePercentageDailyValue\/measure,nutrients\/nutrient"
+  },
+  {
+    "cat_id": "Photography",
+    "parent_cat_id": "0",
+    "name": "Photography",
+    "path": "Photography",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isWeatherResistant,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,batteriesRequired,batterySize,memoryCardType\/memoryCardTypeValue,connections\/connection,material\/materialValue,numberOfPieces,isPortable,cleaningCareAndMaintenance,recommendedLocations\/recommendedLocation,isAssemblyRequired,assemblyInstructions,isWaterproof,hasTouchscreen,recordableMediaFormats\/recordableMediaFormat,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "Footwear",
+    "parent_cat_id": "0",
+    "name": "Footwear",
+    "path": "Footwear",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,occasion\/occasionValue,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,sport\/sportValue"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "0",
+    "name": "Other",
+    "path": "Other",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,recommendedRooms\/recommendedRoom,connections\/connection,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,powerType,isPortable,recommendedLocations\/recommendedLocation,isRetractable,isFoldable,isCollectible,isIndustrial,isAssemblyRequired,assemblyInstructions,recommendedSurfaces\/recommendedSurface,volts\/unit,volts\/measure,shape,displayTechnology"
+  },
+  {
+    "cat_id": "CarriersAndAccessories",
+    "parent_cat_id": "0",
+    "name": "Carriers And Accessories",
+    "path": "CarriersAndAccessories",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isWeatherResistant,fabricCareInstructions\/fabricCareInstruction,brand,dimensions,condition,isLined,manufacturer,numberOfWheels,modelNumber,handleMaterial\/handleMaterialValue,manufacturerPartNumber,gender,color\/colorValue,handleType,ageGroup\/ageGroupValue,designer,leatherGrade,material\/materialValue,pattern\/patternValue,character\/characterValue,monogramLetter,numberOfPieces,zipperMaterial,isPersonalizable,lockingMechanism,hardOrSoftCase,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isWheeled,isFairTrade,capacity,isWaterproof"
+  },
+  {
+    "cat_id": "Jewelry",
+    "parent_cat_id": "0",
+    "name": "Jewelry",
+    "path": "Jewelry",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender,jewelryStyle",
+    "fruugo_attributes": "size,jewelryStyle,metal,plating,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,karats,gemstone\/gemstoneValue,variantAttributeNames\/variantAttributeName,birthstone,variantGroupId,gemstoneShape,isPrimaryVariant,carats\/unit,carats\/value,diamondClarity,gemstoneCut,chainLength\/unit,chainLength\/measure,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,material\/materialValue,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,isPersonalizable,bodyParts,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial"
+  },
+  {
+    "cat_id": "Watches",
+    "parent_cat_id": "0",
+    "name": "Watches",
+    "path": "Watches",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender",
+    "fruugo_attributes": "watchBandMaterial\/watchBandMaterialValue,metal,watchCaseShape,plating,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,watchStyle\/watchStyleValue,gemstone\/gemstoneValue,variantAttributeNames\/variantAttributeName,variantGroupId,gemstoneShape,isPrimaryVariant,carats\/unit,carats\/value,fabricContent\/fabricContentValue,isWeatherResistant,finish,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,batteriesRequired,batterySize,material\/materialValue,pattern\/patternValue,character\/characterValue,powerType,occasion\/occasionValue,isPersonalizable,isWaterproof,displayTechnology"
+  },
+  {
+    "cat_id": "Vehicle",
+    "parent_cat_id": "0",
+    "name": "Vehicle",
+    "path": "Vehicle",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue"
+  },
+  {
+    "cat_id": "Clothing",
+    "parent_cat_id": "0",
+    "name": "Clothing",
+    "path": "Clothing",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,clothingSize,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue"
+  },
+  {
+    "cat_id": "SportAndRecreation",
+    "parent_cat_id": "0",
+    "name": "Sport And Recreation",
+    "path": "SportAndRecreation",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isWeatherResistant,finish,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,batteriesRequired,dexterity,batterySize,fishingLinePoundTest,fishingLocation,animalType,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,fitnessGoal,powerType,maximumIncline\/unit,maximumIncline\/measure,isPortable,cleaningCareAndMaintenance,bladeType,recommendedUses\/recommendedUse,tentType,recommendedLocations\/recommendedLocation,seatingCapacity,tireDiameter\/unit,tireDiameter\/measure,season\/seasonValue,isWheeled,isMemorabilia,isFoldable,isCollectible,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,ballCoreMaterial\/ballCoreMaterialValue,footballSize,sport,basketballSize,maximumWeight\/unit,maximumWeight\/measure,soccerBallSize,batDrop,isTearResistant,isSpaceSaving,capacity,velocity\/unit,velocity\/measure,isWaterproof,hasAutomaticShutoff,shape,wirelessTechnologies\/wirelessTechnologie,horsepower\/unit,horsepower\/measure"
+  },
+  {
+    "cat_id": "HealthAndBeauty",
+    "parent_cat_id": "0",
+    "name": "Health And Beauty",
+    "path": "HealthAndBeauty",
+    "level": "0",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand"
+  },
+  {
+    "cat_id": "PlumbingAndHVAC",
+    "parent_cat_id": "ToolsAndHardware",
+    "name": "Plumbing And HVAC",
+    "path": "ToolsAndHardware\/PlumbingAndHVAC",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape,isEnergyGuideLabelRequired,energyGuideLabel,finish,homeDecorStyle,mountType\/mountTypeValue,powerType,isRemoteControlIncluded,seatingCapacity,volumeCapacity\/unit,volumeCapacity\/measure,fuelType,volts\/unit,volts\/measure,watts\/unit,watts\/measure,btu,maximumRoomSize\/unit,maximumRoomSize\/measure,hasAutomaticShutoff,hasCeeCertification,ceeTier,drainConfiguration,faucetDrillings,gallonsPerFlush\/unit,gallonsPerFlush\/measure,gallonsPerMinute\/unit,gallonsPerMinute\/measure,humidificationOutputPerDay,inletDiameter\/unit,inletDiameter\/measure,mervRating,outletDiameter\/unit,outletDiameter\/measure,pintsOfMoistureRemovedPerDay,spoutHeight\/unit,spoutHeight\/measure,spoutReach\/unit,spoutReach\/measure,spudInletSize\/unit,spudInletSize\/measure,threadStandard,toiletBowlSize,tripLeverPlacement,isVented,ventingRequired,humidificationMethod,horsepower\/unit,horsepower\/measure"
+  },
+  {
+    "cat_id": "Hardware",
+    "parent_cat_id": "ToolsAndHardware",
+    "name": "Hardware",
+    "path": "ToolsAndHardware\/Hardware",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape,finish,homeDecorStyle,mountType\/mountTypeValue,maximumWeight\/unit,maximumWeight\/measure,backsetSize\/unit,backsetSize\/measure,liftHeight\/unit,liftHeight\/measure,isLockable,maximumForceResisted\/unit,maximumForceResisted\/measure,petSize,threadStandard"
+  },
+  {
+    "cat_id": "BuildingSupply",
+    "parent_cat_id": "ToolsAndHardware",
+    "name": "Building Supply",
+    "path": "ToolsAndHardware\/BuildingSupply",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape,homeDecorStyle,acRating,batteriesRequired,batterySize,isBiodegradable,isEnergyStarCertified,carpetStyle,pattern\/patternValue,isPowered,powerType,isCombustible,compatibleSurfaces\/compatibleSurface,coverageArea\/unit,coverageArea\/measure,isMadeFromRecycledMaterial,dryTime\/unit,dryTime\/measure,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isFastSetting,fineness,isFlammable,grade,hasLowEmissivity,isMadeFromReclaimedMaterials,isMadeFromSustainableMaterials,isMoldResistant,isOdorless,paintFinish,peiRating,pileHeight\/unit,pileHeight\/measure,isPrefinished,isReadyToUse,recommendedSurfaces\/recommendedSurface,rollLength\/unit,rollLength\/measure,snowLoadRating\/unit,snowLoadRating\/measure,vocLevel\/unit,vocLevel\/measure,isWaterSoluble,subject,activeIngredients\/activeIngredient\/activeIngredientName,activeIngredients\/activeIngredient\/activeIngredientPercentage,inactiveIngredients\/inactiveIngredient,form,hasCeeCertification,ceeTier"
+  },
+  {
+    "cat_id": "Tools",
+    "parent_cat_id": "ToolsAndHardware",
+    "name": "Tools",
+    "path": "ToolsAndHardware\/Tools",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape,finish,batteriesRequired,batterySize,powerType,isPortable,hasCfl,isLightingFactsLabelRequired,lightingFactsLabel,volumeCapacity\/unit,volumeCapacity\/measure,fuelType,volts\/unit,volts\/measure,cordLength\/unit,cordLength\/measure,lightBulbType,handing,caseIncluded,amps\/unit,amps\/measure,isBareTool,batteryCapacity\/unit,batteryCapacity\/measure,chargerIncluded,chargingTime\/unit,chargingTime\/measure,hasElectricBrake,isVariableSpeed,toolFreeBladeChanging,bladeDiameter\/unit,bladeDiameter\/measure,bladeLength\/unit,bladeLength\/measure,bladeShank,teethPerInch,discSize\/unit,discSize\/measure,chuckSize\/unit,chuckSize\/measure,chuckType,colletSize\/unit,colletSize\/measure,sandingBeltSize,arborDiameter\/unit,arborDiameter\/measure,spindleThread,shankSize\/unit,shankSize\/measure,shankShape,maximumJawOpening\/unit,maximumJawOpening\/measure,decibelRating\/unit,decibelRating\/measure,impactEnergy\/unit,impactEnergy\/measure,blowsPerMinute,strokeLength\/unit,strokeLength\/measure,strokesPerMinute,maximumWattsOut\/unit,maximumWattsOut\/measure,noLoadSpeed\/unit,noLoadSpeed\/measure,torque,sandingSpeed\/unit,sandingSpeed\/measure,airInlet\/unit,airInlet\/measure,averageAirConsumptionAt90PSI\/unit,averageAirConsumptionAt90PSI\/measure,cfmAt40Psi\/unit,cfmAt40Psi\/measure,cfmAt90Psi\/unit,cfmAt90Psi\/measure,workingPressure\/unit,workingPressure\/measure,maximumAirPressure\/unit,maximumAirPressure\/measure,tankConfiguration,tankSize\/unit,tankSize\/measure,isCarbCompliant,engineDisplacement\/unit,engineDisplacement\/measure,horsepower\/measure,engineStarter,hasAutomaticTransferSwitch,clearingWidth,loadCapacity"
+  },
+  {
+    "cat_id": "Electrical",
+    "parent_cat_id": "ToolsAndHardware",
+    "name": "Electrical",
+    "path": "ToolsAndHardware\/Electrical",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape,finish,homeDecorStyle,batteriesRequired,mountType,batterySize,isEnergyStarCertified,pattern\/patternValue,character\/characterValue,powerType,diameter\/unit,diameter\/measure,hasCfl,isLightingFactsLabelRequired,lightingFactsLabel,volts\/unit,volts\/measure,watts\/unit,watts\/measure,estimatedEnergyCostPerYear\/unit,estimatedEnergyCostPerYear\/measure,colorTemperature\/unit,colorTemperature\/measure,numberOfLightBulbs,lightBulbBaseType,lightBulbDiameter\/unit,lightBulbDiameter\/measure,isLightBulbIncluded,beamAngle\/unit,beamAngle\/measure,beamSpread\/unit,beamSpread\/measure,compatibleConduitSizes\/unit,compatibleConduitSizes\/measure,isDarkSkyCompliant,electricalBallastFactor,isRatedForOutdoorUse,maximumEnergySurgeRating,maximumRange\/unit,maximumRange\/measure,responseTime\/unit,responseTime\/measure,numberOfGangs,numberOfPoles,americanWireGauge\/unit,americanWireGauge\/measure,brightness\/unit,brightness\/measure,lifespan,hasCeeCertification,ceeTier,amps\/unit,amps\/measure,decibelRating\/unit,decibelRating\/measure,horsepower\/unit,horsepower\/measure"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "ToolsAndHardware",
+    "name": "Other",
+    "path": "ToolsAndHardware\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isWeatherResistant,isFireResistant,brand,manufacturer,color\/colorValue,material\/materialValue,numberOfPieces,cleaningCareAndMaintenance,recommendedUses\/recommendedUse,isIndustrial,isWaterproof,shape"
+  },
+  {
+    "cat_id": "LargeAppliances",
+    "parent_cat_id": "Home",
+    "name": "Large Appliances",
+    "path": "Home\/LargeAppliances",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,recommendedRooms\/recommendedRoom,batteriesRequired,batterySize,isReusable,isDisposable,isAntique,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,powerType,occasion\/occasionValue,isPersonalizable,isPortable,cleaningCareAndMaintenance,isCordless,isMadeFromRecycledMaterial,isSet,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,isWheeled,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,shape,isEnergyGuideLabelRequired,energyGuideLabel,isEnergyStarCertified,isRemoteControlIncluded,hasCfl,isLightingFactsLabelRequired,lightingFactsLabel,capacity,volumeCapacity\/unit,volumeCapacity\/measure,fuelType,loadPosition,volts\/unit,volts\/measure,watts\/unit,watts\/measure,btu,maximumRoomSize\/unit,maximumRoomSize\/measure,runTime\/unit,runTime\/measure,cordLength\/unit,cordLength\/measure,isSmart,hasAutomaticShutoff"
+  },
+  {
+    "cat_id": "Bedding",
+    "parent_cat_id": "Home",
+    "name": "Bedding",
+    "path": "Home\/Bedding",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,recommendedRooms\/recommendedRoom,batteriesRequired,batterySize,isReusable,isDisposable,isAntique,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,powerType,occasion\/occasionValue,isPersonalizable,isPortable,cleaningCareAndMaintenance,isCordless,isMadeFromRecycledMaterial,isSet,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,isWheeled,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,shape,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,bedSize,threadCount"
+  },
+  {
+    "cat_id": "HomeDecor",
+    "parent_cat_id": "Home",
+    "name": "Home Decor",
+    "path": "Home\/HomeDecor",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,recommendedRooms\/recommendedRoom,batteriesRequired,batterySize,isReusable,isDisposable,isAntique,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,powerType,occasion\/occasionValue,isPersonalizable,isPortable,cleaningCareAndMaintenance,isCordless,isMadeFromRecycledMaterial,isSet,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,isWheeled,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,shape,rugSize,clockNumberType,curtainPanelStyle,fillMaterial\/fillMaterialValue,scent,threadCount,displayTechnology"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Home",
+    "name": "Other",
+    "path": "Home\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,recommendedRooms\/recommendedRoom,batteriesRequired,batterySize,isReusable,isDisposable,isAntique,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,powerType,occasion\/occasionValue,isPersonalizable,isPortable,cleaningCareAndMaintenance,isCordless,isMadeFromRecycledMaterial,isSet,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,isWheeled,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,shape"
+  },
+  {
+    "cat_id": "DecorationsAndFavors",
+    "parent_cat_id": "OccasionAndSeasonal",
+    "name": "Decorations And Favors",
+    "path": "OccasionAndSeasonal\/DecorationsAndFavors",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,holidayLightingStyle\/holidayLightingStyleValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,pattern\/patternValue,material\/materialValue,numberOfPieces,powerType,occasion\/occasionValue,recommendedUses\/recommendedUse,isAssemblyRequired,assemblyInstructions,watts\/unit,watts\/measure,lightBulbType,fabricContent\/fabricContentValue,isAdultProduct,finish,isRecyclable,theme\/themeValue,gender,ageGroup\/ageGroupValue,numberOfPieces,character\/characterValue,isPowered,powerType,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isInflatable,isAnimated,targetAudience\/targetAudienceValue,makesNoise,shape"
+  },
+  {
+    "cat_id": "Funeral",
+    "parent_cat_id": "OccasionAndSeasonal",
+    "name": "Funeral",
+    "path": "OccasionAndSeasonal\/Funeral",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,holidayLightingStyle\/holidayLightingStyleValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,pattern\/patternValue,material\/materialValue,numberOfPieces,powerType,occasion\/occasionValue,recommendedUses\/recommendedUse,isAssemblyRequired,assemblyInstructions,watts\/unit,watts\/measure,lightBulbType,finish,fillMaterial\/fillMaterialValue"
+  },
+  {
+    "cat_id": "CeremonialClothingAndAccessories",
+    "parent_cat_id": "OccasionAndSeasonal",
+    "name": "Ceremonial Clothing And Accessories",
+    "path": "OccasionAndSeasonal\/CeremonialClothingAndAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,holidayLightingStyle\/holidayLightingStyleValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,pattern\/patternValue,material\/materialValue,numberOfPieces,powerType,occasion\/occasionValue,recommendedUses\/recommendedUse,isAssemblyRequired,assemblyInstructions,watts\/unit,watts\/measure,lightBulbType,fabricContent\/fabricContentValue,clothingSize,gender,clothingSizeType,pattern\/patternValue,apparelCategory"
+  },
+  {
+    "cat_id": "Costumes",
+    "parent_cat_id": "OccasionAndSeasonal",
+    "name": "Costumes",
+    "path": "OccasionAndSeasonal\/Costumes",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,holidayLightingStyle\/holidayLightingStyleValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,pattern\/patternValue,material\/materialValue,numberOfPieces,powerType,occasion\/occasionValue,recommendedUses\/recommendedUse,isAssemblyRequired,assemblyInstructions,watts\/unit,watts\/measure,lightBulbType,fabricContent\/fabricContentValue,theme\/themeValue,clothingSize,gender,ageGroup,clothingSizeType,animalType,character\/characterValue,targetAudience\/targetAudienceValue"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "OccasionAndSeasonal",
+    "name": "Other",
+    "path": "OccasionAndSeasonal\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,holidayLightingStyle\/holidayLightingStyleValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,pattern\/patternValue,material\/materialValue,numberOfPieces,powerType,occasion\/occasionValue,recommendedUses\/recommendedUse,isAssemblyRequired,assemblyInstructions,watts\/unit,watts\/measure,lightBulbType"
+  },
+  {
+    "cat_id": "AnimalHealthAndGrooming",
+    "parent_cat_id": "Animal",
+    "name": "Animal Health And Grooming",
+    "path": "Animal\/AnimalHealthAndGrooming",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,animalLifestage,minimumWeight\/unit,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,animalType,material\/materialValue,pattern\/patternValue,isPortable,isFoldable,maximumWeight\/unit,maximumWeight\/measure,petSize,condition,isDisposable,powerType,animalHealthConcern,hairLength\/hairLengthValue,scent,isDrugFactsLabelRequired,drugFactsLabel,activeIngredients\/activeIngredient\/activeIngredientName,activeIngredients\/activeIngredient\/activeIngredientPercentage,inactiveIngredients\/inactiveIngredient,form,instructions,dosage,stopUseIndications\/stopUseIndication,petSize"
+  },
+  {
+    "cat_id": "AnimalAccessories",
+    "parent_cat_id": "Animal",
+    "name": "Animal Accessories",
+    "path": "Animal\/AnimalAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,animalLifestage,minimumWeight\/unit,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,animalType,material\/materialValue,pattern\/patternValue,isPortable,isFoldable,maximumWeight\/unit,maximumWeight\/measure,petSize,condition,minimumTemperature\/unit,minimumTemperature\/measure,clothingSize,batteriesRequired,batterySize,character\/characterValue,isRetractable,isReflective,makesNoise,maximumTemperature\/unit,maximumTemperature\/measure,capacity,shape"
+  },
+  {
+    "cat_id": "AnimalFood",
+    "parent_cat_id": "Animal",
+    "name": "Animal Food",
+    "path": "Animal\/AnimalFood",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,animalLifestage,minimumWeight\/unit,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,animalType,material\/materialValue,pattern\/patternValue,isPortable,isFoldable,maximumWeight\/unit,maximumWeight\/measure,petSize,flavor,petFoodForm,nutrientContentClaims\/nutrientContentClaim,isGrainFree,feedingInstructions,animalHealthConcern,ingredients"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Animal",
+    "name": "Other",
+    "path": "Animal\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,animalLifestage,minimumWeight\/unit,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,animalType,material\/materialValue,pattern\/patternValue,isPortable,isFoldable,maximumWeight\/unit,maximumWeight\/measure,petSize"
+  },
+  {
+    "cat_id": "ChildCarSeats",
+    "parent_cat_id": "Baby",
+    "name": "Child Car Seats",
+    "path": "Baby\/ChildCarSeats",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,childCarSeatType,facingDirection,forwardFacingMinimumWeight\/unit,forwardFacingMinimumWeight\/measure,forwardFacingMaximumWeight\/unit,forwardFacingMaximumWeight\/measure,rearFacingMinimumWeight\/unit,rearFacingMinimumWeight\/measure,rearFacingMaximumWeight\/unit,rearFacingMaximumWeight\/measure,hasLatchSystem"
+  },
+  {
+    "cat_id": "BabyClothing",
+    "parent_cat_id": "Baby",
+    "name": "Baby Clothing",
+    "path": "Baby\/BabyClothing",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,ageGroup,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,color\/colorValue,apparelCategory,season\/seasonValue,babyClothingSize"
+  },
+  {
+    "cat_id": "BabyFootwear",
+    "parent_cat_id": "Baby",
+    "name": "Baby Footwear",
+    "path": "Baby\/BabyFootwear",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,shoeCategory,shoeSize,shoeWidth,shoeStyle,shoeClosure"
+  },
+  {
+    "cat_id": "Strollers",
+    "parent_cat_id": "Baby",
+    "name": "Strollers",
+    "path": "Baby\/Strollers",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,seatingCapacity,strollerType"
+  },
+  {
+    "cat_id": "BabyFurniture",
+    "parent_cat_id": "Baby",
+    "name": "Baby Furniture",
+    "path": "Baby\/BabyFurniture",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,collection,finish,homeDecorStyle,isWheeled,isFoldable,isAssemblyRequired,assemblyInstructions,mattressFirmness,fillMaterial\/fillMaterialValue,bedSize,shape"
+  },
+  {
+    "cat_id": "BabyToys",
+    "parent_cat_id": "Baby",
+    "name": "Baby Toys",
+    "path": "Baby\/BabyToys",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,animalBreed,ageRange,theme\/themeValue,batteriesRequired,batterySize,awardsWon\/awardsWonValue,animalType,isPowered,powerType,isRemoteControlIncluded,makesNoise,fillMaterial\/fillMaterialValue,educationalFocus\/educationalFocus"
+  },
+  {
+    "cat_id": "BabyFood",
+    "parent_cat_id": "Baby",
+    "name": "Baby Food",
+    "path": "Baby\/BabyFood",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology,flavor,nutrientContentClaims\/nutrientContentClaim,servingSize,servingsPerContainer,isBabyFormulaLabelRequired,babyFormulaLabel,isChildrenUnder2LabelRequired,childrenUnder2Label,isChildrenUnder4LabelRequired,childrenUnder4Label,fluidOuncesSupplying100Calories,calories,caloriesFromFat\/unit,caloriesFromFat\/measure,totalFat\/unit,totalFat\/measure,totalFatPercentageDailyValue\/unit,totalFatPercentageDailyValue\/measure,totalCarbohydrate\/unit,totalCarbohydrate\/measure,totalCarbohydratePercentageDailyValue\/value,totalCarbohydratePercentageDailyValue\/measure,nutrients\/nutrient\/nutrientName,nutrients\/nutrient\/nutrientAmount,nutrients\/nutrient\/nutrientPercentageDailyValue"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Baby",
+    "name": "Other",
+    "path": "Baby\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,pattern\/patternValue,material\/materialValue,numberOfPieces,character\/characterValue,occasion\/occasionValue,isPersonalizable,isPortable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,numberOfChannels,isFairTrade,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,maximumWeight\/unit,maximumWeight\/measure,diaposableBabyDiaperType\/diaposableBabyDiaperTypeValue,capacity,scent,organicCertifications\/organicCertification,screenSize\/unit,screenSize\/measure,displayTechnology"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "ArtAndCraft",
+    "name": "Other",
+    "path": "ArtAndCraft\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "metal,isRefillable,plating,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,isRecyclable,culturalStyle,chainLength\/unit,chainLength\/unit,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,isBulk,isReusable,isDisposable,isAntique,pattern\/patternValue,material\/materialValue,isAntitarnish,numberOfPieces,character\/characterValue,isPowered,powerType,occasion\/occasionValue,isPersonalizable,artPaintType,isPortable,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isRetractable,gotsCertification,isFoldable,isCollectible,isHandmade,diameter\/unit,diameter\/measure,skillLevel,isSelfAdhesive,recommendedSurfaces\/recommendedSurface,capacity,subject,scent,form,organicCertifications\/organicCertification,shape"
+  },
+  {
+    "cat_id": "Seating",
+    "parent_cat_id": "Furniture",
+    "name": "Seating",
+    "path": "Furniture\/Seating",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,recommendedRooms\/recommendedRoom,mountTypeValue,isAntique,pattern\/patternValue,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,seatingCapacity,isInflatable,isWheeled,numberOfDrawers,numberOfShelves,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,fillMaterial\/fillMaterialValue,shape,seatBackHeight\/unit,seatBackHeight\/measure,seatMaterial,seatHeight\/unit,seatHeight\/measure,frameMaterial"
+  },
+  {
+    "cat_id": "TVFurniture",
+    "parent_cat_id": "Furniture",
+    "name": "TVFurniture",
+    "path": "Furniture\/TVFurniture",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,recommendedRooms\/recommendedRoom,mountTypeValue,isAntique,pattern\/patternValue,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,seatingCapacity,isInflatable,isWheeled,numberOfDrawers,numberOfShelves,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,fillMaterial\/fillMaterialValue,shape,maximumScreenSize\/unit,maximumScreenSize\/measure"
+  },
+  {
+    "cat_id": "Beds",
+    "parent_cat_id": "Furniture",
+    "name": "Beds",
+    "path": "Furniture\/Beds",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,recommendedRooms\/recommendedRoom,mountTypeValue,isAntique,pattern\/patternValue,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,seatingCapacity,isInflatable,isWheeled,numberOfDrawers,numberOfShelves,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,fillMaterial\/fillMaterialValue,shape,bedStyle,bedSize"
+  },
+  {
+    "cat_id": "Mattresses",
+    "parent_cat_id": "Furniture",
+    "name": "Mattresses",
+    "path": "Furniture\/Mattresses",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,recommendedRooms\/recommendedRoom,mountTypeValue,isAntique,pattern\/patternValue,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,seatingCapacity,isInflatable,isWheeled,numberOfDrawers,numberOfShelves,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,fillMaterial\/fillMaterialValue,shape,mattressFirmness,mattressThickness,pumpIncluded,bedSize"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Furniture",
+    "name": "Other",
+    "path": "Furniture\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,homeDecorStyle,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,recommendedRooms\/recommendedRoom,mountTypeValue,isAntique,pattern\/patternValue,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,seatingCapacity,isInflatable,isWheeled,numberOfDrawers,numberOfShelves,isFoldable,isIndustrial,isAssemblyRequired,assemblyInstructions,fillMaterial\/fillMaterialValue,shape"
+  },
+  {
+    "cat_id": "CellPhones",
+    "parent_cat_id": "Electronics",
+    "name": "Cell Phones",
+    "path": "Electronics\/CellPhones",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,cellPhoneType,resolution,screenSize\/unit,screenSize\/measure,mobileOperatingSystem\/mobileOperatingSystemValue,modelName,displayTechnology,hasBluetooth,batteryLife\/unit,batteryLife\/measure,cellPhoneServiceProvider,cellularNetworkTechnology,frontFacingCameraMegapixels\/unit,frontFacingCameraMegapixels\/measure,hasFlash,standbyTime\/unit,standbyTime\/measure,talkTime\/unit,talkTime\/measure,rearCameraMegapixels\/unit,rearCameraMegapixels\/measure,maximumRamSupported\/unit,maximumRamSupported\/measure,processorSpeed\/unit,processorSpeed\/measure,processorType\/processorTypeValue,ramMemory\/unit,ramMemory\/measure,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "TVsAndVideoDisplays",
+    "parent_cat_id": "Electronics",
+    "name": "TVs And Video Displays",
+    "path": "Electronics\/TVsAndVideoDisplays",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,televisionType\/televisionTypeValue,hasTouchscreen,backlightType,refreshRate\/unit,refreshRate\/measure,responseTime\/unit,responseTime\/measure,aspectRatio,nativeResolution,maximumContrastRatio,inputsAndOutputs\/inputsAndOutput,hasIntegratedSpeakers,resolution,screenSize\/unit,screenSize\/measure,displayTechnology,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "ElectronicsCables",
+    "parent_cat_id": "Electronics",
+    "name": "Electronics Cables",
+    "path": "Electronics\/ElectronicsCables",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,connectorFinish,cableLength\/unit,cableLength\/measure,numberOfTwistedPairsPerCable,compatibleDevices\/compatibleDevice"
+  },
+  {
+    "cat_id": "PrintersScannersAndImaging",
+    "parent_cat_id": "Electronics",
+    "name": "Printers Scanners And Imaging",
+    "path": "Electronics\/PrintersScannersAndImaging",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,hasAutomaticDocumentFeeder,hasAutomaticTwoSidedPrinting,colorPagesPerMinute,maximumDocumentSize,maximumPrintResolution\/unit,maximumPrintResolution\/measure,maximumScannerResolution\/unit,maximumScannerResolution\/measure,monochromeColor,printingTechnology,monochromePagesPerMinute,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "VideoGames",
+    "parent_cat_id": "Electronics",
+    "name": "Video Games",
+    "path": "Electronics\/VideoGames",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,videoGameGenre,esrbRating,sport\/sportValue,targetAudience\/targetAudienceValue,isOnlineMultiplayerAvailable,isDownloadableContentAvailable,edition,videoGameCollection,requiredPeripherals,platform"
+  },
+  {
+    "cat_id": "Software",
+    "parent_cat_id": "Electronics",
+    "name": "Software",
+    "path": "Electronics\/Software",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,softwareCategory\/softwareCategoryValue,systemRequirements\/systemRequirement,version,numberOfUsers,softwareFormat,requiredPeripherals,educationalFocus\/educationalFocus,operatingSystem\/operatingSystemValue"
+  },
+  {
+    "cat_id": "ComputerComponents",
+    "parent_cat_id": "Electronics",
+    "name": "Computer Components",
+    "path": "Electronics\/ComputerComponents",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,internalExternal,hardDriveCapacity\/unit,hardDriveCapacity\/measure,cpuSocketType\/unit,cpuSocketType\/measure,motherboardFormFactor\/motherboardFormFactorValue,maximumRamSupported\/unit,maximumRamSupported\/measure,processorSpeed\/unit,processorSpeed\/measure,processorType\/processorTypeValue,ramMemory\/unit,ramMemory\/measure,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "ElectronicsAccessories",
+    "parent_cat_id": "Electronics",
+    "name": "Electronics Accessories",
+    "path": "Electronics\/ElectronicsAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,recordableMediaFormats\/recordableMediaFormat,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice,wirelessTechnologies\/wirelessTechnology,tvAndMonitorMountType,minimumScreenSize\/unit,minimumScreenSize\/measure,maximumScreenSize\/unit,maximumScreenSize\/measure,maximumLoadWeight\/unit,maximumLoadWeight\/measure,headphoneFeatures\/headphoneFeature"
+  },
+  {
+    "cat_id": "Computers",
+    "parent_cat_id": "Electronics",
+    "name": "Computers",
+    "path": "Electronics\/Computers",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,operatingSystem\/operatingSystemValue,hasFrontFacingCamera,graphicsInformation,opticalDrive,formFactor,hasTouchscreen,resolution,screenSize\/unit,screenSize\/measure,displayTechnology,hasBluetooth,batteryLife\/unit,batteryLife\/measure,frontFacingCameraMegapixels\/unit,frontFacingCameraMegapixels\/measure,rearCameraMegapixels\/unit,rearCameraMegapixels\/measure,hardDriveCapacity\/unit,hardDriveCapacity\/measure,maximumRamSupported\/unit,maximumRamSupported\/measure,processorSpeed\/unit,processorSpeed\/measure,processorType\/processorTypeValue,ramMemory\/unit,ramMemory\/measure,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "VideoProjectors",
+    "parent_cat_id": "Electronics",
+    "name": "Video Projectors",
+    "path": "Electronics\/VideoProjectors",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform,aspectRatio,brightness\/unit,brightness\/measure,nativeResolution,maximumContrastRatio,throwRatio,lampLife\/unit,lampLife\/measure,has3dCapabilities,inputsAndOutputs\/inputsAndOutput,hasIntegratedSpeakers,screenSize\/unit,screenSize\/measure,displayTechnology,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Electronics",
+    "name": "Other",
+    "path": "Electronics\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isEnergyGuideLabelRequired,energyGuideLabel,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,ageGroup,batteriesRequired,batterySize,isEnergyStarCertified,connections\/connection,material\/materialValue,numberOfPieces,isRemoteControlIncluded,isPersonalizable,isPortable,isCordless,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,peakAudioPowerCapacity\/unit,peakAudioPowerCapacity\/measure,audioFeatures\/audioFeature,numberOfChannels,resolution,platform"
+  },
+  {
+    "cat_id": "GrillsAndOutdoorCooking",
+    "parent_cat_id": "GardenAndPatio",
+    "name": "Grills And Outdoor Cooking",
+    "path": "GardenAndPatio\/GrillsAndOutdoorCooking",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isWeatherResistant,finish,homeDecorStyle,plantCategory,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,theme\/themeValue,minimumTemperature\/unit,minimumTemperature\/measure,modelNumber,manufacturerPartNumber,color\/colorValue,isBulk,ageGroup\/ageGroupValue,batteriesRequired,batterySize,isEnergyStarCertified,isAntique,material\/materialValue,pattern\/patternValue,numberOfPieces,character\/characterValue,isPowered,powerType,occasion\/occasionValue,coverageArea\/unit,coverageArea\/measure,cleaningCareAndMaintenance,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,flowRate\/unit,flowRate\/measure,recommendedLocations\/recommendedLocation,hasRadiantHeat,season\/seasonValue,isWheeled,isFoldable,isIndustrial,maximumWeight\/unit,maximumWeight\/measure,isTearResistant,installationType,capacity,fuelType,volts\/unit,volts\/measure,watts\/unit,watts\/measure,btu,isWaterproof,hasAutomaticShutoff,frameMaterial\/frameMaterialValue,shape,displayTechnology,lightBulbType,flavor,numberOfBurners,hasSideShelf,hasCharcoalBasket,totalCookingArea\/unit,totalCookingArea\/measure,sideBurnerSize\/unit,sideBurnerSize\/measure,hasTankTray,lifespan"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "GardenAndPatio",
+    "name": "Other",
+    "path": "GardenAndPatio\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isWeatherResistant,finish,homeDecorStyle,plantCategory,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,theme\/themeValue,minimumTemperature\/unit,minimumTemperature\/measure,modelNumber,manufacturerPartNumber,color\/colorValue,isBulk,ageGroup\/ageGroupValue,batteriesRequired,batterySize,isEnergyStarCertified,isAntique,material\/materialValue,pattern\/patternValue,numberOfPieces,character\/characterValue,isPowered,powerType,occasion\/occasionValue,coverageArea\/unit,coverageArea\/measure,cleaningCareAndMaintenance,isMadeFromRecycledMaterial,recommendedUses\/recommendedUse,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,flowRate\/unit,flowRate\/measure,recommendedLocations\/recommendedLocation,hasRadiantHeat,season\/seasonValue,isWheeled,isFoldable,isIndustrial,maximumWeight\/unit,maximumWeight\/measure,isTearResistant,installationType,capacity,fuelType,volts\/unit,volts\/measure,watts\/unit,watts\/measure,btu,isWaterproof,hasAutomaticShutoff,frameMaterial\/frameMaterialValue,shape,displayTechnology,lightBulbType,flavor,numberOfBurners,hasSideShelf,hasCharcoalBasket,totalCookingArea\/unit,totalCookingArea\/measure,sideBurnerSize\/unit,sideBurnerSize\/measure,hasTankTray,lifespan"
+  },
+  {
+    "cat_id": "TVShows",
+    "parent_cat_id": "Media",
+    "name": "TVShows",
+    "path": "Media\/TVShows",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,tvRating",
+    "fruugo_attributes": "title,originalLanguages,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isAdultProduct,awardsWon\/awardsWonValue,character\/characterValue,targetAudience\/targetAudienceValue,isDownloadableContentAvailable,digitalVideoFormats,tvRating,tvShowGenre,tvShowSubgenre,tvNetwork,tvShowSeason,numberOfEpisodes,episode,director,actors\/actor,screenwriter,studioProductionCompany,videoStreamingQuality,audioTrackCodec,duration\/unit,duration\/measure,dvdReleaseDate,isDubbed,dubbedLanguages\/dubbedLanguage,hasSubtitles,subtitledLanguages\/subtitledLanguage,seriesTitle,numberInSeries,aspectRatio"
+  },
+  {
+    "cat_id": "Music",
+    "parent_cat_id": "Media",
+    "name": "Music",
+    "path": "Media\/Music",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "title,originalLanguages,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isAdultProduct,awardsWon\/awardsWonValue,character\/characterValue,targetAudience\/targetAudienceValue,isDownloadableContentAvailable,musicGenre,musicSubGenre,performer\/performerValue,songwriter,musicMediaFormat,musicProducer,recordLabel,numberOfDiscs,numberOfTracks,releaseDate,musicReleaseType,hasParentalAdvisoryLabel,trackListings\/trackListing,seriesTitle,numberInSeries"
+  },
+  {
+    "cat_id": "BooksAndMagazines",
+    "parent_cat_id": "Media",
+    "name": "Books And Magazines",
+    "path": "Media\/BooksAndMagazines",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "title,originalLanguages,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isAdultProduct,awardsWon\/awardsWonValue,character\/characterValue,targetAudience\/targetAudienceValue,isDownloadableContentAvailable,condition,gender,color\/colorValue,material\/materialValue,pattern\/patternValue,edition,subject,bookFormat,genre,subgenre,author\/authorValue,editor,illustrator,publisher,translator,translatedFrom,fictionNonfiction,isUnabridged,originalPublicationDate,publicationDate,readingLevel,numberOfPages,issue,seriesTitle,numberInSeries,title,variantGroupId,isPrimaryVariant,isAdultProduct,isDownloadableContentAvailable"
+  },
+  {
+    "cat_id": "Movies",
+    "parent_cat_id": "Media",
+    "name": "Movies",
+    "path": "Media\/Movies",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,mpaaRating",
+    "fruugo_attributes": "title,originalLanguages,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isAdultProduct,awardsWon\/awardsWonValue,character\/characterValue,targetAudience\/targetAudienceValue,isDownloadableContentAvailable,mpaaRating,movieGenre,movieSubgenre,theatricalReleaseDate,digitalVideoFormats,director,actors\/actor,screenwriter,studioProductionCompany,videoStreamingQuality,audioTrackCodec,duration\/unit,duration\/measure,dvdReleaseDate,isDubbed,hasSubtitles,seriesTitle,numberInSeries,aspectRatio,title,variantGroupId,isPrimaryVariant,isAdultProduct,isDownloadableContentAvailable"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Media",
+    "name": "Other",
+    "path": "Media\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "title,originalLanguages,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,isAdultProduct,awardsWon\/awardsWonValue,character\/characterValue,targetAudience\/targetAudienceValue,isDownloadableContentAvailable"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Office",
+    "name": "Other",
+    "path": "Office\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "inkColor\/inkColorValue,numberOfSheets,isRefillable,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isAntiglare,isPrimaryVariant,fabricContent\/fabricContentValue,finish,isRecyclable,isMagnetic,brand,envelopeSize,condition,holeSize\/unit,holeSize\/unit,manufacturer,theme\/themeValue,paperSize,year,modelNumber,manufacturerPartNumber,calendarFormat\/unit,calendarTerm\/value,color\/colorValue,batteriesRequired,ageGroup\/ageGroupValue,dexterity,batterySize,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,powerType,occasion\/occasionValue,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedUses\/recommendedUse,isRetractable,isIndustrial,isTearResistant,capacity,brightness\/unit,brightness\/measure,shape,compatibleDevices\/compatibleDevice"
+  },
+  {
+    "cat_id": "SoundAndRecording",
+    "parent_cat_id": "MusicalInstrument",
+    "name": "Sound And Recording",
+    "path": "MusicalInstrument\/SoundAndRecording",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,numberOfPieces,isPersonalizable,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,hasSignalBooster,hasWirelessMicrophone,batteriesRequired,batterySize,isPowered,powerType,isRemoteControlIncluded,audioPowerOutput,equalizerControl,inputsAndOutputs\/inputsAndOutput\/inputOutputType,inputsAndOutputs\/inputsAndOutput\/inputOutputQuantity,hasIntegratedSpeakers,hasBluetooth,batteryLife\/unit,batteryLife\/measure,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "InstrumentAccessories",
+    "parent_cat_id": "MusicalInstrument",
+    "name": "Instrument Accessories",
+    "path": "MusicalInstrument\/InstrumentAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,numberOfPieces,isPersonalizable,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,hasSignalBooster,hasWirelessMicrophone,batteriesRequired,pattern\/patternValue,batterySize,isRemoteControlIncluded,instrument\/instrumentValue,inputsAndOutputs\/inputsAndOutput\/inputOutputType,inputsAndOutputs\/inputsAndOutput\/inputOutputQuantity,displayTechnology,hasBluetooth,batteryLife\/unit,batteryLife\/measure,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "MusicalInstruments",
+    "parent_cat_id": "MusicalInstrument",
+    "name": "Musical Instruments",
+    "path": "MusicalInstrument\/MusicalInstruments",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,numberOfPieces,isPersonalizable,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,finish,hasSignalBooster,hasWirelessMicrophone,ageGroup\/ageGroupValue,batteriesRequired,batterySize,powerType,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,audioPowerOutput,isCollectible,musicalInstrumentFamily,isAcoustic,isElectric,isFretted,instrument\/instrumentValue,shape,inputsAndOutputs\/inputsAndOutput\/inputOutputType,inputsAndOutputs\/inputsAndOutput\/inputOutputQuantity,hasIntegratedSpeakers,displayTechnology,hasBluetooth,batteryLife\/unit,batteryLife\/measure"
+  },
+  {
+    "cat_id": "MusicCasesAndBags",
+    "parent_cat_id": "MusicalInstrument",
+    "name": "Music Cases And Bags",
+    "path": "MusicalInstrument\/MusicCasesAndBags",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,numberOfPieces,isPersonalizable,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation,fabricContent\/fabricContentValue,fabricCareInstructions\/fabricCareInstruction,hardOrSoftCase,isWheeled,instrument\/instrumentValue,shape"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "MusicalInstrument",
+    "name": "Other",
+    "path": "MusicalInstrument\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,numberOfPieces,isPersonalizable,isPortable,recommendedUses\/recommendedUse,recommendedLocations\/recommendedLocation"
+  },
+  {
+    "cat_id": "Puzzles",
+    "parent_cat_id": "Toy",
+    "name": "Puzzles",
+    "path": "Toy\/Puzzles",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,ageRange",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/unit,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isAdultProduct,finish,isRecyclable,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,awardsWon\/awardsWonValue,isEnergyStarCertified,animalType,material\/materialValue,isPowered,numberOfPieces,characterValue,powerType,isRemoteControlIncluded,occasion\/occasionValue,isPersonalizable,isMadeFromRecycledMaterial,isTravelSize,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,seatingCapacity,isInflatable,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,skillLevel,maximumWeight\/unit,maximumWeight\/measure,targetAudience\/targetAudienceValue,maximumSpeed\/unit,maximumSpeed\/measure,educationalFocus\/educationalFocus,capacity,skinTone,volts\/unit,volts\/measure,vehicleType,shape,screenSize\/unit,screenSize\/measure,displayTechnology,numberOfPieces"
+  },
+  {
+    "cat_id": "Games",
+    "parent_cat_id": "Toy",
+    "name": "Games",
+    "path": "Toy\/Games",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,ageRange",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/unit,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isAdultProduct,finish,isRecyclable,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,awardsWon\/awardsWonValue,isEnergyStarCertified,animalType,material\/materialValue,isPowered,numberOfPieces,characterValue,powerType,isRemoteControlIncluded,occasion\/occasionValue,isPersonalizable,isMadeFromRecycledMaterial,isTravelSize,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,seatingCapacity,isInflatable,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,skillLevel,maximumWeight\/unit,maximumWeight\/measure,targetAudience\/targetAudienceValue,maximumSpeed\/unit,maximumSpeed\/measure,educationalFocus\/educationalFocus,capacity,skinTone,volts\/unit,volts\/measure,vehicleType,shape,screenSize\/unit,screenSize\/measure,displayTechnology,batteriesRequired,batterySize,makesNoise,numberOfPlayers\/minimumNumberOfPlayers,numberOfPlayers\/minimumNumberOfPlayers,numberOfPlayers\/maximumNumberOfPlayers"
+  },
+  {
+    "cat_id": "Toys",
+    "parent_cat_id": "Toy",
+    "name": "Toys",
+    "path": "Toy\/Toys",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,ageRange",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/unit,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isAdultProduct,finish,isRecyclable,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,awardsWon\/awardsWonValue,isEnergyStarCertified,animalType,material\/materialValue,isPowered,numberOfPieces,characterValue,powerType,isRemoteControlIncluded,occasion\/occasionValue,isPersonalizable,isMadeFromRecycledMaterial,isTravelSize,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,seatingCapacity,isInflatable,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,skillLevel,maximumWeight\/unit,maximumWeight\/measure,targetAudience\/targetAudienceValue,maximumSpeed\/unit,maximumSpeed\/measure,educationalFocus\/educationalFocus,capacity,skinTone,volts\/unit,volts\/measure,vehicleType,shape,screenSize\/unit,screenSize\/measure,displayTechnology,batteriesRequired,batterySize,makesNoise,fillMaterial\/fillMaterialValue"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Toy",
+    "name": "Other",
+    "path": "Toy\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,ageRange",
+    "fruugo_attributes": "animalBreed,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,ageRange,minimumWeight\/unit,minimumWeight\/measure,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isAdultProduct,finish,isRecyclable,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,theme\/themeValue,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,awardsWon\/awardsWonValue,isEnergyStarCertified,animalType,material\/materialValue,isPowered,numberOfPieces,characterValue,powerType,isRemoteControlIncluded,occasion\/occasionValue,isPersonalizable,isMadeFromRecycledMaterial,isTravelSize,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,seatingCapacity,isInflatable,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,sport\/sportValue,skillLevel,maximumWeight\/unit,maximumWeight\/measure,targetAudience\/targetAudienceValue,maximumSpeed\/unit,maximumSpeed\/measure,educationalFocus\/educationalFocus,capacity,skinTone,volts\/unit,volts\/measure,vehicleType,shape,screenSize\/unit,screenSize\/measure,displayTechnology"
+  },
+  {
+    "cat_id": "AlcoholicBeverages",
+    "parent_cat_id": "FoodAndBeverage",
+    "name": "Alcoholic Beverages",
+    "path": "FoodAndBeverage\/AlcoholicBeverages",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,foodForm,alcoholContentByVolume",
+    "fruugo_attributes": "isNutritionFactsLabelRequired,nutritionFactsLabel,foodForm,isImitation,foodAllergenStatements\/foodAllergenStatement,usdaInspected,vintage,timeAged\/unit,timeAged\/measure,variantAttributeNames\/variantAttributeName,isGmoFree,variantGroupId,isPrimaryVariant,isBpaFree,isPotentiallyHazardousFood,isReadyToEat,caffeineDesignation,brand,manufacturer,spiceLevel,flavor,beefCut,poultryCut,color\/colorValue,isMadeInHomeKitchen,nutrientContentClaims\/nutrientContentClaim,safeHandlingInstructions,character\/characterValue,occasion\/occasionValue,isPersonalizable,fatCaloriesPerGram,recommendedUses\/recommendedUse,carbohydrateCaloriesPerGram,totalProtein\/unit,totalProtein\/measure,totalProteinPercentageDailyValue\/unit,totalProteinPercentageDailyValue\/measure,proteinCaloriesPerGram,isFairTrade,isIndustrial,ingredients,releaseDate,servingSize,servingsPerContainer,organicCertifications\/organicCertification,instructions,calories,caloriesFromFat\/unit,caloriesFromFat\/measure,totalFat\/unit,totalFat\/measure,totalFatPercentageDailyValue\/unit,totalFatPercentageDailyValue\/measure,totalCarbohydrate\/unit,totalCarbohydrate\/measure,totalCarbohydratePercentageDailyValue\/unit,totalCarbohydratePercentageDailyValue\/measure,nutrients\/nutrient,alcoholContentByVolume,alcoholProof,alcoholClassAndType,neutralSpiritsColoringAndFlavoring,whiskeyPercentage,isEstateBottled,wineAppellation,wineVarietal,containsSulfites,isNonGrape"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "FoodAndBeverage",
+    "name": "Other",
+    "path": "FoodAndBeverage\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,foodForm",
+    "fruugo_attributes": "isNutritionFactsLabelRequired,nutritionFactsLabel,foodForm,isImitation,foodAllergenStatements\/foodAllergenStatement,usdaInspected,vintage,timeAged\/unit,timeAged\/measure,variantAttributeNames\/variantAttributeName,isGmoFree,variantGroupId,isPrimaryVariant,isBpaFree,isPotentiallyHazardousFood,isReadyToEat,caffeineDesignation,brand,manufacturer,spiceLevel,flavor,beefCut,poultryCut,color\/colorValue,isMadeInHomeKitchen,nutrientContentClaims\/nutrientContentClaim,safeHandlingInstructions,character\/characterValue,occasion\/occasionValue,isPersonalizable,fatCaloriesPerGram,recommendedUses\/recommendedUse,carbohydrateCaloriesPerGram,totalProtein\/unit,totalProtein\/measure,totalProteinPercentageDailyValue\/unit,totalProteinPercentageDailyValue\/measure,proteinCaloriesPerGram,isFairTrade,isIndustrial,ingredients,releaseDate,servingSize,servingsPerContainer,organicCertifications\/organicCertification,instructions,calories,caloriesFromFat\/unit,caloriesFromFat\/measure,totalFat\/unit,totalFat\/measure,totalFatPercentageDailyValue\/unit,totalFatPercentageDailyValue\/measure,totalCarbohydrate\/unit,totalCarbohydrate\/measure,totalCarbohydratePercentageDailyValue\/unit,totalCarbohydratePercentageDailyValue\/measure,nutrients\/nutrient"
+  },
+  {
+    "cat_id": "PhotoAccessories",
+    "parent_cat_id": "Photography",
+    "name": "Photo Accessories",
+    "path": "Photography\/PhotoAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isWeatherResistant,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,batteriesRequired,batterySize,memoryCardType\/memoryCardTypeValue,connections\/connection,material\/materialValue,numberOfPieces,isPortable,cleaningCareAndMaintenance,recommendedLocations\/recommendedLocation,isAssemblyRequired,assemblyInstructions,isWaterproof,hasTouchscreen,recordableMediaFormats\/recordableMediaFormat,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice,wirelessTechnologies\/wirelessTechnology,fabricContent\/fabricContentValue,condition,pattern\/patternValue,isRemoteControlIncluded,isMadeFromRecycledMaterial,occasion\/occasionValue,hardOrSoftCase,isCordless,lightOutput\/unit,lightOutput\/measure,maximumWeight\/unit,maximumWeight\/measure,capacity,volts\/unit,volts\/measure,watts\/unit,watts\/measure,shape,inputsAndOutputs\/inputsAndOutput\/inputOutputType,inputsAndOutputs\/inputsAndOutput\/inputOutputQuantity,displayTechnology,hasBluetooth,lightBulbType,wirelessTechnologies\/wirelessTechnologie"
+  },
+  {
+    "cat_id": "CamerasAndLenses",
+    "parent_cat_id": "Photography",
+    "name": "Cameras And Lenses",
+    "path": "Photography\/CamerasAndLenses",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isWeatherResistant,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,batteriesRequired,batterySize,memoryCardType\/memoryCardTypeValue,connections\/connection,material\/materialValue,numberOfPieces,isPortable,cleaningCareAndMaintenance,recommendedLocations\/recommendedLocation,isAssemblyRequired,assemblyInstructions,isWaterproof,hasTouchscreen,recordableMediaFormats\/recordableMediaFormat,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice,wirelessTechnologies\/wirelessTechnology,ageGroup\/ageGroupValue,powerType,diameter\/unit,diameter\/measure,numberOfMegapixels\/unit,numberOfMegapixels\/measure,focalLength\/measure,focalLength\/unit,hasShoulderStrap,hasHandle,magnification,fieldOfView,isFogResistant,lensDiameter\/unit,lensDiameter\/measure,isMulticoated,shootingPrograms,shootingMode,opticalZoom,selfTimerDelay\/unit,selfTimerDelay\/measure,hasSelfTimer,hasRemovableFlash,digitalZoom,focusType\/focusTypeValue,hasRedEyeReduction,minimumShutterSpeed\/unit,minimumShutterSpeed\/unit,lockType,maximumShutterSpeed\/unit,maximumShutterSpeed\/measure,sensorResolution\/unit,sensorResolution\/measure,maximumShootingSpeed,minimumAperture,hasDovetailBarSystem,hasLcdScreen,maximumAperture,hasMemoryCardSlot,microphoneIncluded,hasNightVision,lensFilterType,isParfocal,flashType,filmCameraType,attachmentStyle,exposureModes\/exposureMode,cameraLensType,displayResolution\/unit,displayResolution\/measure,focalRatio,lensCoating,operatingTemperature\/unit,operatingTemperature\/measure,isLockable,lensType\/lensTypeValue,screenSize\/unit,screenSize\/measure,displayTechnology,hasFlash,standbyTime\/unit,standbyTime\/measure,activeIngredients\/activeIngredient\/activeIngredientPercentage,inactiveIngredients\/inactiveIngredient,form,instructions"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Photography",
+    "name": "Other",
+    "path": "Photography\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,accessoriesIncluded\/accessoriesIncludedValue,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,isWeatherResistant,hasSignalBooster,hasWirelessMicrophone,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,batteriesRequired,batterySize,memoryCardType\/memoryCardTypeValue,connections\/connection,material\/materialValue,numberOfPieces,isPortable,cleaningCareAndMaintenance,recommendedLocations\/recommendedLocation,isAssemblyRequired,assemblyInstructions,isWaterproof,hasTouchscreen,recordableMediaFormats\/recordableMediaFormat,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice,wirelessTechnologies\/wirelessTechnology"
+  },
+  {
+    "cat_id": "Shoes",
+    "parent_cat_id": "Footwear",
+    "name": "Shoes",
+    "path": "Footwear\/Shoes",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender,color\/colorValue,shoeCategory,shoeSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,occasion\/occasionValue,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,sport\/sportValue,shoeCategory,shoeSize,shoeWidth,heelHeight\/unit,heelHeight\/measure,shoeStyle,casualAndDressShoeType,shoeClosure,isWaterResistant,isOrthopedic"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Footwear",
+    "name": "Other",
+    "path": "Footwear\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,occasion\/occasionValue,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,recommendedLocations\/recommendedLocation,sport\/sportValue"
+  },
+  {
+    "cat_id": "CleaningAndChemical",
+    "parent_cat_id": "Other",
+    "name": "Cleaning And Chemical",
+    "path": "Other\/CleaningAndChemical",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,recommendedRooms\/recommendedRoom,connections\/connection,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,powerType,isPortable,recommendedLocations\/recommendedLocation,isRetractable,isFoldable,isCollectible,isIndustrial,isAssemblyRequired,assemblyInstructions,recommendedSurfaces\/recommendedSurface,volts\/unit,volts\/measure,shape,displayTechnology,isRecyclable,isBiodegradable,isEnergyStarCertified,isCombustible,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue,isFlammable,ingredients,handleLength\/unit,handleLength\/measure,fluidOunces\/unit,fluidOunces\/measure,scent,activeIngredients\/activeIngredient\/activeIngredientName,activeIngredients\/activeIngredient\/activeIngredientPercentage,inactiveIngredients\/inactiveIngredient,form,instructions"
+  },
+  {
+    "cat_id": "Storage",
+    "parent_cat_id": "Other",
+    "name": "Storage",
+    "path": "Other\/Storage",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,recommendedRooms\/recommendedRoom,connections\/connection,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,powerType,isPortable,recommendedLocations\/recommendedLocation,isRetractable,isFoldable,isCollectible,isIndustrial,isAssemblyRequired,assemblyInstructions,recommendedSurfaces\/recommendedSurface,volts\/unit,volts\/measure,shape,displayTechnology,collection,shelfDepth\/unit,shelfDepth\/measure,shelfStyle,recommendedUses\/recommendedUse,drawerPosition,drawerDimensions,numberOfDrawers,numberOfShelves,maximumWeight\/unit,maximumWeight\/measure,capacity"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Other",
+    "name": "Other",
+    "path": "Other\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,systemOfMeasurement,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,finish,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,recommendedRooms\/recommendedRoom,connections\/connection,material\/materialValue,pattern\/patternValue,isPowered,character\/characterValue,powerType,isPortable,recommendedLocations\/recommendedLocation,isRetractable,isFoldable,isCollectible,isIndustrial,isAssemblyRequired,assemblyInstructions,recommendedSurfaces\/recommendedSurface,volts\/unit,volts\/measure,shape,displayTechnology"
+  },
+  {
+    "cat_id": "CasesAndBags",
+    "parent_cat_id": "CarriersAndAccessories",
+    "name": "Cases And Bags",
+    "path": "CarriersAndAccessories\/CasesAndBags",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isWeatherResistant,fabricCareInstructions\/fabricCareInstruction,brand,dimensions,condition,isLined,manufacturer,numberOfWheels,modelNumber,handleMaterial\/handleMaterialValue,manufacturerPartNumber,gender,color\/colorValue,handleType,ageGroup\/ageGroupValue,designer,leatherGrade,material\/materialValue,pattern\/patternValue,character\/characterValue,monogramLetter,numberOfPieces,zipperMaterial,isPersonalizable,lockingMechanism,hardOrSoftCase,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isWheeled,isFairTrade,capacity,isWaterproof,finish,isReusable,occasion\/occasionValue,recommendedUses\/recommendedUse,bagStyle,isFoldable,fastenerType,numberOfCompartments,hasRemovableStrap,isTsaApproved,sport\/sportValue,maximumWeight\/unit,maximumWeight\/value,shape,screenSize\/unit,screenSize\/value,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "CarriersAndAccessories",
+    "name": "Other",
+    "path": "CarriersAndAccessories\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isWeatherResistant,fabricCareInstructions\/fabricCareInstruction,brand,dimensions,condition,isLined,manufacturer,numberOfWheels,modelNumber,handleMaterial\/handleMaterialValue,manufacturerPartNumber,gender,color\/colorValue,handleType,ageGroup\/ageGroupValue,designer,leatherGrade,material\/materialValue,pattern\/patternValue,character\/characterValue,monogramLetter,numberOfPieces,zipperMaterial,isPersonalizable,lockingMechanism,hardOrSoftCase,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,isWheeled,isFairTrade,capacity,isWaterproof"
+  },
+  {
+    "cat_id": "Rings",
+    "parent_cat_id": "Jewelry",
+    "name": "Rings",
+    "path": "Jewelry\/Rings",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender,jewelryStyle",
+    "fruugo_attributes": "size,jewelryStyle,metal,plating,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,karats,gemstone\/gemstoneValue,variantAttributeNames\/variantAttributeName,birthstone,variantGroupId,gemstoneShape,isPrimaryVariant,carats\/unit,carats\/value,diamondClarity,gemstoneCut,chainLength\/unit,chainLength\/measure,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,material\/materialValue,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,isPersonalizable,bodyParts,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,ringStyle\/ringStyleValue"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Jewelry",
+    "name": "Other",
+    "path": "Jewelry\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender,jewelryStyle",
+    "fruugo_attributes": "size,jewelryStyle,metal,plating,swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,karats,gemstone\/gemstoneValue,variantAttributeNames\/variantAttributeName,birthstone,variantGroupId,gemstoneShape,isPrimaryVariant,carats\/unit,carats\/value,diamondClarity,gemstoneCut,chainLength\/unit,chainLength\/measure,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,material\/materialValue,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,isPersonalizable,bodyParts,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Watches",
+    "name": "Other",
+    "path": "Watches\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,gender",
+    "fruugo_attributes": "metal,watchCaseShape,plating,variantGroupId,gemstoneShape,isPrimaryVariant,isWeatherResistant,finish,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,batteriesRequired,batterySize,powerType,isPersonalizable,isWaterproof,displayTechnology"
+  },
+  {
+    "cat_id": "WheelsAndWheelComponents",
+    "parent_cat_id": "Vehicle",
+    "name": "Wheels And Wheel Components",
+    "path": "Vehicle\/WheelsAndWheelComponents",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,finish,diameter\/unit,diameter\/measure,compatibleTireSize,numberOfSpokes,hasWearSensor"
+  },
+  {
+    "cat_id": "LandVehicles",
+    "parent_cat_id": "Vehicle",
+    "name": "Land Vehicles",
+    "path": "Vehicle\/LandVehicles",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,vehicleMake,vehicleModel,vehicleType,vehicleYear",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,landVehicleCategory,powertrain,drivetrain,transmissionDesignation,acceleration,frontSuspension,rearSuspension,frontBrakes,rearBrakes,seatingCapacity,frontWheels,rearWheels,frontTires,rearTires,wheelbase\/unit,wheelbase\/measure,curbWeight\/unit,curbWeight\/measure,towingCapacity\/unit,towingCapacity\/measure,submodel,seatHeight\/unit,seatHeight\/measure,engineModel,compressionRatio,boreStroke,inductionSystem,coolingSystem,maximumEnginePower,topSpeed,fuelRequirement,fuelSystem,fuelCapacity\/unit,fuelCapacity\/measure,averageFuelConsumption\/unit,averageFuelConsumption\/measure,vehicleMake,vehicleModel,vehicleType,vehicleYear,torque,engineDisplacement\/unit,engineDisplacement\/measure"
+  },
+  {
+    "cat_id": "VehiclePartsAndAccessories",
+    "parent_cat_id": "Vehicle",
+    "name": "Vehicle Parts And Accessories",
+    "path": "Vehicle\/VehiclePartsAndAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,fabricContent\/fabricContentValue,isWeatherResistant,finish,chainLength\/unit,chainLength\/measure,fabricCareInstructions\/fabricCareInstruction,batteriesRequired,batterySize,isReusable,connections\/connection,character\/characterValue,powerType,tireDiameter\/unit,tireDiameter\/measure,fillMaterial\/fillMaterialValue,fluidOunces\/unit,fluidOunces\/measure,maximumTemperature\/unit,maximumTemperature\/measure,volumeCapacity\/unit,volumeCapacity\/measure,fuelType,volts\/unit,volts\/measure,watts\/unit,watts\/measure,isLightBulbIncluded,vehicleMake,beamAngle\/unit,beamAngle\/measure,beamSpread\/unit,beamSpread\/measure,vehicleModel,vehicleType,vehicleYear,automotiveWindowShadeFit,breakingStrength\/unit,breakingStrength\/measure,candlePower,displayResolution\/unit,displayResolution\/measure,form,coldCrankAmp,compatibleCars,dropDistance\/unit,dropDistance\/measure,shape,fastenerHeadType,isLockable,filterLife\/unit,filterLife\/measure,flashPoint,fullyIncinerable,hitchClass,inDashSystem,interfaceType\/interfaceTypeValue,displayTechnology,maximumMotorSpeed,numberOfOutlets,numberOfPhases,receiverCompatibility\/unit,receiverCompatibility\/measure,reserveCapacity\/unit,reserveCapacity\/measure,saeDotCompliant,shackleClearance\/unit,shackleClearance\/measure,shackleDiameter\/unit,shackleDiameter\/measure,shackleLength\/unit,shackleLength\/measure,shankLength\/unit,shankLength\/measure,shearStrength\/unit,shearStrength\/measure,hasShortCircuitProtection\/unit,hasShortCircuitProtection\/measure,thickness\/unit,thickness\/measure,threadSize\/unit,threadSize\/measure,towingMirrorSide,lightBulbType,cableLength\/unit,cableLength\/measure,compatibleBrands\/compatibleBrand,compatibleDevices\/compatibleDevice,wirelessTechnologies\/wirelessTechnology,amps\/unit,amps\/measure,maximumLoadWeight\/unit,maximumLoadWeight\/measure,horsepower\/unit,horsepower\/measure,loadCapacity\/unit,loadCapacity\/measure"
+  },
+  {
+    "cat_id": "Tires",
+    "parent_cat_id": "Vehicle",
+    "name": "Tires",
+    "path": "Vehicle\/Tires",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,tireDiameter\/unit,tireDiameter\/measure,tireSize,tireWidth,tireSeason,tireLoadIndex,tireSpeedRating,tireTreadwearRating,isRunFlat,tireTractionRating,tireTemperatureRating,constructionType,tireSidewallStyle,tireType,maximumInflationPressure\/unit,maximumInflationPressure\/measure,treadDepth,treadWidth,uniformTireQualityGrade,overallDiameter\/unit,overallDiameter\/measure"
+  },
+  {
+    "cat_id": "Watercraft",
+    "parent_cat_id": "Vehicle",
+    "name": "Watercraft",
+    "path": "Vehicle\/Watercraft",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,vehicleMake,vehicleModel,vehicleType,vehicleYear",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue,seatingCapacity,watercraftCategory,submodel,engineLocation,propulsionSystem,engineModel,compressionRatio,boreStroke,inductionSystem,coolingSystem,maximumEnginePower,thrust\/unit,thrust\/measure,impellerPropeller,topSpeed,fuelRequirement,fuelSystem,fuelCapacity\/unit,fuelCapacity\/measure,averageFuelConsumption\/unit,averageFuelConsumption\/measure,hullLength\/unit,hullLength\/measure,beam\/unit,beam\/measure,airDraft\/unit,airDraft\/measure,draft\/unit,draft\/measure,waterCapacity\/unit,waterCapacity\/measure,dryWeight\/unit,dryWeight\/measure,vehicleMake,vehicleModel,vehicleType,vehicleYear,engineDisplacement"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Vehicle",
+    "name": "Other",
+    "path": "Vehicle\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,color\/colorValue,material\/materialValue"
+  },
+  {
+    "cat_id": "WomensSwimsuits",
+    "parent_cat_id": "Clothing",
+    "name": "Womens Swimsuits",
+    "path": "Clothing\/WomensSwimsuits",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,clothingSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,braSize,swimsuitStyle"
+  },
+  {
+    "cat_id": "Bras",
+    "parent_cat_id": "Clothing",
+    "name": "Bras",
+    "path": "Clothing\/Bras",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,clothingSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,braSize,braStyle"
+  },
+  {
+    "cat_id": "Skirts",
+    "parent_cat_id": "Clothing",
+    "name": "Skirts",
+    "path": "Clothing\/Skirts",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,waistSize\/unit,waistSize\/measure",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,waistSize\/unit,waistSize\/measure,skirtAndDressCut"
+  },
+  {
+    "cat_id": "PantsAndShorts",
+    "parent_cat_id": "Clothing",
+    "name": "Pants And Shorts",
+    "path": "Clothing\/PantsAndShorts",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,pantSize\/inseam,pantSize\/waistSize\/unit,pantSize\/waistSize\/measure",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,pantSize\/inseam,pantSize\/waistSize\/unit,pantSize\/waistSize\/measure,pantRise,pantStyle,pantPanelStyle"
+  },
+  {
+    "cat_id": "ShirtsAndTops",
+    "parent_cat_id": "Clothing",
+    "name": "Shirts And Tops",
+    "path": "Clothing\/ShirtsAndTops",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,shirtSize\/unit,shirtSize\/measure",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,shirtSize,shirtNeckStyle,sleeveStyle"
+  },
+  {
+    "cat_id": "ClothingAccessories",
+    "parent_cat_id": "Clothing",
+    "name": "Clothing Accessories",
+    "path": "Clothing\/ClothingAccessories",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,clothingSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,material\/materialValue"
+  },
+  {
+    "cat_id": "Dresses",
+    "parent_cat_id": "Clothing",
+    "name": "Dresses",
+    "path": "Clothing\/Dresses",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,clothingSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,skirtAndDressCut,dressStyle,sleeveStyle"
+  },
+  {
+    "cat_id": "DressShirts",
+    "parent_cat_id": "Clothing",
+    "name": "Dress Shirts",
+    "path": "Clothing\/DressShirts",
+    "level": "1",
+    "fruugo_required_attributes": "productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,dressShirtSize\/neckSize,dressShirtSize\/sleeveLength",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,dressShirtSize\/neckSize,dressShirtSize\/sleeveLength,collarType,sleeveStyle"
+  },
+  {
+    "cat_id": "Socks",
+    "parent_cat_id": "Clothing",
+    "name": "Socks",
+    "path": "Clothing\/Socks",
+    "level": "1",
+    "fruugo_required_attributes": "productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,dressShirtSize\/neckSize,dressShirtSize\/sleeveLength,sockSize,color\/colorValue",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,sockSize,sockStyle"
+  },
+  {
+    "cat_id": "Panties",
+    "parent_cat_id": "Clothing",
+    "name": "Panties",
+    "path": "Clothing\/Panties",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,clothingSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue,pantySize,pantyStyle"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "Clothing",
+    "name": "Other",
+    "path": "Clothing\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value,color\/colorValue,clothingSize",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantGroupId,variantAttributeNames\/variantAttributeName,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,clothingSizeType,isMaternity,pattern\/patternValue,character\/characterValue,occasion\/occasionValue,apparelCategory,isPersonalizable,isMadeFromRecycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/recycledMaterial,recycledMaterialContent\/recycledMaterialContentValue\/percentageOfRecycledMaterial,gotsCertification,season\/seasonValue,sport\/sportValue"
+  },
+  {
+    "cat_id": "Cycling",
+    "parent_cat_id": "SportAndRecreation",
+    "name": "Cycling",
+    "path": "SportAndRecreation\/Cycling",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isWeatherResistant,finish,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,batteriesRequired,dexterity,batterySize,fishingLinePoundTest,fishingLocation,animalType,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,fitnessGoal,powerType,maximumIncline\/unit,maximumIncline\/measure,isPortable,cleaningCareAndMaintenance,bladeType,recommendedUses\/recommendedUse,tentType,recommendedLocations\/recommendedLocation,seatingCapacity,tireDiameter\/unit,tireDiameter\/measure,season\/seasonValue,isWheeled,isMemorabilia,isFoldable,isCollectible,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,ballCoreMaterial\/ballCoreMaterialValue,footballSize,sport,basketballSize,maximumWeight\/unit,maximumWeight\/measure,soccerBallSize,batDrop,isTearResistant,isSpaceSaving,capacity,velocity\/unit,velocity\/measure,isWaterproof,hasAutomaticShutoff,shape,wirelessTechnologies\/wirelessTechnologie,horsepower\/unit,horsepower\/measure,bicycleFrameSize\/unit,bicycleFrameSize\/measure,bicycleWheelDiameter\/unit,bicycleWheelDiameter\/measure,bicycleTireSize,numberOfSpeeds,lightBulbType"
+  },
+  {
+    "cat_id": "Optics",
+    "parent_cat_id": "SportAndRecreation",
+    "name": "Optics",
+    "path": "SportAndRecreation\/Optics",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isWeatherResistant,finish,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,batteriesRequired,dexterity,batterySize,fishingLinePoundTest,fishingLocation,animalType,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,fitnessGoal,powerType,maximumIncline\/unit,maximumIncline\/measure,isPortable,cleaningCareAndMaintenance,bladeType,recommendedUses\/recommendedUse,tentType,recommendedLocations\/recommendedLocation,seatingCapacity,tireDiameter\/unit,tireDiameter\/measure,season\/seasonValue,isWheeled,isMemorabilia,isFoldable,isCollectible,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,ballCoreMaterial\/ballCoreMaterialValue,footballSize,sport,basketballSize,maximumWeight\/unit,maximumWeight\/measure,soccerBallSize,batDrop,isTearResistant,isSpaceSaving,capacity,velocity\/unit,velocity\/measure,isWaterproof,hasAutomaticShutoff,shape,wirelessTechnologies\/wirelessTechnologie,horsepower\/unit,horsepower\/measure,powerType,magnification,fieldOfView,isFogResistant,lensDiameter\/unit,lensDiameter\/measure,isMulticoated,opticalZoom,digitalZoom,focusType\/focusTypeValue,lockType,sensorResolution\/unit,sensorResolution\/measure,hasDovetailBarSystem,hasLcdScreen,hasMemoryCardSlot,hasNightVision,isParfocal,attachmentStyle,displayResolution\/unit,displayResolution\/measure,focalRatio,lensCoating,operatingTemperature\/unit,operatingTemperature\/measure,isLockable,screenSize\/unit,screenSize\\measure,displayTechnology"
+  },
+  {
+    "cat_id": "Weapons",
+    "parent_cat_id": "SportAndRecreation",
+    "name": "Weapons",
+    "path": "SportAndRecreation\/Weapons",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isWeatherResistant,finish,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,batteriesRequired,dexterity,batterySize,fishingLinePoundTest,fishingLocation,animalType,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,fitnessGoal,powerType,maximumIncline\/unit,maximumIncline\/measure,isPortable,cleaningCareAndMaintenance,bladeType,recommendedUses\/recommendedUse,tentType,recommendedLocations\/recommendedLocation,seatingCapacity,tireDiameter\/unit,tireDiameter\/measure,season\/seasonValue,isWheeled,isMemorabilia,isFoldable,isCollectible,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,ballCoreMaterial\/ballCoreMaterialValue,footballSize,sport,basketballSize,maximumWeight\/unit,maximumWeight\/measure,soccerBallSize,batDrop,isTearResistant,isSpaceSaving,capacity,velocity\/unit,velocity\/measure,isWaterproof,hasAutomaticShutoff,shape,wirelessTechnologies\/wirelessTechnologie,horsepower\/unit,horsepower\/measure,shotgunGauge,velocity\/unit,velocity\/measure,firearmAction,caliber\/unit,caliber\/measure,ammunitionType,firearmChamberLength"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "SportAndRecreation",
+    "name": "Other",
+    "path": "SportAndRecreation\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,variantAttributeNames\/variantAttributeName,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue\/materialName,isWeatherResistant,finish,fabricCareInstructions\/fabricCareInstruction,brand,condition,manufacturer,modelNumber,manufacturerPartNumber,clothingSize,gender,color\/colorValue,ageGroup\/ageGroupValue,batteriesRequired,dexterity,batterySize,fishingLinePoundTest,fishingLocation,animalType,material\/materialValue,pattern\/patternValue,isPowered,numberOfPieces,character\/characterValue,fitnessGoal,powerType,maximumIncline\/unit,maximumIncline\/measure,isPortable,cleaningCareAndMaintenance,bladeType,recommendedUses\/recommendedUse,tentType,recommendedLocations\/recommendedLocation,seatingCapacity,tireDiameter\/unit,tireDiameter\/measure,season\/seasonValue,isWheeled,isMemorabilia,isFoldable,isCollectible,isAssemblyRequired,maximumRecommendedAge\/unit,maximumRecommendedAge\/measure,assemblyInstructions,minimumRecommendedAge\/unit,minimumRecommendedAge\/measure,ballCoreMaterial\/ballCoreMaterialValue,footballSize,sport,basketballSize,maximumWeight\/unit,maximumWeight\/measure,soccerBallSize,batDrop,isTearResistant,isSpaceSaving,capacity,velocity\/unit,velocity\/measure,isWaterproof,hasAutomaticShutoff,shape,wirelessTechnologies\/wirelessTechnologie,horsepower\/unit,horsepower\/measure"
+  },
+  {
+    "cat_id": "HealthAndBeautyElectronics",
+    "parent_cat_id": "HealthAndBeauty",
+    "name": "Health And Beauty Electronics",
+    "path": "HealthAndBeauty\/HealthAndBeautyElectronics",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand,batteriesRequired,batterySize,connections\/connection,isCordless,hasAutomaticShutoff,screenSize\/unit,screenSize\/measure,displayTechnology"
+  },
+  {
+    "cat_id": "Optical",
+    "parent_cat_id": "HealthAndBeauty",
+    "name": "Optical",
+    "path": "HealthAndBeauty\/Optical",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand,frameMaterial\/frameMaterialValue,shape,eyewearFrameStyle,lensMaterial,eyewearFrameSize,uvRating,isPolarized,lensTint,isScratchResistant,hasAdaptiveLenses,lensType\/lensTypeValue"
+  },
+  {
+    "cat_id": "MedicalAids",
+    "parent_cat_id": "HealthAndBeauty",
+    "name": "Medical Aids",
+    "path": "HealthAndBeauty\/MedicalAids",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand,isInflatable,isWheeled,isFoldable,isIndustrial,diameter\/unit,diameter\/measure,isAssemblyRequired,assemblyInstructions,maximumWeight\/unit,maximumWeight\/unit,isLatexFree,isAntiAging,isHypoallergenic,isOilFree,isParabenFree,isNoncomodegenic,scent,isUnscented,isVegan,isWaterproof,isWaterproof,healthConcerns\/healthConcern"
+  },
+  {
+    "cat_id": "PersonalCare",
+    "parent_cat_id": "HealthAndBeauty",
+    "name": "Personal Care",
+    "path": "HealthAndBeauty\/PersonalCare",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand,ingredientClaim\/ingredientClaimValue,isLatexFree,absorbency,resultTime\/unit,resultTime\/measure,skinCareConcern,skinType,hairType,skinTone,spfValue,isAntiAging,isHypoallergenic,isOilFree,isParabenFree,isNoncomodegenic,scent,isUnscented,isVegan,isWaterproof,isTinted,isSelfTanning,isDrugFactsLabelRequired,drugFactsLabel,activeIngredients\/activeIngredient\/activeIngredientName,activeIngredients\/activeIngredient\/activeIngredientPercentage,inactiveIngredients\/inactiveIngredient,form,organicCertifications\/organicCertification,instructions,stopUseIndications\/stopUseIndication"
+  },
+  {
+    "cat_id": "MedicineAndSupplements",
+    "parent_cat_id": "HealthAndBeauty",
+    "name": "Medicine And Supplements",
+    "path": "HealthAndBeauty\/MedicineAndSupplements",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand,isDrugFactsLabelRequired,drugFactsLabel,isSupplementFactsLabelRequired,supplementFactsLabel,servingSize,servingsPerContainer,activeIngredients\/activeIngredient\/activeIngredientName,activeIngredients\/activeIngredient\/activeIngredientPercentage,inactiveIngredients\/inactiveIngredient,healthConcerns\/healthConcern,form,organicCertifications\/organicCertification,instructions,dosage,stopUseIndications\/stopUseIndication"
+  },
+  {
+    "cat_id": "Other",
+    "parent_cat_id": "HealthAndBeauty",
+    "name": "Other",
+    "path": "HealthAndBeauty\/Other",
+    "level": "1",
+    "fruugo_required_attributes": "sku,productName,longDescription,shelfDescription,shortDescription,mainImage\/mainImageUrl,productIdentifiers\/productIdentifier\/productIdType,productIdentifiers\/productIdentifier\/productId,productTaxCode,brand,price\/amount,shippingWeight\/value",
+    "fruugo_attributes": "swatchImages\/swatchImage\/swatchImageUrl,swatchImages\/swatchImage\/swatchVariantAttribute,collection,variantAttributeNames\/variantAttributeName,flexibleSpendingAccountEligible,variantGroupId,isPrimaryVariant,fabricContent\/fabricContentValue,isAdultProduct,fabricCareInstructions\/fabricCareInstruction,brand,manufacturer,modelNumber,manufacturerPartNumber,gender,color\/colorValue,ageGroup\/ageGroupValue,isReusable,isDisposable,material\/materialValue,isPowered,numberOfPieces,character\/characterValue,powerType,isPersonalizable,bodyParts\/bodyPart,isPortable,cleaningCareAndMaintenance,isSet,isTravelSize,recommendedUses,recommendedUses\/recommendedUse,shape,compatibleBrands\/compatibleBrand"
+  }
+]

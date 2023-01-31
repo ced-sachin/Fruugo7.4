@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category    Ced
+ * @package     Ced_Fruugo
+ * @author 		CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright   Copyright CedCommerce (http://cedcommerce.com/)
+ * @license      http://cedcommerce.com/license-agreement.txt
+ */
+
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+     <fieldset name="fruugo_category_mapping">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Fruugo Category Mapping</item>
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="sortOrder" xsi:type="number">0</item>
+            </item>
+        </argument>
+
+        <field name="fruugo_cat_level_0">
+            <argument name="data" xsi:type="array">
+            	<item name="options" xsi:type="object">Ced\Fruugo\Model\Source\Category\Rootlevel</item>
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">20</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">select</item>
+                    <item name="label" xsi:type="string" translate="true">Select Root Category</item>
+                    <!--<item name="validation" xsi:type="array">-->
+                        <!--<item name="required-entry" xsi:type="boolean">true</item>-->
+                    <!--</item>-->
+                </item>
+            </argument>
+        </field>
+        <field name="fruugo_cat_level_1">
+            <argument name="data" xsi:type="array">
+                 <item name="options" xsi:type="object">Ced\Fruugo\Model\Source\Category\Levelone</item>
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">30</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">select</item>
+                     <item name="label" xsi:type="string" translate="true">Select Sub Category</item>
+                	    <!--<item name="validation" xsi:type="array">-->
+                        <!--<item name="required-entry" xsi:type="boolean">true</item>-->
+                    <!--</item>-->
+                </item>
+            </argument>
+        </field>
+        <container name="form" >
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">50</item>
+                </item>
+            </argument>
+            <htmlContent name="html_content">
+                <argument name="block" xsi:type="object">Ced\Fruugo\Block\Adminhtml\Category\Tabs\Form</argument>
+            </htmlContent>
+        </container>
+
+       </fieldset>
+</form>

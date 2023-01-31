@@ -1,0 +1,682 @@
+{
+  "color": {
+    "fruugo_attribute_name": "color",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Color value as provided by the manufacturer.\n Example: Aqua; Burgundy; Mauve; Fuchsia",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "size": {
+    "fruugo_attribute_name": "size",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: S; M; L; 2; 4; 6",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "flavor": {
+    "fruugo_attribute_name": "flavor",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": " Example: Chicken  Lamb; Bacon; Beef  Liver; Tuna",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "scent": {
+    "fruugo_attribute_name": "scent",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Descriptive term for fragrance. Example: Vanilla; Geranium; Rose",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "assembledProductLength": {
+    "fruugo_attribute_name": "assembledProductLength",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Dimensions referring to the item as it is out of the box and assembled.\n                      Example: 5 in; 2 ft; 2.5 ft",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "assembledProductWidth": {
+    "fruugo_attribute_name": "assembledProductWidth",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Dimensions referring to the item as it is out of the box and assembled.\n                      Example: 5 in; 2 ft; 2.5 ft",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "assembledProductHeight": {
+    "fruugo_attribute_name": "assembledProductHeight",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Dimensions referring to the item as it is out of the box and assembled.\n                      Example: 5 in; 2 ft; 2.5 ft",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "shape": {
+    "fruugo_attribute_name": "shape",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Physical shape of the item. \n Example: Aviator; Cateye; Horned; Oval; Rectangle; Round; Square; Wayfarer",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "material": {
+    "fruugo_attribute_name": "material",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Material makeup of the item. \n Fabric materials should be entered using the \"Fabric Content\" attribute. \n                     Example: Nickel; Metal; Plastic",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "finish": {
+    "fruugo_attribute_name": "finish",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Overall finish of the item.\n Example: Natural; Unfinished; Brown; Espresso; Oak",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "babyClothingSize": {
+    "fruugo_attribute_name": "babyClothingSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: S; M; L; 2; 4; 6",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "shoeSize": {
+    "fruugo_attribute_name": "shoeSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: S; M; L; 2; 4; 6",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "pattern": {
+    "fruugo_attribute_name": "pattern",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Decorative design or visual ornamentation, often with a thematic, recurring motif.\n                      Example: Floral; Plaid; Paisley",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "bagStyle": {
+    "fruugo_attribute_name": "bagStyle",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The style of the bag, comprised of form and function\n Example: Crossbody; Messenger; Shoulder Bag; Tote Bag; Clutch; Wristlet; Satchel; Hobo;",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "clothingSize": {
+    "fruugo_attribute_name": "clothingSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: S; M; L; 2; 4; 6",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "inseam": {
+    "fruugo_attribute_name": "inseam",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Pant inseam in inches. Example: 32 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "waistSize": {
+    "fruugo_attribute_name": "waistSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Waist size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "neckSize": {
+    "fruugo_attribute_name": "neckSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Neck size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "hatSize": {
+    "fruugo_attribute_name": "hatSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Hat size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "pantySize": {
+    "fruugo_attribute_name": "pantySize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Panty size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "sockSize": {
+    "fruugo_attribute_name": "sockSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Sock Size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "braSize": {
+    "fruugo_attribute_name": "braSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Bra Size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "braBandSize": {
+    "fruugo_attribute_name": "braBandSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Bra Band Size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "braCupSize": {
+    "fruugo_attribute_name": "braCupSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Bra Cup Size in inches. Example: 38 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "screenSize": {
+    "fruugo_attribute_name": "screenSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Typically measured on the diagonal in inches. \n Example: 42 in; 110 in; 5.6 in",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "resolution": {
+    "fruugo_attribute_name": "resolution",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The commonly used resolution category of best fit for the panel.\n                      1080p for a native resolution of 1920 x 1080, 4K for a native resolution of 4096 x 2160, and so on.\n                       Example: 1080p (HDTV)",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "ramMemory": {
+    "fruugo_attribute_name": "ramMemory",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Random Access Memory is a type of computer data storage that allows \n                     information to be accessed in a random order.\n                      RAM is the most common type of memory found in computers and devices. Example: 16 GB; 1 TB",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "hardDriveCapacity": {
+    "fruugo_attribute_name": "hardDriveCapacity",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The amount of storage on a hard disk for retrieving and storing digital\n                      information, typically measured in megabytes, gigabytes, and terabytes. Example: 1 TB; 20 GB",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "connections": {
+    "fruugo_attribute_name": "connections",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The standardized connections provided on the item. \n Example: HDMI; S-Video; RCA",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "cableLength": {
+    "fruugo_attribute_name": "cableLength",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The total length of the cable (including connectors), measured in feet.\n                      Example: 3 ft; 15 ft",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "digitalFileFormat": {
+    "fruugo_attribute_name": "digitalFileFormat",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "physicalMediaFormat": {
+    "fruugo_attribute_name": "physicalMediaFormat",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "platform": {
+    "fruugo_attribute_name": "platform",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The hardware upon which the video game is designed to run or with which the \n                      product is compatible. Example: Mac; Nintendo DS  DSi; Nintendo 2DS; PlayStation 3; Nintendo Wii U;\n                       Playstation Portable; PC; Playstation 4; Nintendo Wii; VTech InnoTab; Xbox 360; Nintendo 3DS; \n                       Playstation 2; Xbox One",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "edition": {
+    "fruugo_attribute_name": "edition",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The specific edition of the item. \n Example: Game of the Year; Limited; Ghost; Black; Anniversary",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "shoeWidth": {
+    "fruugo_attribute_name": "shoeWidth",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "heelHeight": {
+    "fruugo_attribute_name": "heelHeight",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "capacity": {
+    "fruugo_attribute_name": "capacity",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "homeDecorStyle": {
+    "fruugo_attribute_name": "homeDecorStyle",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Describes home furnishings and decorations according to various themes, \n                     styles, and tastes. Example: French; Vintage; Traditional; Contemporary; Rustic",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "bedSize": {
+    "fruugo_attribute_name": "bedSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Denotes the size of a bed, a bed's parts, mattress, or bed linens.\n                                Example: Toddler; Twin; Twin XL; Full; Full XL; Queen; King; California King",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "ringSize": {
+    "fruugo_attribute_name": "ringSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "karats": {
+    "fruugo_attribute_name": "karats",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Masure of the purity of gold, pure gold being 24 Karats Example: 12K; 24K",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "carats": {
+    "fruugo_attribute_name": "carats",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: 3.5 ct",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "gemstone": {
+    "fruugo_attribute_name": "gemstone",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: Amethyst; Aquamarine; Citrine; Coral; Crystal; Cubic Zirconia",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "birthstone": {
+    "fruugo_attribute_name": "birthstone",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Name of month and birthstone for a particular gemstone\n Example: April- Diamond; August- Peridot; December-Tanzanite, Zircon, Turquoise; \n                      February- methyst; January- Garnet; July- Ruby; June - Pearl, Alexandrite;\n                       March- Aquamarine; May- Emerald; November- Topaz, Citrine;\n                        October- Tourmaline, Opal; September- Sapphire",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "chainLength": {
+    "fruugo_attribute_name": "chainLength",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "audioPowerOutput": {
+    "fruugo_attribute_name": "audioPowerOutput",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The audio output power of the amplifier or self-powered device's\n                      speakers, expressed in Watts. A self-powered item has an internal amplifier; \n                      it does not need to be plugged into a power amplifier to produce sound. Example: 5W + 5W; 7.5W",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "theme": {
+    "fruugo_attribute_name": "theme",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "A dominant idea carried in an artwork or piece of furniture\n                      Example: Animals  Insects; Automobiles; Space; Baseball",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "occasion": {
+    "fruugo_attribute_name": "occasion",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "The particular target time, event, or holiday for the product\n                      Example: Halloween; Christmas; Wedding; Anniversary",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "paperSize": {
+    "fruugo_attribute_name": "paperSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "numberOfSheets": {
+    "fruugo_attribute_name": "numberOfSheets",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "envelopeSize": {
+    "fruugo_attribute_name": "envelopeSize",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "focalLength": {
+    "fruugo_attribute_name": "focalLength",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "displayResolution": {
+    "fruugo_attribute_name": "displayResolution",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "sportsTeam": {
+    "fruugo_attribute_name": "sportsTeam",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "sportsLeague": {
+    "fruugo_attribute_name": "sportsLeague",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "grade": {
+    "fruugo_attribute_name": "grade",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "volts": {
+    "fruugo_attribute_name": "volts",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "amps": {
+    "fruugo_attribute_name": "amps",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "watts": {
+    "fruugo_attribute_name": "watts",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "workingLoadLimit": {
+    "fruugo_attribute_name": "workingLoadLimit",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "gallonsPerMinute": {
+    "fruugo_attribute_name": "gallonsPerMinute",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "vehicleYear": {
+    "fruugo_attribute_name": "vehicleYear",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "engineModel": {
+    "fruugo_attribute_name": "engineModel",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "vehicleMake": {
+    "fruugo_attribute_name": "vehicleMake",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "vehicleModel": {
+    "fruugo_attribute_name": "vehicleModel",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "watchBandMaterial": {
+    "fruugo_attribute_name": "watchBandMaterial",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "plating": {
+    "fruugo_attribute_name": "plating",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Example: Silver; Gold",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  },
+  "watchStyle": {
+    "fruugo_attribute_name": "watchStyle",
+    "magento_attribute_code": null,
+    "fruugo_attribute_doc": "Level of formality or type of dress\n Example: Casual; Dress; Fashion; Sport",
+    "is_mapped": 0,
+    "fruugo_attribute_enum": null,
+    "fruugo_attribute_level": "Optional",
+    "fruugo_attribute_type": "string,4000",
+    "fruugo_attribute_depends_on": null
+  }
+}

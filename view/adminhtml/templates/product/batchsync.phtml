@@ -1,0 +1,166 @@
+<?php
+
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement(EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category  Ced
+ * @package   Ced_Fruugo
+ * @author    CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright Copyright CEDCOMMERCE(http://cedcommerce.com/)
+ * @license   http://cedcommerce.com/license-agreement.txt
+ */
+
+$total = $block->productids;
+$baseUrl = $block->getUrl('fruugo/products/index');
+$successImg = $block->getViewFileUrl('Ced_Fruugo::images/fam_bullet_success.gif');
+$errorImg = $block->getViewFileUrl('Ced_Fruugo::images/error_msg_icon.gif');
+$loaderImg = $block->getViewFileUrl('Ced_Fruugo::images/rule-ajax-loader.gif');
+?>
+<style type="text/css" >
+    . ul { list-style:none; padding:0; margin:0; }
+    . ul li { margin-left:0; border:1px solid #ccc; margin:2px;
+        padding:2px 2px 2px 2px; font:normal 12px sans-serif;
+    }
+    . img { margin-right:5px; }
+</style>
+
+<div class="row">
+    <div class="col-md-12" style="margin-top: 10px;">
+        <div class="panel panel-default">
+            <div class="content-header panel-heading col-md-12 uptransform">
+                <div class="col-md-6" style="font-size:17px;line-height:31px; margin-top:0px; float: left;">
+                    <?php  echo __('Mass Product Upload Status'); ?>
+                </div>
+                <div class="col-md-6 buttons_scb" style="text-align:right; float: right;">
+                    <button onclick="setLocation('<?php  echo $block->escapeUrl($baseUrl); ?>')"
+                            class="btn btn-info uptransform"
+                            type="button"
+                            title="<?php  echo __('Back'); ?>">
+                        <span><?php  echo __('Back'); ?></span>
+                    </button>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div class="block-content panel-body ">
+                <ul style="list-style: none;">
+                    <li style="background-color:#Fff; list-style: none;">
+                        <img src="<?php  echo $block->getViewFileUrl('Ced_Fruugo::images/note_msg_icon.gif'); ?>" class="v-middle" style="margin-right:5px"/>
+                        <?php  echo __(" Mass Product Uploading , please wait...");?>
+                    </li>
+                    <li style="background-color:#FFD; list-style: none;">
+                        <img src="<?php  echo $block->getViewFileUrl('Ced_Fruugo::images/fam_bullet_error.gif'); ?>" class="v-middle" style="margin-right:5px"/>
+                        <?php  echo __("Warning: Please do not close the window while data is uploading");?>
+                    </li>
+                </ul>
+
+                <ul id="profileRows" style="list-style: none;">
+                    <li style="background-color:#DDF; list-style: none;">
+                        <img class="v-middle" src="<?php  echo $successImg ?>">
+                        <?php  echo 'Total '.$total.' Batch(s) Found.'; ?>
+                    </li>
+                    <li style="background-color:#DDF; list-style: none;" id="update_row">
+                        <img class="v-middle" id="status_image" src="<?php  echo $loaderImg ?>">
+                        <span id="update_status" class="text"><?php  echo __("Updating...");?></span>
+                    </li>
+                    <li id="liFinished" style="display:none;background-color:#Fff; list-style: none;">
+                        <img src="<?php  echo $block->getViewFileUrl('Ced_Fruugo::images/note_msg_icon.gif');?>" class="v-middle" style="margin-right:5px"/>
+                        <?php  echo __("Finished Product Mass Upload.");?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    require([
+        'prototype',
+    ], function() {
+        var totalRecords = parseInt("<?php  echo (int)$total; ?>");
+        var countOfSuccess = 0;
+        var id = 0;
+        var my_id = document.getElementById('liFinished');
+        var update_status = document.getElementById('update_status');
+        var update_row = document.getElementById('update_row');
+        var status_image = document.getElementById('status_image');
+
+        uploaddata();
+
+        function uploaddata() {
+            percent = getPercent();
+            update_status.innerHTML = percent+'% '+(id+1)+' Of '+totalRecords+' Processing';
+            new Ajax.Request("<?php  echo $this->getUrl('fruugo/products/syncstatus');?>", {
+                method: "post",
+                parameters: {
+                    batchid : id,
+                },
+                onSuccess: function(transport) {
+                    var json = transport.responseText.evalJSON();
+                    id++;
+                    if (json.success) {
+                        countOfSuccess++;
+                        var span = document.createElement('li');
+                        span.innerHTML =
+                            '<img class="v-middle" src="<?php  echo $successImg ?>"><span class="text">'+json.success+'</span>';
+                        span.id = 'id-'+id;
+                        span.style = 'background-color:#DDF';
+                        update_row.parentNode.insertBefore(span, update_row);
+                    }
+
+                    if (json.error) {
+                        var span = document.createElement('li');
+                        span.innerHTML = '<img class="v-middle" src="<?php  echo $errorImg ?>"><span class="text">'+json.error+'</span>';
+                        span.id = 'id-'+id;
+                        span.style = 'background-color:#FDD';
+                        update_row.parentNode.insertBefore(span, update_row);
+                    }
+
+                    if (id < totalRecords) {
+                        uploaddata();
+                    }else{
+                        status_image.src = '<?php  echo $successImg ?>';
+                        var span = document.createElement('li');
+                        span.innerHTML = '<img class="v-middle" src="<?php  echo $successImg ?>"><span id="update_status" class="text">'+countOfSuccess+' Mass Product Batch(s) Status Sycn Successfull.'+'</span>';
+                        span.style = 'background-color:#DDF';
+                        my_id.parentNode.insertBefore(span, my_id);
+                        document.getElementById("liFinished").style.display="block";
+                        update_status.innerHTML = percent+'% '+(id)+' Of '+totalRecords+' Processed.';
+                    }
+                },
+                onFailure: function() {
+                    console.log('fail');
+                    id++;
+                    var span = document.createElement('li');
+                    span.innerHTML = '<img class="v-middle" src="<?php  echo $errorImg ?>"><span class="text">Something Went Wrong </span>';
+                    span.id = 'id-'+id;
+                    span.style = 'background-color:#FDD';
+                    update_row.parentNode.insertBefore(span, update_row);
+
+                    if (id < totalRecords) {
+                        uploaddata();
+                    }
+                    else {
+                        status_image.src = '<?php  echo $successImg ?>';
+                        var span = document.createElement('li');
+                        span.innerHTML = '<img class="v-middle" src="<?php  echo $successImg ?>"><span id="update_status" class="text">'+countOfSuccess+' Batch(s) Successfully Processed.'+'</span>';
+                        span.style = 'background-color:#DDF';
+                        my_id.parentNode.insertBefore(span, my_id);
+                        document.getElementById("liFinished").style.display="block";
+                    }
+                }
+            });
+
+        }
+
+        function getPercent() {
+
+            return Math.ceil(((id+1)/totalRecords)*1000)/10;
+        }
+    });
+</script>

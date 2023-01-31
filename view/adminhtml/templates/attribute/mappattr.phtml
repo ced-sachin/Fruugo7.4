@@ -1,0 +1,138 @@
+<?php
+
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category  Ced
+ * @package   Ced_Fruugo
+ * @author    CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+ * @license   http://cedcommerce.com/license-agreement.txt
+ */
+
+$prod_attr = $block->getProductAttribute();
+$_htmlClass   = 'egrgf';
+$_htmlName    = 'fruugo_attribute';
+$_counter = 0;
+$model =  $block->objectManager->create('Ced\Fruugo\Model\Attributes');
+if($model->getCollection()->getData()){
+  $all_data = $model->getCollection()->getData();
+}
+
+?>
+<div class="admin__field field">
+    <div class="admin__field-control control">
+      <table id="attribute-options-table" class="admin__dynamic-rows dynamic-grid data border rkstorelocator-officehours data-grid" cellspacing="0" cellpadding="0">
+        <tbody id="attribute-options-table-ship-body">
+            <tr class="headings data-row">
+                <th width="40%">
+                  <div class="admin__field"  style="text-align:center;">
+                      <label class="admin__field-label"  style="color: #fff;">
+                        <span><?php echo __('Fruugo Mapping Attributes') ?></span>
+                      </label>
+                  </div>
+                </th>
+                <th width="40%">
+                  <div class="admin__field"  style="text-align:center;">
+                      <label class="admin__field-label"  style="color: #fff;">
+                        <span><?php echo __('Magento Attributes') ?></span>
+                      </label>
+                  </div>
+                </th>
+                <th class='a-center last'>
+                  <div class="admin__field">
+                      <div class="admin__field-control control"><div style="text-align: center;">
+                        <button id="add_new_option_ship_button" title="Add More" type="button" class="scalable add"><span><span><span><?php echo __('Add More') ?></span></span></span></button></div>
+                      </div>
+                  </div>
+                </th>
+            </tr>
+              <?php foreach ($all_data as $key => $option_attr){ ?>
+                  <?php if(isset($option_attr['is_mapped']) && $option_attr['is_mapped'] == 1) { ?>
+                    <tr class="data-row option-row rkstorelocator-officehours-dayrow" id="ship-hour-row-<?php echo $_counter;?>">
+                      <td class="_no-header">
+                        <div class="admin__field">
+                          <div class="admin__field-control control">
+                            <select class="select admin__control-select" name="<?php echo $_htmlName; ?>[<?php echo $_counter;?>]">
+                          <?php  foreach($all_data as $k => $value){ ?>
+                                  <option <?php if($value['fruugo_attribute_name'] == $option_attr['fruugo_attribute_name']){ echo ' selected="selected"'; } ?> value="<?php echo $value['fruugo_attribute_name'] ?>"><?php echo $value['fruugo_attribute_name'] ?></option>
+                          <?php  } ?>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="_no-header">
+                        <div class="admin__field">
+                          <div class="admin__field-control control">
+                            <select class="admin__control-select required-entry _required" name="<?php echo $_htmlName; ?>_mapp[<?php echo $_counter;?>]">
+                        <?php 
+                            $value_flag = false;
+                            $option_html = '';
+                            foreach($prod_attr as $ke => $val){
+                                if ($val['code'] == $option_attr['magento_attribute_code']) {
+                                    $option_html .= '<option selected="selected" value="'.$val['code'].'">'.$val['code'].'</option>';
+                                    $value_flag = true;
+                                } else {
+                                    $option_html .= '<option value="'.$val['code'].'">'.$val['code'].'</option>';
+                                }
+                            } 
+                            if(!$value_flag){
+                                    echo '<option value="">'.__('Please Select One').'</option>'.$option_html;
+                            } else {
+                                echo $option_html;
+                            }
+                        ?>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="_no-header a-center last" id="delete_button_container_option_<?php echo $_counter;?>">
+                          <div class="admin__field-control control">
+                            <button onclick="jQuery('#ship-hour-row-<?php echo $_counter;?>').remove();" title="Remove" type="button" class="scalable delete delete-option">
+                              <span><span><span>Remove</span></span></span>
+                            </button>
+                          </div>
+                      </td>
+                    </tr>
+                    <?php $_counter ++;?>
+                <?php } ?>
+            <?php } ?>
+        </tbody>
+    </table>
+    <?php 
+      $html = '<tr class="option-row rkstorelocator-officehours-dayrow" id="ship-hour-row-{{id}}">';
+      $html .= '<td class="_no-header"><div class="admin__field"><div class="admin__field-control control">';
+      $html .= '<select class="select admin__control-select  required-entry _required" name="'.$_htmlName.'[{{id}}]"><option value = "">Please Select One</option>';
+      foreach($all_data as $value){ 
+          $html .= '<option value="'.$value['fruugo_attribute_name'].'">'.$value['fruugo_attribute_name'].'</option>';
+      }
+      $html .= '</div></div></td>';
+      $html .= '<td class="_no-header"><div class="admin__field"><div class="admin__field-control control">';
+      $html .= '<select class="select admin__control-select  required-entry _required" name="'.$_htmlName.'_mapp[{{id}}]"><option value = "">Please Select One</option>';
+      foreach($prod_attr as $val){
+            $html .= '<option value="'.$val['code'].'">'.$val['code'].'</option>';
+      }
+      $html .= '</div></div></td>';
+      $html .= '<td class="a-center last" id="delete_button_container_option_{{id}}"><div class="admin__field-control control">';
+    ?>
+<script type="text/javascript">
+  require(["jquery"], function($){
+
+  var _form_html_row1 = '<?php echo $html ?>'+'<button onclick="jQuery(\'#ship-hour-row-{{id}}\').remove();" title="Remove" type="button" class="scalable delete delete-option"><span><span><span>Remove</span></span></span></button></div></td></tr>';
+
+  var _rkstorelocator_counter1 = <?php echo $_counter ?>;
+
+    $('#add_new_option_ship_button').click(function(){
+      $('#attribute-options-table-ship-body').append(_form_html_row1.replace(/\{\{id\}\}/ig, _rkstorelocator_counter1));
+    _rkstorelocator_counter1++;
+  });
+});
+</script>
+</div>
+</div>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!--
+/**
+  * CedCommerce
+  *
+  * NOTICE OF LICENSE
+  *
+  * This source file is subject to the End User License Agreement (EULA)
+  * that is bundled with this package in the file LICENSE.txt.
+  * It is also available through the world-wide-web at this URL:
+  * http://cedcommerce.com/license-agreement.txt
+  *
+  * @category    Ced
+  * @package     Ced_Fruugo
+  * @author      CedCommerce Core Team <connect@cedcommerce.com>
+  * @copyright   Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  * @license     http://cedcommerce.com/license-agreement.txt
+  */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Store/etc/config.xsd">
+    <default>
+        <fruugoconfiguration>
+            <fruugosetting>
+                <enable>1</enable>
+                <debug>0</debug>
+                <api_url>https://www.fruugo.com/</api_url>
+            </fruugosetting>
+
+            <product_edit>
+                <auto_sync>1</auto_sync>
+                <update_price>1</update_price>
+                <update_inventory>1</update_inventory>
+                <update_detail>0</update_detail>
+            </product_edit>
+
+            <productinfo_map>
+                <fruugo_fullfillment_lagtime>1</fruugo_fullfillment_lagtime>
+                <fruugo_productid_type>UPC</fruugo_productid_type>
+                <fruugo_taxcode_animal>2038710</fruugo_taxcode_animal>
+                <fruugo_taxcode_artandcraft>2038710</fruugo_taxcode_artandcraft>
+                <fruugo_taxcode_baby>2038710</fruugo_taxcode_baby>
+                <fruugo_taxcode_carriersandaccessories>2038710</fruugo_taxcode_carriersandaccessories>
+                <fruugo_taxcode_clothing>2038710</fruugo_taxcode_clothing>
+                <fruugo_taxcode_electronics>2038710</fruugo_taxcode_electronics>
+                <fruugo_taxcode_foodandbeverage>2038710</fruugo_taxcode_foodandbeverage>
+                <fruugo_taxcode_footwear>2038710</fruugo_taxcode_footwear>
+                <fruugo_taxcode_furniture>2038710</fruugo_taxcode_furniture>
+                <fruugo_taxcode_gardenandpatio>2038710</fruugo_taxcode_gardenandpatio>
+                <fruugo_taxcode_healthandbeauty>2038710</fruugo_taxcode_healthandbeauty>
+                <fruugo_taxcode_home>2038710</fruugo_taxcode_home>
+                <fruugo_taxcode_jewelry>2038710</fruugo_taxcode_jewelry>
+                <fruugo_taxcode_media>2038710</fruugo_taxcode_media>
+                <fruugo_taxcode_musicalinstrument>2038710</fruugo_taxcode_musicalinstrument>
+                <fruugo_taxcode_occasionandseasonal>2038710</fruugo_taxcode_occasionandseasonal>
+                <fruugo_taxcode_office>2038710</fruugo_taxcode_office>
+                <fruugo_taxcode_other>2038710</fruugo_taxcode_other>
+                <fruugo_taxcode_photography>2038710</fruugo_taxcode_photography>
+                <fruugo_taxcode_sportandrecreation>2038710</fruugo_taxcode_sportandrecreation>
+                <fruugo_taxcode_toolsandhardware>2038710</fruugo_taxcode_toolsandhardware>
+                <fruugo_taxcode_toy>2038710</fruugo_taxcode_toy>
+                <fruugo_taxcode_vehicle>2038710</fruugo_taxcode_vehicle>
+                <fruugo_taxcode_watches>2038710</fruugo_taxcode_watches>
+                <fruugo_cat_setting>--please select--</fruugo_cat_setting>
+            </productinfo_map>
+            <!--massaction activation-->
+            <massaction>
+                <activation>1</activation>
+            </massaction>
+            <!--end of massaction-->
+        </fruugoconfiguration>
+        <carriers>
+            <shipfruugocom>
+                <active>0</active>
+                <sallowspecific>0</sallowspecific>
+                <name>Fruugo.com Shipping</name>
+                <title>Fruugo.com Shipping</title>
+                <model>Ced\Fruugo\Model\Carrier\Shipfruugocom</model>
+            </shipfruugocom>
+        </carriers>
+        <payment>
+            <payfruugocom>
+                <active>0</active>
+                <model>Ced\Fruugo\Model\Payment\Payfruugocom</model>
+                <order_status>Processing</order_status>
+                <title>Fruugo.com</title>
+                <payment_action>sale</payment_action>
+                <allowspecific>0</allowspecific>
+            </payfruugocom>
+        </payment>
+        <system>
+            <fruugo>
+                <feed_url>cedcommerce.com/licensing/log/post</feed_url>
+                <popup_url>widgets.magentocommerce.com/notificationPopup</popup_url>
+                <severity_icons_url>widgets.magentocommerce.com/%s/%s.gif</severity_icons_url>
+                <frequency>72</frequency>
+                <last_update>0</last_update>
+            </fruugo>
+            <license>
+                <use_https>0</use_https>
+                <license_url>fruugo/main/license</license_url>
+                <activate_url>cedcommerce.com/licensing/validate/</activate_url>
+                <validate_url>cedcommerce.com/licensing/validate/auto</validate_url>
+            </license>
+        </system>
+        <cedcore>
+            <feeds_group>
+                <feeds>INFO,PROMO,UPDATE_RELEASE,NEW_RELEASE,INSTALLED_UPDATE</feeds>
+            </feeds_group>
+        </cedcore>
+    </default>
+</config>

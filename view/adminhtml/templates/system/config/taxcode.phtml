@@ -1,0 +1,169 @@
+<?php
+
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category  Ced
+ * @package   Ced_Fruugo
+ * @author    CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+ * @license   http://cedcommerce.com/license-agreement.txt
+ */
+
+$formKey=$block->objectManager->create('\Magento\Framework\Data\Form\FormKey')->getFormKey();
+
+?>
+
+    <input onclick="getTaxCode(); return false;" class='action-default' type="button" id="<?php echo $block->getHtmlId() ?>" value="<?php echo $block->escapeHtml($block->getButtonLabel()) ?>"</input>
+
+
+<div id="popup-modal" style="display:none">
+    <table id="initial" style="padding-top: 10px;">
+        <tr>
+            <th style="padding-right: 10px;">Search Key </th>
+            <td style="padding-right: 10px; width: 80px;"><input type="text" class='action-default' id="fruugo-taxcode-key"></td>
+            <td><input type="button" class='action-default' id="fruugo-taxcode-submit" value="Search" onclick="searchTaxCode()"></td>
+            <td style="padding-left: 230px"><label id="selected_tax_code"></label></td>
+        </tr>
+    </table>
+    <div class="fruugo-taxcodes-data" style="height: 260px; margin-top: 15px; overflow-y: scroll; padding-top: 0; text-align: center;">
+    <table id="rendered" class="data-grid" style="display:none;padding: 22px; margin: 20px auto;  width: 100%;">
+        <tr>
+            <th style="padding:15px">
+                <label class="data-grid-cell-content">Tax Code</label>
+            </th>
+            <th style="padding:15px">
+                <label class="data-grid-cell-content">Category</label>
+            </th>
+            <th style="padding:15px">
+                <label class="data-grid-cell-content">Category Description</label>
+            </th>
+            <th style="padding:15px">
+                <label class="data-grid-cell-content">Action</label>
+            </th>
+        </tr>
+    </table>
+    </div>
+</div>
+
+<script>
+
+    require(
+        [
+            'jquery'
+        ],
+        function ($) {
+            $('#fruugo-taxcode-key').keypress(function(e) {
+                if (e.which == 13) {
+                    searchTaxCode();
+                    e.preventDefault();
+                }
+            });
+        });
+    function getTaxCode() {
+        require(
+            [
+                'jquery',
+                'Magento_Ui/js/modal/modal'
+            ],
+            function(
+                $,
+                modal
+            ) {
+                console.log("Model");
+                $(document).ready(function(){
+                    var options = {
+                        type: 'popup',
+                        responsive: true,
+                        innerScroll: true,
+                        title: 'Find a Tax Code',
+                        buttons: [{
+                            text: $.mage.__('Save'),
+                            class: 'modal-btn',
+                            click: function() {
+                                this.closeModal();
+                            }
+                        }]
+                    };
+
+                    var popup = modal(options, $('#popup-modal'));
+
+                    $('#popup-modal').modal('openModal');
+                });
+            });
+    }
+
+    function searchTaxCode() {
+        require(
+            [
+                'jquery'
+            ],
+            function ($) {
+                var id = $('#fruugo-taxcode-key').val();
+                if(id.length == null){
+                    alert('Please Enter Search Key')
+                    return false;
+                }
+
+                $.ajax({
+                    url: '<?php echo $this->getUrl('fruugo/taxes/searchtaxcode');?>',
+                    type:"POST",
+                    dataType: 'json',
+                    data: {
+                        search: id,
+                        formKey: '<?php echo $formKey;?>',
+                    },
+                    context: self.element,
+                    showLoader: true,
+                    success: function(response){
+                        var IS_JSON = true;
+                        try
+                        {
+                            var json = response.result;
+                            var size = response.size;
+                            var html = '';
+                            for( var i= 0 ;  i < size ; i++){
+                                html += '<tr><td>'+json[i].tax_code+'</td><td>'+json[i].sub_cat_desc+'</td>' +
+                                    '<td>'+json[i].cat_desc+'</td>' +
+                                    '<td>' +
+                                    '<button class="action-default"  ' +
+                                    'onclick = "changeTax(\''+json[i].tax_code+'\')//$(\'#selected_tax_code\').text(\''+json[i].tax_code+'\')">Select</button></td></tr>';
+                            }
+                            $('#rendered').append(html);
+                            $('#rendered').attr('style','display:block;padding: 22px;');
+                        }
+                        catch(err)
+                        {
+                            console.log(err);
+
+                            IS_JSON = false;
+                        }
+                    }
+                });
+            });
+    }
+
+    function changeTax(tax){
+        require(
+            [
+                'jquery'
+            ],
+            function ($) {
+                //setting in popup
+                $('#selected_tax_code').html
+                ('<b>Selected Tax Code </b> <input type="text" class="action-default" value="'+tax + '" />');
+
+                //setting in input box
+                $('[id^="fruugoconfiguration_productinfo_map_fruugo_taxcode"]')/*.filter
+                (':visible:enabled')*/.attr('value', tax);
+            });
+    }
+</script>
+

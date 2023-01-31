@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * CedCommerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User License Agreement (EULA)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://cedcommerce.com/license-agreement.txt
+ *
+ * @category    Ced
+ * @package     Ced_Fruugo
+ * @author 		CedCommerce Core Team <connect@cedcommerce.com>
+ * @copyright   Copyright CedCommerce (http://cedcommerce.com/)
+ * @license      http://cedcommerce.com/license-agreement.txt
+ */
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Ced_Fruugo::Fruugo"
+             title="Fruugo Integration"
+             module="Ced_Fruugo"
+             sortOrder="14"
+             resource="Ced_Fruugo::Fruugo"
+             dependsOnConfig="fruugoconfiguration/fruugosetting/enable"
+        />
+
+
+
+        <add id="Ced_Fruugo::fruugo_products"
+             title="Fruugo Products"
+             module="Ced_Fruugo"
+             sortOrder="10"
+             parent="Ced_Fruugo::Fruugo"
+             resource="Ced_Fruugo::fruugo_products"
+        />
+
+        <!--<add id="Ced_Fruugo::fruugo_products_index"
+             title="Upload Products"
+             module="Ced_Fruugo"
+             sortOrder="1"
+             parent="Ced_Fruugo::fruugo_products"
+             action="fruugo/products/index"
+             resource="Ced_Fruugo::fruugo_products_index"
+        />-->
+
+        <add id="Ced_Fruugo::fruugo_profiles"
+             title="Manage Profile"
+             module="Ced_Fruugo"
+             sortOrder="10"
+             parent="Ced_Fruugo::fruugo_products"
+             action="fruugo/profile/index"
+             resource="Ced_Fruugo::fruugo_profiles"
+        />
+        <add id="Ced_Fruugo::fruugo_products_feeds"
+             title="Product Feeds"
+             module="Ced_Fruugo"
+             sortOrder="20"
+             parent="Ced_Fruugo::fruugo_products"
+             action="fruugo/products/feeds"
+             resource="Ced_Fruugo::fruugo_products_feeds"
+        />
+        <add id="Ced_Fruugo::fruugo_products_index"
+             title="Manage Products"
+             module="Ced_Fruugo"
+             sortOrder="1"
+             parent="Ced_Fruugo::fruugo_products"
+             action="fruugo/products/index"
+             resource="Ced_Fruugo::fruugo_products_index"
+        />
+
+
+
+        <add id="Ced_Fruugo::fruugo_orders"
+             title="Fruugo Orders"
+             module="Ced_Fruugo"
+             sortOrder="20"
+             parent="Ced_Fruugo::Fruugo"
+             resource="Ced_Fruugo::fruugo_orders"
+        />
+        <add id="Ced_Fruugo::view_fruugo_orders"
+             title="View Fruugo Orders"
+             module="Ced_Fruugo"
+             sortOrder="10"
+             parent="Ced_Fruugo::fruugo_orders"
+             action="fruugo/order/listorder"
+             resource="Ced_Fruugo::view_fruugo_orders"
+        />
+        <add id="Ced_Fruugo::view_failed_imported_fruugo_orders_log"
+             title="Failed Imported Orders"
+             module="Ced_Fruugo"
+             sortOrder="20"
+             parent="Ced_Fruugo::fruugo_orders"
+             action="fruugo/order/failedorders"
+             resource="Ced_Fruugo::view_failed_imported_fruugo_orders_log"
+        />
+        
+
+
+
+       <!--
+       @ToDo remove these menu
+       <add id="Ced_Fruugo::fruugo_attribute"
+             title="Fruugo Attributes"
+             module="Ced_Fruugo"
+             sortOrder="30"
+             parent="Ced_Fruugo::Fruugo"
+             resource="Ced_Fruugo::fruugo_custom"
+        />
+
+        <add id="Ced_Fruugo::fruugo_attributes"
+             title="Fruugo Simple Attributes"
+             module="Ced_Fruugo"
+             sortOrder="1"
+             parent="Ced_Fruugo::fruugo_attribute"
+             action="fruugo/attributes/index"
+             resource="Ced_Fruugo::fruugo_attributes"
+        />
+        <add id="Ced_Fruugo::fruugo_confattributes"
+             title="Fruugo Configurable Attributes"
+             module="Ced_Fruugo"
+             sortOrder="2"
+             parent="Ced_Fruugo::fruugo_attribute"
+             action="fruugo/confattributes/index"
+             resource="Ced_Fruugo::fruugo_confattributes"
+        />-->
+
+        <!-- <add id="Ced_Fruugo::fruugo_products"
+             title="Fruugo Products"
+             module="Ced_Fruugo"
+             sortOrder="20"
+             parent="Ced_Fruugo::Fruugo"
+             resource="Ced_Fruugo::fruugo_products"
+        />
+        <add id="Ced_Fruugo::fruugo_products_index"
+             title="Upload Products"
+             module="Ced_Fruugo"
+             sortOrder="1"
+             parent="Ced_Fruugo::fruugo_products"
+             action="fruugo/products/index"
+             resource="Ced_Fruugo::fruugo_products_index"
+        />
+        <add id="Ced_Fruugo::fruugo_products_feeds"
+             title="Product Feeds"
+             module="Ced_Fruugo"
+             sortOrder="2"
+             parent="Ced_Fruugo::fruugo_products"
+             action="fruugo/products/feeds"
+             resource="Ced_Fruugo::fruugo_products_feeds"
+        /> -->
+
+
+        <add id="Ced_Fruugo::configurations"
+             title="Configurations"
+             module="Ced_Fruugo"
+             sortOrder="50"
+             parent="Ced_Fruugo::Fruugo"
+             resource="Ced_Fruugo::configurations"
+        />
+        <add id="Ced_Fruugo::configuration"
+             title="Configuration"
+             module="Ced_Fruugo"
+             sortOrder="1"
+             parent="Ced_Fruugo::configurations"
+             action="adminhtml/system_config/edit/section/fruugoconfiguration"
+             resource="Ced_Fruugo::configuration"
+        />
+        <!--<add id="Ced_Fruugo::category_mapping"
+             title="Category Mapping"
+             module="Ced_Fruugo"
+             sortOrder="2"
+             parent="Ced_Fruugo::configurations"
+             action="catalog/category/index"
+             resource="Ced_Fruugo::category_mapping"
+        />-->
+
+
+        <add id="Ced_Fruugo::extra"
+             title="Extras"
+             module="Ced_Fruugo"
+             sortOrder="110"
+             parent="Ced_Fruugo::Fruugo"
+             resource="Ced_Fruugo::extra"
+        />
+        <add id="Ced_Fruugo::fruugo_knowledge_base"
+             title="Fruugo Knowledge Base"
+             module="Ced_Fruugo"
+             sortOrder="10" parent="Ced_Fruugo::extra"
+             action="fruugo/request/help"
+             resource="Ced_Fruugo::fruugo_knowledge_base"
+        />
+        <!--<add id="Ced_Fruugo::fruugo_taxes_controller"
+             title="Fruugo Tax Codes"
+             module="Ced_Fruugo"
+             sortOrder="20" parent="Ced_Fruugo::extra"
+             action="fruugo/taxes/taxcontroller"
+             resource="Ced_Fruugo::fruugo_knowledge_base"
+        />-->
+        <add id="Ced_Fruugo::fruugo_cron_crongrid"
+             title="Fruugo Cron Grid"
+             module="Ced_Fruugo"
+             sortOrder="30" parent="Ced_Fruugo::extra"
+             action="fruugo/cron/crongrid"
+             resource="Ced_Fruugo::fruugo_cron_crongrid"
+        />
+        <add id="Ced_Fruugo::fruugo_logs_grid"
+             title="Fruugo Log Grid"
+             module="Ced_Fruugo"
+             sortOrder="30" parent="Ced_Fruugo::extra"
+             action="fruugo/logs/loggrid"
+             resource="Ced_Fruugo::fruugo_logs_grid"
+        />
+
+        <!--<add id="Ced_Fruugo::fruugo_categories"
+             title="Fruugo Categories"
+             module="Ced_Fruugo"
+             sortOrder="40"
+             parent="Ced_Fruugo::extra"
+             action="fruugo/categories/index"
+             resource="Ced_Fruugo::fruugo_categories"
+        />-->
+        <!--<add id="Ced_Fruugo::attribute_mapping"
+             title="Simple Attribute Mapping"
+             module="Ced_Fruugo"
+             sortOrder="3"
+             parent="Ced_Fruugo::extra"
+             action="fruugo/attributes/map"
+             resource="Ced_Fruugo::attribute_mapping"
+        />
+        <add id="Ced_Fruugo::confattribute_mapping"
+             title="Configurable Attribute Mapping"
+             module="Ced_Fruugo"
+             sortOrder="4"
+             parent="Ced_Fruugo::extra"
+             action="fruugo/confattributes/map"
+             resource="Ced_Fruugo::confattribute_mapping"
+        />-->
+
+    </menu>
+</config>
