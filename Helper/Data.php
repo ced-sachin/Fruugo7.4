@@ -2098,7 +2098,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
                     $configurableProductObject->setFruugoProductValidation('Invalid');
                     $configurableProductObject->getResource()->saveAttribute($configurableProductObject,'fruugo_validation_errors')->saveAttribute($configurableProductObject,'fruugo_product_validation');
                 } else {
-                    $configurableProductObject->setFruugoValidationErrors(NULL);
+                    $configurableProductObject->setData('fruugo_validation_errors',' ');
                     $configurableProductObject->setFruugoProductValidation('Valid');
                     $configurableProductObject->getResource()->saveAttribute($configurableProductObject,'fruugo_product_validation')->saveAttribute($configurableProductObject,'fruugo_validation_errors');
                 }
@@ -2308,7 +2308,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
                 $product->setData('fruugo_product_validation', 'Invalid');
             } else {
                 $product->setData('fruugo_product_validation', 'Valid');
-                $product->setData('fruugo_validation_errors', NULL);
+                $product->setData('fruugo_validation_errors', ' ');
                 $validatedProduct['id'] = $id;
                 $validatedProduct['category'] = $category;
             }
