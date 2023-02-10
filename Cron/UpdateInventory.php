@@ -97,6 +97,12 @@ class UpdateInventory
                 foreach ($collection as $pchange){
                     $ids[]['id']= $pchange->getProductId();
                 }
+
+                if(empty($ids)) {
+                    $this->logger->logger("Fruugo Cron" , "Fruugo Inventory Cron" , 'Success',' Inventory Cron Success');
+                    return true;
+                }
+
                 $inventory = $this->objectManager
                     ->get('Ced\Fruugo\Helper\Data')
                     ->updateInventoryOnFruugo($ids);
