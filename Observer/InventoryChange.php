@@ -115,10 +115,10 @@ class InventoryChange implements ObserverInterface
             return $observer;
         }
         $product_load = $this->objectManager->create('Magento\Catalog\Model\Product')->load($product->getId());
-        $productids[] = $product->getId();
+        $productids[] = $product_load->getId();
 
         $this->session->setNoBatches(true);
-        $this->dataHelper->createProductOnFruugo($product_load, array());
+        $this->dataHelper->createProductOnFruugo($productids, array());
         
         $oldValue = 0;
 
