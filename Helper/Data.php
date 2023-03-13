@@ -1263,6 +1263,12 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
                     {
                         $fruugo_prod_cat = $id['profile']['profile_category_level_1'];
                     }
+
+                    $fruugo_desc_tags = $this->scopeConfigManager->getValue('fruugoconfiguration/product_edit/fruugo_config_tags');
+                    
+                    if($fruugo_desc_tags == 0) {
+                        $attrValueArray['Description'] = strip_tags(html_entity_decode($attrValueArray['Description']));
+                    }
                     
                     $productToUpload[$uploadType] = [
                         'ProductId' => $attrValueArray['ProductId'],

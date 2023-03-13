@@ -187,7 +187,11 @@
                     <label>Use From Parent Product</label>
                     <source_model>Ced\Fruugo\Model\Source\FruugoAttributes</source_model>
                     <can_be_empty>1</can_be_empty>
-                    <comment><![CDATA[Select attributes whichy you want to taken from parent product.</b>]]></comment>
+                    <comment><![CDATA[Select attributes which you want to taken from parent product.</b>]]></comment>
+                </field>
+                <field id="fruugo_config_tags" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0" showInProfile="1">
+                    <label>Send HTML tags in Fruugo Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <!--<field id="auto_sync" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Auto Sync Fruugo</label>
